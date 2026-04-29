@@ -1,0 +1,76 @@
+# FinGuard-RAG Configuration File
+# Shared across all modules — do not change without team agreement
+
+# === LLM Configuration ===
+llm:
+  provider: "gemini"                    # "gemini" | "groq"
+  model_name: "gemini-1.5-flash"
+  temperature: 0.3                      # lower = more deterministic
+  max_tokens: 2048
+  timeout_seconds: 30
+
+# === Embedding Configuration ===
+embeddings:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  dimension: 384
+  normalize: true
+
+# === Retrieval Configuration ===
+retrieval:
+  alpha: 0.7                            # weight for semantic score
+  beta: 0.3                             # weight for compliance risk (subtracted)
+  top_k: 5                              # number of documents to retrieve
+  risk_score_threshold: 0.3             # minimum final_score to include doc
+  embedding_search_threshold: 0.5       # cosine similarity cutoff
+
+# === Temporal Configuration ===
+temporal:
+  check_superseded: true                # enforce temporal validity gates
+  include_historical: false             # support reference_date parameter
+
+# === Agent Configuration ===
+agent:
+  framework: "langchain"                # ReAct based
+  max_iterations: 10                    # hard limit on agent loops
+  timeout_seconds: 60
+  log_traces: true
+
+# === Compliance Validation Configuration ===
+compliance:
+  # Symbolic rule engine
+  enable_symbolic_rules: true
+  num_rules: 20                         # number of deontic rules loaded
+  # Neural safety classifier
+  enable_neural_safety: true
+  noncompliant_pattern_threshold: 0.82  # cosine similarity cutoff
+
+# === Leakage Detection Configuration ===
+leakage_detection:
+  enable_session_tracking: true
+  sensitivity_propagation: true
+  inference_threshold_low: 0.5          # risk score for LOW alert
+  inference_threshold_high: 0.8         # risk score for HIGH alert
+  max_session_queries: 100              # queries before session cleanup
+
+# === Conflict Resolution Configuration ===
+conflict_resolution:
+  enable_jurisdiction_conflict_detection: true
+  enable_conservative_recommendation: true
+
+# === ChromaDB Configuration ===
+chromadb:
+  collection_name: "finguard_docs"
+  persistence_directory: "data/chroma_db"
+  batch_size: 100                       # chunks to process per batch during ingestion
+
+# === Evaluation Configuration ===
+evaluation:
+  test_sets_dir: "evaluation/test_sets"
+  results_dir: "evaluation/results"
+  baseline_systems: ["vanilla_rag", "rbac_rag", "no_agent", "full_system"]
+
+# === Logging & Debugging ===
+logging:
+  level: "INFO"                         # "DEBUG" | "INFO" | "WARNING" | "ERROR"
+  log_file: "logs/finguard.log"
+  enable_query_logging: true
