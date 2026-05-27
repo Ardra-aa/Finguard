@@ -1,0 +1,134 @@
+{
+  "SEBI_LODR_2015.pdf": {
+    "doc_id": "SEBI-LODR-2015",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "securities",
+    "valid_roles": ["junior_analyst","senior_analyst","compliance_officer","cfo","ceo","legal_counsel","auditor_external"],
+    "effective_date": "2015-12-01",
+    "superseded_date": null,
+    "version": "4.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.7
+  },
+  "SEBI_MasterCircular_LODR_2023.pdf": {
+    "doc_id": "SEBI-MC-LODR-2023",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "securities",
+    "valid_roles": ["junior_analyst","senior_analyst","compliance_officer","cfo","ceo","legal_counsel","auditor_external"],
+    "effective_date": "2023-07-11",
+    "superseded_date": null,
+    "version": "3.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.7
+  },
+  "SEBI_NCS_MasterCircular_2023.pdf": {
+    "doc_id": "SEBI-NCS-MC-2023",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "securities",
+    "valid_roles": ["senior_analyst","compliance_officer","cfo","ceo","legal_counsel","auditor_external"],
+    "effective_date": "2023-06-30",
+    "superseded_date": null,
+    "version": "2.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.65
+  },
+  "SEBI_PIT_Regulations_2015.pdf": {
+    "doc_id": "SEBI-PIT-2015",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "securities",
+    "valid_roles": ["senior_analyst","compliance_officer","cfo","ceo","legal_counsel"],
+    "effective_date": "2015-01-15",
+    "superseded_date": null,
+    "version": "1.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.8
+  },
+  "RBI_MD_KYC_AIFI_2025.pdf": {
+    "doc_id": "RBI-MD-KYC-AIFI-2025",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["junior_analyst","senior_analyst","compliance_officer","cfo","ceo"],
+    "effective_date": "2025-11-28",
+    "superseded_date": null,
+    "version": "2.0",
+    "risk_level": "MEDIUM",
+    "risk_score": 0.5
+  },
+  "RBI_MD_NBFC_ScaleBased_2025.pdf": {
+    "doc_id": "RBI-MD-NBFC-SCALE-2025",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["compliance_officer","cfo","ceo","legal_counsel"],
+    "effective_date": "2025-11-28",
+    "superseded_date": null,
+    "version": "1.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.7
+  },
+  "RBI_MD_NBFC_KYC_2025.pdf": {
+    "doc_id": "RBI-MD-NBFC-KYC-2025",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["junior_analyst","senior_analyst","compliance_officer","cfo","ceo"],
+    "effective_date": "2025-11-28",
+    "superseded_date": null,
+    "version": "1.0",
+    "risk_level": "MEDIUM",
+    "risk_score": 0.5
+  },
+  "Companies_Act_2013.pdf": {
+    "doc_id": "MCA-CA-2013",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "corporate",
+    "valid_roles": ["junior_analyst","senior_analyst","compliance_officer","cfo","ceo","legal_counsel","auditor_external"],
+    "effective_date": "2013-09-12",
+    "superseded_date": null,
+    "version": "2.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.6
+  },
+  "CARO_2020.pdf": {
+    "doc_id": "MCA-CARO-2020",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "corporate",
+    "valid_roles": ["compliance_officer","cfo","ceo","legal_counsel","auditor_external"],
+    "effective_date": "2021-04-01",
+    "superseded_date": null,
+    "version": "1.0",
+    "risk_level": "MEDIUM",
+    "risk_score": 0.5
+  },
+  "IndAS_Compendium_2023.pdf": {
+    "doc_id": "ICAI-INDAS-2023",
+    "jurisdiction": ["IN"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["cfo","senior_analyst","auditor_external","compliance_officer","ceo"],
+    "effective_date": "2023-04-01",
+    "superseded_date": null,
+    "version": "2023.0",
+    "risk_level": "MEDIUM",
+    "risk_score": 0.4
+  },
+  "MAS_Notice637.pdf": {
+    "doc_id": "MAS-NOTICE-637-2024",
+    "jurisdiction": ["SG"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["compliance_officer","cfo","ceo","legal_counsel"],
+    "effective_date": "2024-07-01",
+    "superseded_date": null,
+    "version": "2024.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.7
+  },
+  "IFSCA_Banking_Regulations_2020.pdf": {
+    "doc_id": "IFSCA-BANKING-2023",
+    "jurisdiction": ["IN","SG"],
+    "regulatory_scope": "banking",
+    "valid_roles": ["compliance_officer","cfo","ceo","legal_counsel"],
+    "effective_date": "2023-07-14",
+    "superseded_date": null,
+    "version": "3.0",
+    "risk_level": "HIGH",
+    "risk_score": 0.7
+  }
+}

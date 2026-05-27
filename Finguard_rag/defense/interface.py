@@ -1,76 +1,100 @@
 """
-DEFENSE MODULE INTERFACE
-Ardra M A — M8, M9
+defense/interface.py
+====================
+PUBLIC INTERFACE FOR M8 + M9.
 
-Public function that detects leakage attacks and jurisdiction conflicts.
+Teammates (Amala's retrieval, Devna's generation) call ONLY this function.
+They must NOT import LeakageDetector or ConflictResolver directly.
+
+Usage:
+    from Finguard_rag.defense.interface import defend, DefenseResult
+
+    result: DefenseResult = defend(
+        session_id   = ctx.session_id,
+        user_id      = ctx.user_id,
+        role         = ctx.role,
+        query        = query_text,
+        response     = generated_answer,
+        source_docs  = ranked_docs,          # List[RankedDocument]
+        user_context = ctx,
+        mock_mode    = False,
+    )
 """
-from finguard_rag.schemas.document_schema import (
-    UserContext, ComplianceResponse, DefenseResult
-)
+
+from __future__ import annotations
+from typing import List, TYPE_CHECKING
+
+from .leakage_detector import LeakageDetector
+from .conflict_resolver import ConflictResolver
+
+if TYPE_CHECKING:
+    from ..schemas.document_schema import RankedDocument, UserContext
+
+# Module-level singletons (created once per process)
+_leakage_detector  = LeakageDetector()
+_conflict_resolver = ConflictResolver()
 
 
 def defend(
     session_id: str,
+    user_id: str,
+    role: str,
     query: str,
-    response: ComplianceResponse,
-    user_context: UserContext,
-    mock_mode: bool = False
-) -> DefenseResult:
+    response: str,
+    source_docs: "List[RankedDocument]",
+    user_context: "UserContext | None" = None,
+    mock_mode: bool = False,
+) -> dict:
     """
-    Apply defense layer checks to detect leakage attacks and jurisdiction conflicts.
-    
-    Flow:
-      1. Role-Inference Leakage Detector (M8):
-         - Maintains per-session query history keyed by session_id
-         - Builds sensitivity propagation graph
-         - Detects if query sequence reconstructs restricted information
-         - Returns: leakage_risk (NONE | LOW | HIGH)
-      
-      2. Jurisdiction-Conflict Resolver (M9):
-         - Inspects response.sources for conflicting legal regimes
-         - Checks conflict ontology for known (jurisdiction_A, jurisdiction_B, topic) patterns
-         - Always recommends more restrictive rule
-         - Returns: conflict_detected (bool) + conflicting_rules + recommendation
-    
-    Args:
-        session_id: Session identifier for query history tracking
-        query: The user's query (for fingerprinting in leakage detector)
-        response: ComplianceResponse from generation module
-        user_context: UserContext with role, jurisdiction, session_id
-        mock_mode: If True, return dummy DefenseResult instantly
-    
-    Returns:
-        DefenseResult: leakage_risk + conflict_detected + recommendations
-    
-    Raises:
-        Exception: If session tracking fails or conflict resolution error
-    
-    Example:
-        >>> ctx = UserContext(..., session_id='sess_123', ...)
-        >>> response = generate(query, docs, ctx)
-        >>> defense = defend('sess_123', query, response, ctx)
-        >>> if defense.leakage_risk == 'HIGH':
-        ...     print("Query blocked: inference leakage detected")
+    Run M8 (leakage detection) + M9 (conflict resolution) in sequence.
+
+    Parameters
+    ----------
+    session_id   : unique ID for the current browser/API session
+    user_id      : authenticated user identifier
+    role         : user's RBAC role
+    query        : raw query text
+    response     : generated answer text (from generation module)
+    source_docs  : List[RankedDocument] retrieved by the retrieval module
+    user_context : UserContext dataclass (optional, for future expansion)
+    mock_mode    : if True, return safe defaults immediately (useful for unit tests)
+
+    Returns
+    -------
+    dict matching DefenseResult fields:
+        {
+            "leakage_risk":                "NONE" | "LOW" | "HIGH",
+            "leakage_details":             List[str],
+            "conflict_detected":           bool,
+            "conflicting_rules":           List[str],
+            "conservative_recommendation": str,
+        }
     """
-    if mock_mode:
-        # Return dummy DefenseResult for testing/development
-        return DefenseResult(
-            leakage_risk='NONE',
-            leakage_details=[],
-            conflict_detected=False,
-            conflicting_rules=[],
-            conservative_recommendation='No conflicts detected. Response is safe to display.'
-        )
-    
-    # TODO: Implement actual defense layer
-    # M8: Role-Inference Leakage Detector
-    #     - Session-level query history tracking
-    #     - Sensitivity propagation graph construction
-    #     - Inference attack pattern detection
-    #     - Risk scoring: NONE | LOW | HIGH
-    #
-    # M9: Jurisdiction-Conflict Resolver
-    #     - Document jurisdiction ontology
-    #     - Known conflict pattern matching
-    #     - Conservative recommendation engine
-    raise NotImplementedError('Defense layer not yet implemented by Ardra')
+    # ------------------------------------------------------------------ M8
+    retrieved_doc_ids = [rd.document.doc_id for rd in source_docs]
+    leakage_result = _leakage_detector.detect(
+        session_id       = session_id,
+        user_id          = user_id,
+        role             = role,
+        query_text       = query,
+        retrieved_doc_ids= retrieved_doc_ids,
+        mock_mode        = mock_mode,
+    )
+
+    # ------------------------------------------------------------------ M9
+    source_contents = [rd.document.content for rd in source_docs]
+    conflict_result = _conflict_resolver.resolve(
+        query            = query,
+        source_doc_ids   = retrieved_doc_ids,
+        source_contents  = source_contents,
+        user_jurisdiction= (user_context.jurisdiction if user_context else "IN"),
+        mock_mode        = mock_mode,
+    )
+
+    return {
+        "leakage_risk":                leakage_result["leakage_risk"],
+        "leakage_details":             leakage_result["leakage_details"],
+        "conflict_detected":           conflict_result["conflict_detected"],
+        "conflicting_rules":           conflict_result["conflicting_rules"],
+        "conservative_recommendation": conflict_result["conservative_recommendation"],
+    }
