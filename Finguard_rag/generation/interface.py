@@ -105,6 +105,14 @@ def generate(
         compliance_status = validation_result.get("status", "PASS")
         violations = validation_result.get("violations", [])
         confidence_score = validation_result.get("confidence", 0.85)
+
+        # If FAIL: replace the answer with the safe refusal message
+        if validation_result.get("withheld", False):
+            answer_text = validation_result.get("safe_answer", answer_text)
+            logger.critical(
+                "Response WITHHELD — violations: %s", violations
+            )
+
         logger.info(
             "Compliance validation: status=%s, violations=%d",
             compliance_status,
@@ -130,3 +138,4 @@ def generate(
         confidence_score=confidence_score,
         agent_trace=None,
     )
+
