@@ -4,11 +4,11 @@
   "description": "FinGuard-RAG Compliance Portal — React frontend for BharatFinServ Ltd.",
   "private": true,
   "dependencies": {
-    "axios": "^1.16.1",
+    "axios": "1.16.1",
     "lucide-react": "0.383.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "^6.30.3",
+    "react-router-dom": "6.30.3",
     "react-scripts": "5.0.1"
   },
   "scripts": {
