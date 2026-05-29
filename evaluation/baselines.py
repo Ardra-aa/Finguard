@@ -25,6 +25,7 @@ logger = logging.getLogger(__name__)
 
 
 from datetime import date as _date
+from typing import List, Optional
 
 def _build_ctx(user_context: dict) -> UserContext:
     ref_str = user_context.get("reference_date", "2025-01-01")
@@ -42,6 +43,63 @@ def _build_ctx(user_context: dict) -> UserContext:
         reference_date=ref_date,
         session_id=user_context.get("session_id", "eval_session"),
     )
+
+
+def _extract_jurisdictions(ranked_docs: List[RankedDocument], user_jurisdiction: str) -> str:
+    """
+    Build a comma-separated string of all distinct jurisdictions from the
+    user's context AND every retrieved document's metadata.
+    e.g. "IN,SG" or "IN,EU"
+    """
+    all_j = set()
+    # Add user's own jurisdiction
+    for j in user_jurisdiction.split(","):
+        j = j.strip()
+        if j:
+            all_j.add(j)
+    # Add jurisdictions from every retrieved document
+    for rd in ranked_docs:
+        doc_j = rd.document.jurisdiction or ""
+        for j in doc_j.split(","):
+            j = j.strip()
+            if j:
+                all_j.add(j)
+    return ",".join(sorted(all_j))
+
+
+_REGULATION_KEYWORDS = [
+    "rbi", "sebi", "gdpr", "mas", "companies act", "nbfc",
+    "kyc", "pit", "lodr", "ifsca", "ncs", "data retention",
+    "data privacy", "aml", "insider trading", "capital adequacy",
+]
+
+
+def _extract_best_date(query: str, ranked_docs: List[RankedDocument], ctx: 'UserContext') -> str:
+    """
+    Find the document whose doc_id or content best matches a regulation
+    reference in the query, then use that document's effective_date.
+    Falls back to ranked_docs[0] then ctx.reference_date.
+    """
+    if not ranked_docs:
+        return str(ctx.reference_date)
+
+    query_lower = query.lower()
+    # Try to find a doc whose ID or content matches query keywords
+    best_doc = None
+    for doc in ranked_docs:
+        doc_id_lower = (doc.document.doc_id or "").lower()
+        content_prefix = (doc.document.content or "")[:300].lower()
+        for kw in _REGULATION_KEYWORDS:
+            if kw in query_lower and (kw in doc_id_lower or kw in content_prefix):
+                best_doc = doc
+                break
+        if best_doc:
+            break
+
+    if best_doc is None:
+        best_doc = ranked_docs[0]
+
+    return str(best_doc.document.effective_date)
 
 
 # ---------------------------------------------------------------------------
@@ -73,8 +131,8 @@ class VanillaRAG:
                 "conflicts":                [],
                 "leakage_risk":             "NONE",
                 "conflict_detected":        False,
-                "predicted_jurisdiction":   user_context.get("jurisdiction", "IN"),
-                "response_date":            str(ranked_docs[0].document.effective_date) if ranked_docs else str(ctx.reference_date),
+                "predicted_jurisdiction":   _extract_jurisdictions(ranked_docs, user_context.get("jurisdiction", "IN")),
+                "response_date":            _extract_best_date(query, ranked_docs, ctx),
                 "confidence_score":         0.5,
                 "latency_seconds":          time.time() - start,
             }
@@ -117,8 +175,8 @@ class RBACFilteredRAG:
                 "conflicts":                [],
                 "leakage_risk":             "NONE",
                 "conflict_detected":        False,
-                "predicted_jurisdiction":   user_context.get("jurisdiction", "IN"),
-                "response_date":            str(ranked_docs[0].document.effective_date) if ranked_docs else str(ctx.reference_date),
+                "predicted_jurisdiction":   _extract_jurisdictions(ranked_docs, user_context.get("jurisdiction", "IN")),
+                "response_date":            _extract_best_date(query, ranked_docs, ctx),
                 "confidence_score":         0.6,
                 "latency_seconds":          time.time() - start,
             }
@@ -161,8 +219,8 @@ class TemporalFilteredRAG:
                 "conflicts":                [],
                 "leakage_risk":             "NONE",
                 "conflict_detected":        False,
-                "predicted_jurisdiction":   user_context.get("jurisdiction", "IN"),
-                "response_date":            str(ranked_docs[0].document.effective_date) if ranked_docs else str(ctx.reference_date),
+                "predicted_jurisdiction":   _extract_jurisdictions(ranked_docs, user_context.get("jurisdiction", "IN")),
+                "response_date":            _extract_best_date(query, ranked_docs, ctx),
                 "confidence_score":         0.7,
                 "latency_seconds":          time.time() - start,
             }
@@ -214,8 +272,8 @@ class FinGuardRAG:
                 "conflicts":                defense_result.get("conflicting_rules", []),
                 "leakage_risk":             defense_result.get("leakage_risk", "NONE"),
                 "conflict_detected":        defense_result.get("conflict_detected", False),
-                "predicted_jurisdiction":   user_context.get("jurisdiction", "IN"),
-                "response_date":            str(ranked_docs[0].document.effective_date) if ranked_docs else str(ctx.reference_date),
+                "predicted_jurisdiction":   _extract_jurisdictions(ranked_docs, user_context.get("jurisdiction", "IN")),
+                "response_date":            _extract_best_date(query, ranked_docs, ctx),
                 "confidence_score":         0.9,
                 "latency_seconds":          time.time() - start,
             }
