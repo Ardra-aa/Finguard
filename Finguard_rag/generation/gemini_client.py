@@ -43,7 +43,7 @@ def _load_config() -> dict:
     return {
         "llm": {
             "provider": "gemini",
-            "model_name": "gemini-1.5-flash",
+            "model_name": "gemini-2.0-flash-lite",
             "temperature": 0.3,
             "max_tokens": 2048,
             "timeout_seconds": 30,
@@ -75,7 +75,7 @@ def _call_gemini(prompt: str) -> str:
         )
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(_LLM_CFG.get("model_name", "gemini-1.5-flash"))
+    model = genai.GenerativeModel(_LLM_CFG.get("model_name", "gemini-2.0-flash-lite"))
 
     generation_config = genai.types.GenerationConfig(
         temperature=_LLM_CFG.get("temperature", 0.3),
@@ -119,12 +119,15 @@ def _call_groq(prompt: str) -> str:
     client = Groq(api_key=api_key)
     chat_completion = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         temperature=_LLM_CFG.get("temperature", 0.3),
         max_tokens=_LLM_CFG.get("max_tokens", 2048),
     )
 
-    return chat_completion.choices[0].message.content
+    result = chat_completion.choices[0].message.content
+    import time
+    time.sleep(2)  # rate-limit guard for Groq free tier
+    return result
 
 
 # ---------------------------------------------------------------------------
