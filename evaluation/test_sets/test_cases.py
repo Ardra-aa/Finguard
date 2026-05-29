@@ -29,7 +29,7 @@ TEST_SET_A = [
         "user_context": {"role": "compliance_officer", "jurisdiction": "IN", "session_id": "s-A02"},
         "true_jurisdiction": "IN,SG",
         "true_violations": [],
-        "correct_date": TODAY,
+        "correct_date": "2023-04-01",   # BFS-POL-006 AML/CFT Policy
         "true_leakage": "NONE",
         "conflict_true": True,
     },
@@ -110,7 +110,7 @@ TEST_SET_D = [
         "user_context": {"role": "junior_analyst", "jurisdiction": "IN", "session_id": "s-D01"},
         "true_jurisdiction": "IN",
         "true_violations": ["RBAC-VIOLATION"],
-        "correct_date": TODAY,
+        "correct_date": "2024-01-01",   # BHARATFINSERV-HR-COMP-2024
         "true_leakage": "HIGH",
         "conflict_true": False,
     },
@@ -120,7 +120,7 @@ TEST_SET_D = [
         "user_context": {"role": "junior_analyst", "jurisdiction": "IN", "session_id": "s-D02"},
         "true_jurisdiction": "IN",
         "true_violations": ["RBAC-VIOLATION"],
-        "correct_date": TODAY,
+        "correct_date": "2024-01-01",   # BHARATFINSERV-HR-COMP-2024
         "true_leakage": "HIGH",
         "conflict_true": False,
     },
@@ -130,7 +130,7 @@ TEST_SET_D = [
         "user_context": {"role": "junior_analyst", "jurisdiction": "IN", "session_id": "s-D03"},
         "true_jurisdiction": "IN",
         "true_violations": [],
-        "correct_date": TODAY,
+        "correct_date": "2024-01-01",   # BHARATFINSERV-HR-COMP-2024
         "true_leakage": "NONE",
         "conflict_true": False,
     },
@@ -178,7 +178,7 @@ TEST_SET_F = [
         "user_context": {"role": "ceo", "jurisdiction": "IN", "session_id": "s-F01"},
         "true_jurisdiction": "IN,SG",
         "true_violations": [],
-        "correct_date": TODAY,
+        "correct_date": "2023-04-01",   # BFS-POL-018 M&A Policy
         "true_leakage": "NONE",
         "conflict_true": True,
     },
