@@ -1,0 +1,92 @@
+REGULATORY — SECURITIES AND EXCHANGE BOARD OF INDIA
+
+**SEBI (Prohibition of Insider Trading) Regulations, 2015**
+
+**Document ID:** SEBI-PIT-2015
+**Regulation Reference:** SEBI/LAD-NRO/GN/2015-16/013
+**Effective Date:** January 15, 2015 (as amended through September 2, 2015)
+**Jurisdiction:** India (IN)
+**Regulatory Scope:** Securities
+**Risk Level:** HIGH
+**Sensitivity:** HIGH
+
+---
+
+**1. Short Title and Commencement**
+
+1.1. These Regulations may be called the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015.
+1.2. They came into force on May 15, 2015, and were further amended through September 2, 2015 to strengthen the regulatory framework.
+
+**2. Definitions**
+
+2.1. **"Connected Person"** means any person who is or has during the six months prior to the concerned act been associated with a company, directly or indirectly, in any capacity including by reason of frequent communication with its officers, or by being in any contractual, fiduciary or employment relationship, or by being a director, officer or an employee of the company, or holds any position including a professional or business relationship between himself and the company.
+
+2.2. **"Designated Person"** means directors, key managerial personnel, employees above a particular grade designated by the board, and any persons having access to unpublished price sensitive information (UPSI). Designated persons include promoters, members of the promoter group, and those in the compliance function.
+
+2.3. **"Unpublished Price Sensitive Information (UPSI)"** means any information relating to a company or its securities, directly or indirectly, that is not generally available which upon becoming generally available, is likely to materially affect the price of the securities. This includes:
+(a) Financial results
+(b) Dividends
+(c) Change in capital structure
+(d) Mergers, de-mergers, acquisitions, delisting, disposals
+(e) Changes in key managerial personnel
+(f) Material events in accordance with the listing agreement
+
+**3. Communication or Procurement of UPSI**
+
+3.1. No insider shall communicate, provide, or allow access to any UPSI relating to a company or securities listed or proposed to be listed, to any person including other insiders except where such communication is in furtherance of legitimate purposes, performance of duties, or discharge of legal obligations.
+
+3.2. No person shall procure UPSI from an insider.
+
+**4. Trading When in Possession of UPSI — RULE SEBI-PIT-REG4**
+
+COMPLIANCE RULE: SEBI-PIT-REG4
+RULE TYPE: MUST_NOT
+RULE TEXT: No insider shall trade in securities that are listed or proposed to be listed on a stock exchange when in possession of unpublished price sensitive information.
+
+4.1. **Trading Window Closure:** Listed companies shall close the trading window for designated persons during the period when UPSI exists. The trading window shall be closed:
+(a) At least from the end of every quarter till 48 hours after the declaration of financial results
+(b) From the date of Board Meeting in which dividend declaration, bonus, rights issue, or other corporate action is proposed, till the information is published
+(c) During any period when material events or transactions are under consideration
+
+4.2. **Contra Trade Prohibition:** Designated persons who have traded in securities of the company shall not execute a contra trade within 6 months of the prior transaction. The Compliance Officer may grant a waiver from the applicability of contra trade restrictions for different categories of designated persons after recording reasons in writing.
+
+4.3. **Pre-clearance of Trades:** All designated persons shall obtain pre-clearance from the Compliance Officer before trading in the company's securities if the value of the proposed trade exceeds INR 10 lakhs. The Compliance Officer shall approve or reject the request within 2 trading days.
+
+**5. Trading Plans**
+
+5.1. An insider may formulate a trading plan and present it to the Compliance Officer. The trading plan shall:
+(a) Set out the value of trades to be effected, or number of securities to be traded
+(b) Set out the dates on or time period within which the trades shall be effected
+(c) Not entail commencement of trading earlier than 6 months from public disclosure of the plan
+
+**6. Disclosures of Trading by Insiders — RULE SEBI-PIT-REG6**
+
+COMPLIANCE RULE: SEBI-PIT-REG6
+RULE TYPE: MUST
+RULE TEXT: Every designated person who trades in securities of the listed company shall disclose the trading to the company within 2 trading days of the transaction.
+
+6.1. **Initial Disclosures:** Every promoter, key managerial personnel, and director shall disclose their holdings in the company's securities within 30 days of appointment or upon the Regulations taking effect.
+
+6.2. **Continual Disclosures:** Designated persons shall disclose to the company the number of securities acquired or disposed of within 2 trading days of such transaction if the value exceeds INR 10 lakhs in any calendar quarter. The company shall notify the stock exchange within 2 trading days of receipt of such disclosure.
+
+6.3. **Annual Disclosures:** Designated persons and their immediate relatives shall make annual disclosures of their holdings in the company's securities by the 30th day of April every year.
+
+**7. Code of Conduct**
+
+7.1. The Board of Directors of every listed company and market intermediary shall formulate a Code of Conduct to regulate, monitor, and report trading by its designated persons.
+
+7.2. The Code shall designate a Compliance Officer to administer the Code. The Compliance Officer shall report to the Board of Directors and shall provide assistance in addressing matters relating to insider trading.
+
+**8. Institutional Mechanism for Prevention of Insider Trading**
+
+8.1. Every listed company shall implement adequate and effective systems of internal controls with specific reference to:
+(a) All UPSI shall be handled on a need-to-know basis
+(b) UPSI shall be identified and its confidentiality shall be maintained
+(c) Chinese walls shall be erected between departments to prevent unauthorized access to UPSI
+
+**9. Penalties**
+
+9.1. Contravention of these Regulations shall attract penalties under Section 15G and 15H of the SEBI Act, 1992, which may extend to INR 25 crore or three times the profits made, whichever is higher.
+
+---
+**[SEBI (Prohibition of Insider Trading) Regulations, 2015 — Effective January 15, 2015]**

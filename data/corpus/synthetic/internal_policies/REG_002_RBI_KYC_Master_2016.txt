@@ -1,0 +1,104 @@
+REGULATORY — RESERVE BANK OF INDIA — MASTER DIRECTION
+
+**RBI Master Direction — Know Your Customer (KYC) Requirements**
+
+**Document ID:** RBI-KYC-MASTER-2016
+**Regulation Reference:** RBI/DBR/2016-17/MD-01
+**Effective Date:** February 25, 2016
+**Jurisdiction:** India (IN)
+**Regulatory Scope:** Banking / Financial Institutions
+**Risk Level:** MEDIUM
+
+---
+
+**1. Preamble**
+
+In exercise of the powers conferred by Section 35A of the Banking Regulation Act, 1949, read with Section 56 of the said Act, and Sections 45JA, 45K, and 45L of the RBI Act, 1934, the Reserve Bank of India hereby issues this Master Direction on Know Your Customer (KYC) requirements. This Direction consolidates and supersedes all previous KYC/AML/CFT circulars and guidelines, effective from February 25, 2016.
+
+**2. Applicability**
+
+This Direction applies to:
+(a) All scheduled commercial banks, including Regional Rural Banks
+(b) All non-scheduled urban cooperative banks
+(c) All NBFCs, including housing finance companies
+(d) All payment system providers and prepaid payment instrument issuers
+
+**3. Customer Due Diligence (CDD)**
+
+3.1. **Individual Customers:**
+(a) Proof of identity: Aadhaar, PAN, Voter ID, Passport, or Driving License
+(b) Proof of address: Aadhaar, utility bill (not older than 2 months), bank statement, property tax receipt
+(c) Recent photograph
+(d) Self-declaration of PAN or Form 60/61
+
+3.2. **Non-Individual Customers (Legal Entities):**
+(a) Certificate of incorporation / registration
+(b) Memorandum and Articles of Association / Partnership Deed
+(c) Board resolution authorizing account opening and identifying authorized signatories
+(d) PAN of the entity
+(e) List of directors/partners with their KYC documents
+
+3.3. **Video-based Customer Identification Process (V-CIP):**
+(a) Regulated entities may undertake V-CIP as an alternative method for CDD
+(b) V-CIP shall involve an official of the RE interacting with the customer via video call
+(c) The video shall be stored as a record
+
+**4. Beneficial Ownership Requirements**
+
+4.1. For legal entities, the beneficial owner is the natural person who:
+(a) Holds more than 25% of shares or capital or profits, for companies
+(b) Has controlling ownership interest exceeding 15% for partnerships
+(c) Exercises significant influence or control through other means
+
+4.2. Where no natural person is identified as the beneficial owner, the senior managing official shall be identified as the beneficial owner.
+
+4.3. The identity of the beneficial owner shall be verified using documents as prescribed for individual CDD.
+
+**5. Enhanced Due Diligence (EDD) for High-Risk Customers**
+
+5.1. The following categories require Enhanced Due Diligence:
+(a) Politically Exposed Persons (PEPs) and their family members
+(b) Non-resident customers
+(c) High Net Worth Individuals (HNI)
+(d) Companies with complex ownership structures
+(e) Customers from high-risk jurisdictions identified by FATF
+(f) Shell companies and Special Purpose Vehicles (SPVs) without clear business purpose
+
+5.2. EDD measures include:
+(a) Additional identification documents beyond standard CDD
+(b) Source of funds and source of wealth verification
+(c) Senior management approval for establishing business relationships
+(d) More frequent periodic KYC updates (annually instead of biennially)
+(e) Enhanced ongoing monitoring of transactions
+
+**6. Periodic KYC Update Requirements**
+
+6.1. KYC updates shall be carried out at the following intervals:
+(a) High-risk customers: Every 2 years
+(b) Medium-risk customers: Every 8 years
+(c) Low-risk customers: Every 10 years
+
+6.2. Banks/NBFCs shall notify customers at least 6 months prior to the due date for KYC update.
+
+6.3. No restrictions on operations shall be imposed solely on the grounds of KYC update being pending, provided the customer has submitted the required documents.
+
+**7. Record Retention**
+
+7.1. All records of transactions, both domestic and international, shall be maintained for a minimum period of 5 years from the date of transaction.
+
+7.2. Records pertaining to the identity of the customers shall be maintained for a minimum period of 5 years after the termination of the business relationship or closure of the account.
+
+**8. Reporting Obligations**
+
+8.1. Suspicious Transaction Reports (STRs) shall be furnished to the Financial Intelligence Unit – India (FIU-IND) within 7 working days of identification.
+
+8.2. Cash Transaction Reports (CTRs) for transactions of INR 10 lakhs or above shall be submitted monthly.
+
+**9. Aadhaar-based e-KYC**
+
+9.1. Aadhaar Authentication and Offline Verification may be used for KYC purposes with customer consent.
+
+9.2. Banks shall ensure that the Aadhaar data so obtained is secured in compliance with Section 29 of the Aadhaar Act, 2016.
+
+---
+**[RBI Master Direction — KYC Requirements — Effective February 25, 2016]**

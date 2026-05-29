@@ -1,0 +1,86 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**IT SYSTEMS ACCEPTABLE USE POLICY**
+
+**Document Version:** 1.0
+**Effective Date:** 15th July 2024
+**Review Cycle:** Annually, or as necessitated by regulatory or technological changes.
+
+---
+
+**1. PURPOSE**
+
+This IT Systems Acceptable Use Policy ("Policy") establishes the guidelines and expectations for the appropriate, secure, and ethical use of BharatFinServ Ltd.'s ("BharatFinServ" or "the Company") information technology (IT) systems and resources. The primary purpose of this Policy is to:
+*   Safeguard BharatFinServ's IT infrastructure, data, and intellectual property from misuse, damage, and unauthorised access.
+*   Ensure compliance with applicable laws, regulations, and industry standards, including but not limited to the Reserve Bank of India (RBI) Cyber Security Guidelines 2016 and the Information Technology Act, 2000 ("IT Act 2000").
+*   Promote a secure, productive, and professional work environment.
+*   Define acceptable and unacceptable behaviours related to the use of company IT assets.
+*   Mitigate risks associated with cyber threats, data breaches, and operational disruptions.
+
+**2. SCOPE**
+
+This Policy applies to all individuals who access or use BharatFinServ's IT systems and resources, regardless of their employment status or location. This includes, but is not limited to:
+*   All full-time, part-time, and contractual employees across all global offices (Mumbai, Bengaluru, GIFT City IFSC, Frankfurt).
+*   Consultants, temporary staff, interns, and third-party vendors with authorised access.
+*   Any person granted access to BharatFinServ's IT environment.
+
+The Policy covers all BharatFinServ IT systems, networks, hardware, software, data, databases, applications, digital services, and associated infrastructure, whether company-owned, leased, or accessed remotely via company-approved channels, including but not limited to desktop computers, laptops, mobile devices, servers, cloud services, communication tools, and data storage.
+
+**3. DEFINITIONS**
+
+*   **BharatFinServ / The Company:** Refers to BharatFinServ Ltd., its subsidiaries, and all associated business units (NBFC, insurance, asset management, IT services).
+*   **IT Systems / Resources:** Encompasses all hardware (e.g., computers, servers, networks, mobile devices), software (e.g., operating systems, applications), data, databases, networks, email systems, internet access, communication tools, and any other information technology assets owned, leased, or managed by BharatFinServ.
+*   **User / Employee:** Any individual, including but not limited to employees, contractors, consultants, and temporary staff, who is granted access to BharatFinServ's IT Systems.
+*   **Confidential Information:** Any non-public information related to BharatFinServ's business, operations, financial data, strategic plans, intellectual property, customer data, employee data, or any information that, if disclosed, could be detrimental to the Company.
+*   **Personally Identifiable Information (PII):** Information that can be used to identify an individual, such as name, address, phone number, email address, financial information, Aadhar numbers, PAN numbers, and other unique identifiers.
+*   **Malware:** Malicious software designed to disrupt, damage, or gain unauthorised access to a computer system.
+
+**4. POLICY DETAILS**
+
+**4.1. General Principles of Use**
+BharatFinServ's IT Systems are provided primarily for legitimate business purposes. While incidental and minimal personal use may be permitted, it must not interfere with work responsibilities, consume excessive system resources, incur unreasonable costs to the Company, or violate any other Company policies or legal obligations. Users should have no expectation of privacy when using Company IT Systems. BharatFinServ reserves the right to monitor, access, and disclose any information stored on or transmitted through its IT Systems, in accordance with applicable laws and regulations, for security, compliance, and business operational purposes.
+
+**4.2. Data Security and Confidentiality**
+All Users are responsible for protecting BharatFinServ's data, particularly confidential and sensitive information.
+*   **Access Control:** Users must use strong, unique passwords or multi-factor authentication where required and must never share their credentials. All accounts must be protected from unauthorised access.
+*   **Data Handling:** Confidential Information and PII must be handled with the utmost care, in strict adherence to Company data protection policies and regulatory requirements. This includes complying with the RBI Cyber Security Guidelines 2016 which mandate robust controls for protecting customer and organisational data, and the IT Act 2000, particularly Section 43A concerning the protection of sensitive personal data or information.
+*   **Encryption:** Data, especially confidential data stored on mobile devices, laptops, or transmitted over public networks, must be encrypted using Company-approved methods.
+*   **Incident Reporting:** Any suspected or actual data breach, security incident, loss of Company data, or compromise of an IT asset must be reported immediately to the IT Department.
+
+**4.3. Prohibited Activities**
+The following activities are strictly prohibited when using BharatFinServ's IT Systems:
+*   **Unauthorised Access:** Attempting to gain unauthorised access to any IT System, data, or network, or circumventing security controls.
+*   **Malicious Activities:** Introduction, creation, or transmission of malware (viruses, worms, Trojan horses), phishing attempts, denial-of-service attacks, or any activity that disrupts or damages IT Systems.
+*   **Illegal or Unethical Conduct:** Engaging in any activity that is illegal, fraudulent, harassing, defamatory, discriminatory, or offensive, including accessing or distributing inappropriate content. This includes activities violating intellectual property rights or copyright laws as per the IT Act 2000.
+*   **Unauthorised Software/Hardware:** Installing, downloading, or using unauthorised software or hardware on Company IT Systems without explicit IT Department approval.
+*   **Resource Misuse:** Excessive personal use of internet bandwidth, storage, or processing power, including extensive streaming, gaming, or downloading of non-business-related content.
+*   **Circumventing Monitoring:** Using anonymising services, proxies, or other methods to bypass Company security controls or monitoring.
+
+**4.4. Internet, Email, and Communication Tools**
+*   **Professional Conduct:** All communication through Company IT Systems (email, instant messaging, collaboration tools) must be professional, respectful, and reflective of BharatFinServ's values.
+*   **Content:** Users must not transmit or store any content that is offensive, discriminatory, sexually explicit, harassing, or in violation of any Company policy or law.
+*   **External Communications:** Exercise caution when opening attachments or clicking links from unknown senders. Be vigilant against phishing attempts. Do not share Confidential Information via unencrypted or unapproved external communication channels.
+*   **Company Property:** All communications and data created, sent, or received using Company IT Systems are the property of BharatFinServ and are subject to monitoring and review.
+
+**4.5. Device Management and Remote Access**
+*   **Company Devices:** All company-issued devices (laptops, mobile phones, tablets) must be physically secured, password-protected, and kept up-to-date with patches and security software. Any attempt to alter system configurations or remove security software without IT approval is prohibited.
+*   **Personal Devices (BYOD):** Where personal devices are approved for business use, they must comply with BharatFinServ's Bring Your Own Device (BYOD) Policy and security standards, including requirements for password protection, encryption, and the installation of Company-mandated security software.
+*   **Remote Access:** Remote access to BharatFinServ's IT Systems must only be conducted through Company-approved methods (e.g., VPN) and secure networks, ensuring compliance with RBI Cyber Security Guidelines 2016 for remote access security.
+*   **Lost/Stolen Devices:** Any loss or theft of a Company-issued or approved personal device containing Company data must be reported immediately to the IT Department for remote wiping and security action.
+
+**5. RESPONSIBILITIES**
+
+*   **All Users:** Are responsible for understanding and adhering to this Policy, protecting their credentials, reporting suspicious activities or security incidents, and using IT Systems responsibly and ethically.
+*   **IT Department:** Is responsible for implementing, maintaining, and securing BharatFinServ's IT Systems, monitoring compliance with this Policy, providing security awareness training, investigating security incidents, and enforcing technical controls.
+*   **Department Heads/Managers:** Are responsible for ensuring their team members are aware of and comply with this Policy and for reinforcing its importance within their respective departments.
+*   **Human Resources Department:** Is responsible for the dissemination of this Policy, addressing non-compliance, and initiating disciplinary actions in consultation with relevant stakeholders.
+
+**6. REVIEW CYCLE**
+
+This Policy shall be reviewed at least annually by the IT Department, in conjunction with Legal & Compliance and relevant stakeholders, to ensure its continued relevance, effectiveness, and compliance with evolving regulatory requirements (including updates to RBI guidelines and the IT Act 2000) and technological advancements. Ad-hoc reviews may be conducted as necessitated by significant changes in the threat landscape or business operations.
+
+**7. EFFECTIVE DATE**
+
+This Policy is effective as of **15th July 2024**.
+
+---

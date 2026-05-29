@@ -1,0 +1,57 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Anti-Money Laundering and Counter-Financing of Terrorism (AML/CFT) Policy**
+
+---
+
+**1. Purpose**
+
+BharatFinServ Ltd. is unequivocally committed to preventing its services and operations from being exploited for Money Laundering (ML) or Terrorist Financing (TF) activities. This Anti-Money Laundering and Counter-Financing of Terrorism (AML/CFT) Policy ("the Policy") articulates the fundamental principles, procedures, and controls implemented by BharatFinServ Ltd. and its subsidiaries to detect, prevent, and report ML and TF activities, thereby safeguarding the integrity of the global financial system. This Policy ensures compliance with all applicable national and international laws, regulations, and best practices, including but not limited to the Prevention of Money Laundering Act, 2002 (PMLA 2002) in India, the Reserve Bank of India (RBI) Master Directions on Frauds (RBI MD Frauds 2016), and the Monetary Authority of Singapore (MAS) AML Guidelines (e.g., MAS Notice 626). Our commitment extends to protecting the company’s reputation, managing regulatory and operational risks, and contributing to the global fight against financial crime.
+
+**2. Scope**
+
+This Policy applies to all employees (permanent, contractual, temporary), directors, officers, agents, and representatives of BharatFinServ Ltd. and its subsidiaries, including those operating from our Mumbai Headquarters, Bengaluru tech hub, GIFT City IFSC entity, Frankfurt EU subsidiary, and all other domestic and international offices. It covers all business units: Non-Banking Financial Company (NBFC), Insurance, Asset Management, and IT Services, and all products, services, and transactions offered by these units. Adherence to this Policy is mandatory for all individuals and entities within BharatFinServ Ltd.’s global operations.
+
+**3. Definitions**
+
+*   **Money Laundering (ML):** The process of concealing the origins of illegally obtained money, typically by means of transfers involving foreign banks or legitimate businesses.
+*   **Terrorist Financing (TF):** The provision or collection of funds, by any means, directly or indirectly, with the intention that they be used or in the knowledge that they are to be used, in whole or in part, to carry out any terrorist act.
+*   **Customer Due Diligence (CDD):** The process of identifying and verifying the identity of a customer, understanding the nature of their business, and assessing the ML/TF risks associated with the customer.
+*   **Enhanced Due Diligence (EDD):** Additional and more stringent measures applied to high-risk customers, politically exposed persons (PEPs), or complex transactions, beyond standard CDD procedures.
+*   **Suspicious Transaction Report (STR):** A report filed with the Financial Intelligence Unit (FIU-IND in India, or relevant authorities in Singapore/Germany) detailing transactions or attempted transactions that give rise to a suspicion of ML or TF.
+*   **Politically Exposed Person (PEP):** Individuals who are or have been entrusted with prominent public functions, and their family members and close associates. These individuals pose a higher risk of corruption and ML.
+*   **Ultimate Beneficial Owner (UBO):** The natural person(s) who ultimately owns or controls a customer and/or the natural person on whose behalf a transaction is being conducted.
+
+**4. Policy Details**
+
+**4.1. Customer Due Diligence (CDD) and Know Your Customer (KYC)**
+BharatFinServ Ltd. shall implement robust CDD and KYC procedures at the client onboarding stage and throughout the business relationship. This includes verifying the identity of all customers, including legal entities, and identifying their Ultimate Beneficial Owners (UBOs). The extent of CDD will be commensurate with the assessed ML/TF risk, incorporating identification, verification of identity using reliable, independent source documents, and understanding the purpose and intended nature of the business relationship. For Politically Exposed Persons (PEPs), Enhanced Due Diligence (EDD) measures, including senior management approval for onboarding and ongoing monitoring, shall be applied in accordance with PMLA 2002 and MAS AML Guidelines.
+
+**4.2. Risk-Based Approach (RBA)**
+A comprehensive RBA forms the cornerstone of BharatFinServ Ltd.’s AML/CFT framework. The company will identify, assess, and understand its ML/TF risks in relation to its customers, products, services, delivery channels, and geographical areas of operation. Based on this assessment, appropriate internal controls and mitigation measures will be implemented, ranging from simplified CDD for low-risk scenarios to EDD for high-risk situations. Regular ML/TF risk assessments of the company's entire operations, including our GIFT City and Frankfurt subsidiaries, will be conducted, reviewed, and updated.
+
+**4.3. Suspicious Transaction Reporting (STR) and Reporting Obligations**
+All employees are obligated to identify and promptly report any transactions or activities that appear unusual or potentially suspicious, regardless of the amount involved, to the designated Anti-Money Laundering Officer (AMLO). BharatFinServ Ltd. maintains a strict policy against "tipping-off," which prohibits informing customers or third parties about the filing of an STR. All STRs will be thoroughly investigated and, if warranted, reported to the Financial Intelligence Unit – India (FIU-IND) or the relevant authorities in Singapore (e.g., Commercial Affairs Department/MAS) as per local regulations and timelines. The RBI MD Frauds 2016 principles regarding vigilance and timely reporting of suspicious financial activities will be observed.
+
+**4.4. Record Keeping**
+BharatFinServ Ltd. shall maintain comprehensive records of all customer identification data, account files, business correspondence, transaction records, and STRs for a minimum period of ten (10) years from the end of the business relationship or the date of the transaction, or as mandated by the stricter of applicable Indian (PMLA 2002) or Singaporean (MAS AML Guidelines) regulations. These records must be readily accessible for inspection by regulatory and law enforcement authorities upon request.
+
+**4.5. Training and Awareness**
+A robust training and awareness program is critical to the effectiveness of this Policy. All new employees will receive mandatory AML/CFT training upon joining, and existing employees will undergo refresher training at least annually. Training will be tailored to specific roles and responsibilities, with enhanced modules for employees in high-risk functions such as customer-facing roles, compliance, and internal audit. The program aims to ensure that all personnel understand their AML/CFT obligations, can identify red flags, and know the correct procedures for reporting suspicious activities.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Ultimate oversight and approval of this Policy and the overall AML/CFT framework.
+*   **AML/CFT Officer (Compliance Officer):** Day-to-day implementation and management of the Policy, liaison with regulatory authorities, reporting of STRs, and providing guidance to employees.
+*   **Legal Counsel:** Provide advice on all legal aspects of AML/CFT compliance and regulatory interpretations.
+*   **Chief Financial Officer (CFO):** Ensure adequate resources are allocated for effective AML/CFT compliance and oversight of financial transactions.
+*   **Business Heads:** Responsible for ensuring compliance within their respective business units and promoting an AML/CFT-aware culture.
+*   **All Employees:** Adhere to this Policy, participate in training, exercise vigilance, and promptly report any suspicious activities to the AMLO.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed at least annually by the AML/CFT Officer and Legal Counsel, and approved by the Board of Directors. It may be reviewed more frequently as necessitated by changes in applicable laws, regulations, regulatory guidance, business operations, or identified risks.
+
+**7. Effective Date**
+
+This Policy is effective from [Insert Date, e.g., November 1, 2023].

@@ -1,0 +1,104 @@
+REGULATORY — RESERVE BANK OF INDIA — MASTER DIRECTION
+
+**RBI Master Direction — Non-Banking Financial Companies — Capital Adequacy Norms**
+
+**Document ID:** RBI-NBFC-MASTER-2023
+**Regulation Reference:** RBI/DNBR/2023-24/MD-01
+**Effective Date:** October 19, 2023
+**Jurisdiction:** India (IN)
+**Regulatory Scope:** Banking / Non-Banking Financial Companies
+**Risk Level:** HIGH
+
+---
+
+**1. Preamble**
+
+In exercise of the powers conferred by Sections 45-IA, 45JA, 45K, 45L, and 45MA of the Reserve Bank of India Act, 1934, the Reserve Bank of India hereby issues this Master Direction on Capital Adequacy Norms for Non-Banking Financial Companies (NBFCs). This Direction consolidates and supersedes all previous circulars and guidelines on NBFC capital adequacy issued prior to October 19, 2023.
+
+**2. Applicability**
+
+This Master Direction applies to all Non-Banking Financial Companies registered with the Reserve Bank of India, including:
+- NBFC-Investment and Credit Companies (NBFC-ICC)
+- NBFC-Micro Finance Institutions (NBFC-MFI)
+- NBFC-Factors
+- Infrastructure Finance Companies (NBFC-IFC)
+- Core Investment Companies (CIC)
+- Housing Finance Companies (HFC) to the extent applicable
+
+**3. Minimum Capital to Risk-Weighted Assets Ratio (CRAR)**
+
+3.1. Every applicable NBFC shall maintain a minimum Capital to Risk-Weighted Assets Ratio (CRAR) of 15% (fifteen percent) with effect from October 19, 2023.
+
+3.2. Of the above, the minimum Tier I Capital ratio shall be 10% (ten percent) of the total risk-weighted assets.
+
+3.3. NBFCs classified under the Upper Layer shall maintain a minimum CRAR of 15% with Common Equity Tier 1 (CET1) capital of at least 9% of risk-weighted assets.
+
+3.4. The leverage ratio for Upper Layer NBFCs shall not exceed 25 times of Tier I capital.
+
+**4. Tier I Capital Requirements**
+
+4.1. Tier I Capital (Core Capital) shall consist of:
+(a) Paid-up equity capital
+(b) Free reserves including share premium
+(c) Capital reserves representing surplus arising out of sale proceeds of assets
+(d) Statutory reserves
+(e) Balance in the Profit and Loss account after appropriation towards dividend, bonus shares, etc.
+
+4.2. The following shall be deducted from Tier I Capital:
+(a) Intangible assets
+(b) Deferred Tax Assets (DTA) exceeding 10% of CET1
+(c) Investments in subsidiaries and associates in the nature of equity
+(d) Accumulated losses
+
+**5. Tier II Capital Components**
+
+5.1. Tier II Capital (Supplementary Capital) shall consist of:
+(a) Revaluation reserves (discounted at 55%)
+(b) General provisions and loss reserves up to 1.25% of total risk-weighted assets
+(c) Hybrid capital instruments
+(d) Subordinated debt with a minimum original maturity of 5 years (discounted by 20% each year during the last 5 years)
+
+5.2. The total of Tier II Capital elements shall be limited to a maximum of 100% of the total of Tier I Capital.
+
+**6. Risk-Weighted Assets Computation**
+
+6.1. Credit Risk: Assets shall be risk-weighted based on counterparty classification:
+- Cash and bank balances: 0%
+- Government securities: 0%
+- Approved securities: 20%
+- Housing loans up to INR 35 lakhs: 35%
+- Housing loans above INR 35 lakhs: 50-75%
+- Standard asset loans to corporates: 100%
+- Non-performing assets (sub-standard): 150%
+- Non-performing assets (doubtful): 200%
+
+6.2. Off-balance sheet items shall be converted to credit risk equivalents using Credit Conversion Factors (CCF) as specified.
+
+**7. Capital Conservation Buffer**
+
+7.1. NBFCs in the Upper Layer shall maintain a Capital Conservation Buffer (CCB) of 2.5% of risk-weighted assets, comprised entirely of Common Equity Tier 1 capital.
+
+7.2. The CCB shall be phased in as follows:
+- From April 1, 2024: 0.625%
+- From April 1, 2025: 1.25%
+- From April 1, 2026: 1.875%
+- From April 1, 2027: 2.5%
+
+**8. Internal Capital Adequacy Assessment Process (ICAAP)**
+
+8.1. Every NBFC classified in the Middle Layer or Upper Layer shall have an ICAAP to assess the adequacy of its capital vis-à-vis its risk profile.
+
+8.2. The ICAAP shall cover all material risks not captured under Pillar 1, including concentration risk, interest rate risk in the banking book, liquidity risk, strategic risk, and reputational risk.
+
+**9. Reporting Requirements**
+
+9.1. NBFCs shall submit quarterly returns on capital adequacy to the Reserve Bank within 15 days from the end of each quarter.
+
+9.2. The Board of Directors shall review the CRAR position at least quarterly.
+
+**10. Penalties for Non-Compliance**
+
+10.1. NBFCs failing to maintain the prescribed CRAR shall be subject to supervisory action including restrictions on expansion of credit, dividend declaration, and opening of new branches.
+
+---
+**[RBI Master Direction — Effective October 19, 2023]**

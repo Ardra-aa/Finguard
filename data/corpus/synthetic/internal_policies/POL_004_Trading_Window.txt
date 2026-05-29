@@ -1,0 +1,103 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Trading Window and Insider Trading Prevention Policy**
+
+**1. Purpose**
+This Policy outlines the framework for preventing insider trading activities in the securities of BharatFinServ Ltd. (the "Company") and ensuring compliance with the Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations, 2015 ("SEBI PIT Regulations, 2015") and the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ("SEBI LODR, 2015"). Its primary objective is to maintain the highest ethical standards, uphold market integrity, and preserve the Company's reputation by prohibiting the misuse of Unpublished Price Sensitive Information (UPSI) and ensuring fair and transparent trading practices by all concerned persons. This policy also aims to delineate responsibilities and establish procedures for safeguarding UPSI and managing the "Trading Window" for transactions in the Company's securities.
+
+**2. Scope**
+This Policy applies to all Directors, Key Managerial Personnel (KMPs), Designated Persons (DPs), employees of the Company and its material subsidiaries (including those in Bengaluru, GIFT City IFSC, and Frankfurt EU subsidiary), Connected Persons, and their Immediate Relatives, as defined herein. It covers all dealings in the Company's securities, whether directly or indirectly, and prohibits any communication or procurement of UPSI that could facilitate insider trading. While this Policy primarily addresses Indian regulations, all individuals covered by this Policy, particularly those operating in international jurisdictions, must also comply with applicable local laws and regulations concerning insider trading, which may impose additional restrictions.
+
+**3. Definitions**
+*   **BharatFinServ Securities:** Equity shares, debentures, options, futures, and any other securities issued by BharatFinServ Ltd. or its subsidiaries that are listed or proposed to be listed on a recognized stock exchange.
+*   **Compliance Officer:** The Company Secretary of BharatFinServ Ltd., or any other person designated by the Board of Directors, who is responsible for administering this Policy and ensuring compliance with SEBI PIT Regulations, 2015.
+*   **Connected Person:** As defined under Regulation 2(1)(d) of the SEBI PIT Regulations, 2015, including any person who has been associated with the company in any capacity that allows them access to UPSI.
+*   **Designated Person (DP):** Includes, but is not limited to:
+    *   Directors and KMPs of BharatFinServ Ltd. and its material subsidiaries.
+    *   All employees in the Finance, Legal, Secretarial, Compliance, and IT departments up to two levels below the Board of Directors.
+    *   All employees designated as Senior Analysts and above.
+    *   Employees of material subsidiaries as identified by the Compliance Officer.
+    *   Any other employee or person as may be designated by the Board of Directors or the Compliance Officer from time to time based on their access to UPSI.
+    *   Immediate Relatives of all the above.
+*   **Immediate Relative:** A spouse, parent, sibling, and child of such person or of the spouse, any of whom is either dependent financially on such person, or consults such person in taking decisions relating to the trading of securities.
+*   **Insider:** Any person who is: (i) a Connected Person; or (ii) in possession of or having access to UPSI.
+*   **Insider Trading:** Dealing in securities of the Company while in possession of UPSI.
+*   **Unpublished Price Sensitive Information (UPSI):** Any information, relating to the Company or its securities, directly or indirectly, that is not generally available and which, upon becoming generally available, is likely to materially affect the price of the securities. This typically includes (but is not limited to): financial results, dividends, changes in capital structure, mergers, de-mergers, acquisitions, delistings, disposals, expansion of business and new projects, changes in KMP, and other material events.
+*   **Trading Window:** The period during which DPs are permitted to trade in the Company's securities.
+*   **Trading Window Closure Period:** The period during which trading in the Company's securities is prohibited for DPs.
+*   **Trading Plan:** A plan formulated by a DP for trading in securities of the Company in accordance with Regulation 5 of the SEBI PIT Regulations, 2015.
+
+**4. Policy Details**
+
+**4.1. Prohibition on Insider Trading**
+No Insider shall:
+    a. Trade in BharatFinServ Securities when in possession of UPSI.
+    b. Communicate, provide access to, or procure UPSI to any person, directly or indirectly, except where such communication is in furtherance of legitimate purposes, performance of duties, or discharge of legal obligations.
+    c. Counsel or procure any other person to trade in BharatFinServ Securities.
+This prohibition applies to all types of securities issued by the Company. The onus is on the Insider to prove that they were not in possession of UPSI or that the trade was executed under a valid Trading Plan.
+
+**4.2. Trading Window**
+    a. **Closure:** The Trading Window shall be closed for DPs and their Immediate Relatives at least seven (7) days prior to the proposed Board meeting dates for considering:
+        *   Financial results (quarterly, half-yearly, and annual).
+        *   Declaration of dividends (interim and final).
+        *   Any change in capital structure (e.g., bonus issue, rights issue, buyback).
+        *   Mergers, de-mergers, acquisitions, delistings, disposals, and expansion of business.
+        *   Any other material event as may be deemed to be UPSI by the Compliance Officer.
+        The Compliance Officer shall determine the exact date of closure of the Trading Window and shall notify DPs accordingly.
+    b. **Re-opening:** The Trading Window shall re-open forty-eight (48) hours after the UPSI becomes generally available and has been disseminated to the public through the stock exchanges.
+    c. **Exceptions:** The Trading Window restrictions shall not apply to transactions specified under Regulation 4(1) of SEBI PIT Regulations, 2015, such as transactions carried out through a pre-approved Trading Plan, exercise of stock options, or transactions in accordance with regulatory requirements.
+
+**4.3. Pre-Clearance of Trades**
+    a. All DPs and their Immediate Relatives who wish to trade in BharatFinServ Securities (when the Trading Window is open) must obtain pre-clearance from the Compliance Officer if the value of the proposed trade, whether in a single transaction or a series of transactions, exceeds INR 10 Lakhs (Rupees Ten Lakhs Only) or 5,000 shares, whichever is lower, in any calendar quarter.
+    b. The application for pre-clearance must be accompanied by a declaration that the applicant is not in possession of any UPSI.
+    c. An approval for pre-clearance is valid for seven (7) trading days. If the trade is not executed within this period, a fresh pre-clearance is required.
+    d. DPs who have obtained pre-clearance shall execute their trade within seven (7) trading days from the date of approval.
+    e. All DPs and their Immediate Relatives are prohibited from executing a contra-trade (i.e., selling or buying any number of shares within six (6) months of a prior purchase or sale) in BharatFinServ Securities. In case of an urgent need, the Compliance Officer may grant an exemption from the contra-trade restriction after recording reasons in writing, provided that such a trade would not violate the SEBI PIT Regulations, 2015.
+
+**4.4. Trading Plans**
+    a. DPs may formulate and present a Trading Plan to the Compliance Officer for approval and public disclosure pursuant to Regulation 5 of the SEBI PIT Regulations, 2015.
+    b. A Trading Plan must:
+        *   Be for a minimum period of twelve (12) months.
+        *   Not entail commencement of trading earlier than six (6) months from public disclosure.
+        *   Not overlap with any existing Trading Plan.
+        *   Set out the value of trades or the number of securities to be traded along with the dates or intervals.
+        *   Not entail any market abuse.
+    c. The Compliance Officer will review the Trading Plan to assess its compliance with SEBI PIT Regulations, 2015, and promptly notify the stock exchanges upon approval. Once approved, the Trading Plan becomes irrevocable, and the DP must adhere to it.
+
+**4.5. Disclosure Requirements**
+All DPs and their Immediate Relatives are required to make the following disclosures to the Company, as per SEBI PIT Regulations, 2015 and SEBI LODR, 2015:
+    a. **Initial Disclosure:**
+        *   Every person on appointment as a KMP or a Director, or upon becoming a DP, shall disclose their holding of BharatFinServ Securities as on the date of appointment/becoming a DP, within seven (7) days of such appointment/becoming a DP.
+    b. **Continual Disclosure:**
+        *   Every DP and their Immediate Relatives shall disclose to the Company the number of BharatFinServ Securities acquired or disposed of within two (2) trading days of such transaction if the value of the securities traded, whether in a single transaction or a series of transactions over any calendar quarter, aggregates to a market value in excess of INR 10 Lakhs. The Company shall notify the stock exchanges within two (2) trading days of receipt of such disclosure.
+    c. **Annual Disclosure:**
+        *   All DPs shall submit an annual statement of all holdings in BharatFinServ Securities, including those of their Immediate Relatives, as of March 31st each year, within thirty (30) days from the end of the financial year.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Shall have overall responsibility for the effective implementation of this Policy and for ensuring compliance with all applicable regulations.
+*   **Compliance Officer:**
+    *   Administer this Policy in letter and spirit.
+    *   Grant/reject pre-clearance applications.
+    *   Maintain records of DPs and their holdings.
+    *   Notify DPs of Trading Window closures and openings.
+    *   Provide clarifications on the SEBI PIT Regulations, 2015, and this Policy.
+    *   Monitor compliance with the disclosure requirements.
+    *   Report to the Board of Directors/Audit Committee periodically on compliance.
+*   **Designated Persons and All Employees:**
+    *   Adhere to this Policy and the SEBI PIT Regulations, 2015.
+    *   Protect UPSI and not communicate it unnecessarily.
+    *   Seek pre-clearance where required.
+    *   Make timely and accurate disclosures.
+    *   Report any actual or suspected violation of this Policy to the Compliance Officer.
+
+**6. Penalties for Contravention**
+Any contravention of this Policy and/or the SEBI PIT Regulations, 2015 by an employee, DP, or Connected Person shall result in disciplinary action by the Company, which may include suspension, termination of employment, recovery of profits made, and/or other actions deemed appropriate. Furthermore, such persons may also be subject to monetary penalties, imprisonment, and/or debarment from the securities market by SEBI, as prescribed under the SEBI Act, 1992.
+
+**7. Review Cycle**
+This Policy shall be reviewed at least once every financial year by the Compliance Officer and approved by the Board of Directors or the Audit Committee to ensure its continued relevance, effectiveness, and compliance with prevailing legal and regulatory requirements. Ad-hoc reviews may be conducted in response to significant regulatory changes.
+
+**8. Effective Date**
+This Policy is effective from [Date of Approval, e.g., November 1, 2023].
+
+**Access:** senior_analyst, compliance_officer, ceo, cfo

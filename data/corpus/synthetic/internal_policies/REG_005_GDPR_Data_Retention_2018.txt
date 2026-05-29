@@ -1,0 +1,79 @@
+REGULATORY — EUROPEAN UNION
+
+**General Data Protection Regulation (GDPR) — Data Retention and Minimisation**
+
+**Document ID:** GDPR-DATA-RETENTION-2018
+**Regulation Reference:** Regulation (EU) 2016/679, Articles 5, 6, 17
+**Effective Date:** May 25, 2018
+**Jurisdiction:** European Union (EU)
+**Regulatory Scope:** Corporate / Data Privacy
+**Risk Level:** HIGH
+
+---
+
+**1. Overview**
+
+The General Data Protection Regulation (GDPR), Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016, establishes a comprehensive framework for the protection of natural persons with regard to the processing of personal data. It applies to all organisations operating within the EU, as well as non-EU organisations that process personal data of EU residents. This document focuses on the data minimisation, storage limitation, and erasure provisions relevant to financial services institutions operating in or serving EU markets.
+
+**2. Article 5 — Principles Relating to Processing of Personal Data**
+
+2.1. **Data Minimisation (Article 5(1)(c)):** Personal data shall be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed.
+
+2.2. **Storage Limitation (Article 5(1)(e)):** Personal data shall be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed. Personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes.
+
+2.3. **Purpose Limitation (Article 5(1)(b)):** Personal data shall be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes.
+
+**3. Data Retention Limits for Financial Institutions**
+
+3.1. Financial records shall be retained for a maximum of 3 years after the purpose for which they were collected has been fulfilled, unless a specific legal obligation requires longer retention.
+
+3.2. Customer personal data associated with terminated financial products or closed accounts shall be erased within 30 days of the retention period expiry.
+
+3.3. Transaction records for regulatory reporting purposes may be retained for up to 5 years, but shall be pseudonymised after 3 years.
+
+3.4. Marketing consent records shall be retained only as long as consent remains active plus 6 months.
+
+**4. Article 6 — Lawful Basis for Processing**
+
+4.1. Processing shall be lawful only if and to the extent that at least one of the following applies:
+(a) The data subject has given consent
+(b) Processing is necessary for the performance of a contract
+(c) Processing is necessary for compliance with a legal obligation
+(d) Processing is necessary to protect vital interests
+(e) Processing is necessary for a task carried out in the public interest
+(f) Processing is necessary for legitimate interests pursued by the controller
+
+4.2. Financial institutions primarily rely on lawful bases (b), (c), and (f) for processing customer data.
+
+**5. Article 17 — Right to Erasure ('Right to be Forgotten')**
+
+5.1. The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay where:
+(a) The personal data are no longer necessary in relation to the purposes for which they were collected
+(b) The data subject withdraws consent
+(c) The data subject objects to the processing
+(d) The personal data have been unlawfully processed
+
+5.2. **Exemptions:** The right to erasure shall not apply to the extent that processing is necessary for:
+(a) Exercising the right of freedom of expression and information
+(b) Compliance with a legal obligation which requires processing under EU or Member State law
+(c) Archiving purposes in the public interest, scientific or historical research
+(d) Establishment, exercise or defence of legal claims
+
+**6. Cross-Border Data Transfers**
+
+6.1. Personal data shall not be transferred to a third country or international organisation unless the European Commission has decided that the third country ensures an adequate level of protection.
+
+6.2. In the absence of an adequacy decision, transfers may occur subject to appropriate safeguards including Standard Contractual Clauses (SCCs), Binding Corporate Rules (BCRs), or approved codes of conduct.
+
+**7. Conflict with Non-EU Retention Requirements**
+
+7.1. Where financial institutions operate across jurisdictions, conflicts may arise between GDPR storage limitation requirements and longer retention mandates under non-EU law (e.g., RBI mandates 8-year retention for financial records vs. GDPR's 3-year limit). In such cases, the institution must implement data segregation and apply the most restrictive standard to EU data subjects while maintaining compliance with local law for non-EU data subjects.
+
+**8. Data Breach Notification**
+
+8.1. In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority.
+
+8.2. When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.
+
+---
+**[GDPR — Data Retention and Minimisation — Effective May 25, 2018]**

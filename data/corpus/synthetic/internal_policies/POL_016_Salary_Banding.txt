@@ -1,0 +1,89 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Compensation Banding and Grade Structure Policy**
+
+**Version:** 1.0
+**Effective Date:** 1st January 2024
+**Policy Owner:** Chief Human Resources Officer (CHRO)
+**Approved By:** Board of Directors
+
+---
+
+**1. Purpose**
+
+The Compensation Banding and Grade Structure Policy ("the Policy") establishes a clear, transparent, and equitable framework for the compensation of employees across BharatFinServ Ltd. and its Indian subsidiaries. The primary objectives of this Policy are to:
+*   Attract, retain, and motivate high-calibre talent by offering competitive remuneration.
+*   Ensure internal equity by fairly compensating employees based on their roles, responsibilities, skills, and performance.
+*   Maintain external competitiveness by benchmarking compensation against relevant market data within the financial services and technology sectors.
+*   Provide a structured and consistent approach to salary management, progression, and promotion.
+*   Support BharatFinServ’s strategic objectives and performance culture.
+*   Ensure compliance with all relevant statutory and regulatory requirements, including the provisions of the Companies Act, 2013, pertaining to managerial remuneration, and the Income Tax Act, 1961.
+
+**2. Scope**
+
+This Policy applies to all permanent employees of BharatFinServ Ltd. and its wholly-owned Indian subsidiaries, encompassing all business units, including NBFC, Insurance, Asset Management, and IT Services. This Policy does not generally apply to contractual staff, interns, or employees of international subsidiaries (e.g., Frankfurt EU subsidiary), whose compensation frameworks are governed by local regulations and specific international policies, unless explicitly stated otherwise by the Group HR function.
+
+**3. Definitions**
+
+*   **Grade:** A specific level within BharatFinServ's organizational hierarchy, grouping positions with similar levels of complexity, responsibility, required skills, and impact on the business.
+*   **Compensation Band:** A defined range of base salaries (comprising a minimum, midpoint, and maximum) associated with each Grade.
+*   **Base Salary:** The fixed component of an employee's total compensation, paid regularly, excluding variable pay, benefits, and allowances.
+*   **Total Rewards:** The comprehensive package of all forms of compensation and benefits provided to employees, including base salary, variable pay (e.g., bonuses, incentives), benefits (e.g., health insurance, provident fund), and non-financial rewards.
+*   **Market Benchmarking:** The systematic process of comparing BharatFinServ's compensation levels and practices against external market data from peer companies for similar roles and industries.
+*   **Internal Equity:** The principle of ensuring that employees in roles of similar value, contribution, and complexity within BharatFinServ are compensated fairly relative to each other.
+*   **Managerial Remuneration:** The compensation payable to Key Managerial Personnel (KMP) and other directors of the company, which is specifically regulated under the Companies Act, 2013.
+
+**4. Policy Details**
+
+**4.1. Principles of Compensation**
+BharatFinServ's compensation philosophy is built on the following core principles:
+*   **Fairness & Equity:** We are committed to ensuring fair compensation practices that promote internal equity and are free from bias.
+*   **Competitiveness:** We aim to offer compensation that is externally competitive to attract and retain top talent across our diverse business functions.
+*   **Performance-Driven:** Compensation decisions will reflect individual performance, contribution to business outcomes, and alignment with company values.
+*   **Transparency (Framework):** While individual compensation remains confidential, the framework, principles, and processes governing compensation decisions will be communicated clearly.
+*   **Compliance:** All compensation practices will strictly adhere to relevant Indian laws and regulations, including the Companies Act, 2013 (with particular attention to provisions governing managerial remuneration), and the Income Tax Act, 1961.
+*   **Sustainability:** Compensation structures will be designed to be financially sustainable for the company in the long term.
+
+**4.2. Grade Structure Overview**
+BharatFinServ operates a structured grading system designed to classify roles based on a consistent set of factors, including:
+*   **Complexity:** The intricacy and challenge of problems solved.
+*   **Accountability:** The level of ownership and responsibility for outcomes.
+*   **Impact:** The degree to which the role influences business results, strategy, or operations.
+*   **Leadership & Management:** The extent of people management responsibilities and strategic leadership.
+*   **Required Skills & Experience:** The depth of technical, functional, and leadership expertise.
+The grade structure comprises a defined number of grades, ranging from entry-level positions to senior executive roles, with each grade having a distinct profile outlining typical responsibilities and required competencies. The specific details of the grading taxonomy are maintained by the HR Department.
+
+**4.3. Compensation Bands and Salary Ranges**
+Each Grade within BharatFinServ's structure is assigned a corresponding Compensation Band, defining the permissible range for Base Salary.
+*   **Band Components:** Each Compensation Band includes a minimum, midpoint, and maximum salary. The midpoint typically represents the market rate for a fully proficient performer in that particular Grade, reflecting external competitiveness.
+*   **Placement within Band:** An employee's placement within their Grade's Compensation Band is determined by factors such as relevant experience, specific skill sets, demonstrated performance, market value, and internal equity considerations.
+*   **Review and Adjustment:** Compensation Bands are subject to an annual review process led by the HR Department, in consultation with Finance and business leaders, utilizing up-to-date market benchmarking data to ensure continued external competitiveness and internal alignment.
+
+**4.4. Progression and Promotion**
+*   **Progression within a Grade:** Employees may progress within their current Compensation Band based on consistent high performance, development of additional skills, increased scope of responsibilities, and sustained contribution to the business. Such progression typically involves incremental salary adjustments moving towards the midpoint or upper quartile of the band.
+*   **Promotion to a Higher Grade:** Promotion signifies a significant advancement to a higher Grade, reflecting a substantial increase in complexity, responsibility, leadership, and strategic impact. Eligibility for promotion is based on consistently exceeding expectations in the current role, demonstrating readiness for increased accountability, and fulfilling the core requirements of the target higher Grade. Promotions result in a salary adjustment to align with the new Grade's Compensation Band, ensuring placement appropriately within the new range, usually above its minimum.
+
+**4.5. Annual Compensation Review and Adjustments**
+BharatFinServ conducts an annual compensation review cycle for all eligible employees. Decisions regarding individual salary adjustments are based on a holistic assessment of:
+*   **Individual Performance:** Achievement of objectives, demonstration of competencies, and contribution to business success.
+*   **Company Performance:** Overall financial health and achievement of strategic goals.
+*   **Market Movements:** External market trends, salary inflation, and industry-specific demand for skills.
+*   **Internal Equity:** Ensuring fair relative compensation across similar roles and performance levels within the company.
+*   **Budgetary Constraints:** Adherence to approved compensation budgets.
+Any proposed revisions to the overall Compensation Bands themselves require rigorous market analysis and approval by the Board of Directors or the designated Compensation Committee, especially concerning Managerial Remuneration in accordance with the Companies Act, 2013.
+
+**5. Responsibilities**
+
+*   **Board of Directors / Compensation Committee:** Provide ultimate oversight, strategic guidance, and final approval of the Policy, overall compensation philosophy, and specifically, managerial remuneration in line with statutory requirements.
+*   **Chief Executive Officer (CEO) / Chief Financial Officer (CFO):** Provide strategic direction, ensure alignment with financial strategy, and allocate necessary resources for compensation structures.
+*   **Chief Human Resources Officer (CHRO) & HR Department:** Responsible for policy formulation, detailed design of grade structures and compensation bands, market benchmarking, consistent implementation, communication, and management of the annual review process.
+*   **Business Heads / Managers:** Accountable for fair and consistent application of this Policy within their respective teams, providing accurate performance assessments, and recommending progression or promotion based on merit and policy guidelines.
+*   **Employees:** Understand the Policy framework, actively participate in performance management processes, and strive for continuous development and high performance.
+
+**6. Review Cycle**
+
+This Policy will be formally reviewed on an annual basis by the HR Department, in consultation with the Finance Department and Senior Leadership. Additionally, reviews may be initiated as required by significant changes in regulatory requirements (e.g., amendments to the Companies Act or Income Tax Act), market conditions, or BharatFinServ’s business strategy and objectives. Any amendments will be approved by the Board of Directors.
+
+**7. Effective Date**
+
+This Policy is effective from 1st January 2024 and supersedes all previous compensation banding and grade structure policies and guidelines.

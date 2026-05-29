@@ -1,0 +1,65 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Employee Stock Option Plan (ESOP) Grant and Vesting Policy**
+
+**Document ID:** BFS/HR/ESOP/POL/003
+**Version:** 1.0
+**Approved By:** Board of Directors
+**Access:** ceo, cfo, compliance_officer
+
+---
+
+**1. Purpose**
+
+The purpose of this Employee Stock Option Plan (ESOP) Grant and Vesting Policy (the "Policy") is to establish a clear, transparent, and fair framework for the grant and vesting of stock options to eligible employees of BharatFinServ Ltd. (the "Company") and its subsidiaries. This Policy aims to attract, motivate, and retain high-calibre talent, foster a sense of ownership, align employee interests with the long-term strategic objectives and shareholder value creation of BharatFinServ Ltd., and ensure compliance with all applicable laws and regulations in India and other relevant jurisdictions.
+
+**2. Scope**
+
+This Policy applies to all eligible employees, as defined herein, of BharatFinServ Ltd. and its directly or indirectly wholly-owned subsidiaries, including those operating from Bengaluru, GIFT City, and Frankfurt. It governs all aspects pertaining to the grant, vesting, and administration of stock options issued under the BharatFinServ Ltd. Employee Stock Option Scheme (the "Scheme"), as approved by the Company's shareholders. This Policy does not apply to consultants, contractors, or any individuals not classified as "employees" under the Scheme and relevant regulations.
+
+**3. Definitions**
+
+*   **Company:** BharatFinServ Ltd., a company incorporated under the Companies Act, 2013, having its registered office in Mumbai.
+*   **Compensation Committee (CC):** The committee of the Board of Directors constituted in accordance with the provisions of the Companies Act, 2013, and the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015, responsible for administering the Scheme.
+*   **Employee:** As defined under Regulation 2(1)(k) of the SEBI (Share Based Employee Benefits and Business Trust) Regulations, 2021 ("SEBI (SBEB) Regulations 2021"), and Rule 12(1)(a) of the Companies (Share Capital and Debentures) Rules, 2014, read with Section 2(3) of the Companies Act, 2013. This includes a permanent employee, a director (excluding an independent director and a director who is a promoter or belongs to the promoter group), and an employee or director, as defined above, of a subsidiary or an associate company. It specifically excludes employees who are promoters or members of the promoter group, or who directly or indirectly hold more than ten percent of the outstanding equity shares of the Company.
+*   **Exercise Period:** The period commencing from the date of vesting of the Options until the expiry date as specified in the grant letter, during which an Employee may exercise the vested Options.
+*   **Exercise Price:** The pre-determined price per share at which an Employee can purchase Company shares upon exercising an Option.
+*   **Grant Date:** The date on which the Compensation Committee formally approves and issues Options to eligible Employees.
+*   **Option:** A right granted to an Employee under the Scheme to acquire a specified number of equity shares of the Company at a pre-determined Exercise Price, subject to vesting conditions.
+*   **SEBI (SBEB) Regulations 2021:** Securities and Exchange Board of India (Share Based Employee Benefits and Business Trust) Regulations, 2021, and any amendments thereto.
+*   **Vesting:** The process by which an Employee gains full ownership rights to the granted Options over a specified period or upon meeting specific conditions.
+*   **Vesting Period:** The period between the Grant Date and the date(s) on which the Options vest, during which the Employee must typically remain in continuous service with the Company or its subsidiaries. As per SEBI (SBEB) Regulations 2021, there shall be a minimum vesting period of one year.
+
+**4. Policy Details**
+
+**4.1. Eligibility for Grant**
+The Compensation Committee, at its sole discretion, shall determine the eligibility of employees for the grant of Options. Eligibility criteria may include, but are not limited to, employee grade, role criticality, performance assessments, length of service, and contributions to the Company's strategic objectives. In strict adherence to Section 62(1)(b) of the Companies Act, 2013, and Regulation 2(1)(k) of the SEBI (SBEB) Regulations 2021, employees who are promoters or belong to the promoter group, or who directly or indirectly hold more than ten percent of the outstanding equity shares of the Company, shall be ineligible for the grant of Options. Exceptions for independent directors and employees of subsidiary or associate companies are governed by the specific provisions of the SEBI (SBEB) Regulations 2021.
+
+**4.2. Grant Process**
+The Compensation Committee shall periodically review and approve the grant of Options. The Committee will determine the number of Options to be granted to each eligible Employee based on factors such as individual performance, market benchmarks, retention requirements, and overall business unit performance. All grants shall be communicated to the respective Employees via a formal grant letter, specifying the Grant Date, number of Options, Exercise Price, Vesting Period, Exercise Period, and other relevant terms and conditions. The Exercise Price shall be determined by the Compensation Committee, ensuring compliance with SEBI (SBEB) Regulations 2021, particularly with regard to any discount from the fair value.
+
+**4.3. Vesting Schedule and Conditions**
+Options granted under the Scheme shall vest over a specified Vesting Period, as communicated in the grant letter. In compliance with Regulation 8(3) of the SEBI (SBEB) Regulations 2021, the minimum Vesting Period shall be one year from the Grant Date. The Compensation Committee may adopt various vesting schedules, such as linear vesting (e.g., 25% annually over four years) or graded vesting, depending on the role, seniority, and strategic importance of the Employee. Continued employment with the Company or its subsidiaries throughout the Vesting Period is a primary condition for vesting. In the event of cessation of employment due to resignation, termination for cause, or other reasons, unvested Options shall lapse immediately. The treatment of vested and unvested Options in cases of retirement, death, disability, redundancy, or merger/acquisition shall be determined by the Compensation Committee in accordance with the Scheme and applicable laws, potentially involving acceleration of vesting or a limited exercise period.
+
+**4.4. Exercise of Options**
+Upon vesting, Options become exercisable during the stipulated Exercise Period. Employees wishing to exercise vested Options must submit a formal exercise request and remit the total Exercise Price for the shares, along with applicable taxes (including perquisite tax, if any). The Company shall facilitate the exercise process through its designated HR and Finance departments, providing clear instructions and support. Employees are solely responsible for understanding and complying with all personal tax implications arising from the grant, vesting, and exercise of Options, including income tax on perquisite value at the time of exercise and capital gains tax on the sale of shares. The Company will provide necessary information for tax calculation, but ultimate tax liability rests with the Employee.
+
+**4.5. Regulatory Compliance and Disclosure**
+This Policy and the underlying Scheme are designed to comply fully with the requirements of Section 62(1)(b) of the Companies Act, 2013, Rule 12 of the Companies (Share Capital and Debentures) Rules, 2014, and the SEBI (SBEB) Regulations 2021. The Scheme and any material amendments thereto shall be approved by the shareholders of the Company by way of a special resolution. The Company shall make all necessary disclosures related to the ESOP Scheme in its annual reports and to stock exchanges, as mandated by the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, and SEBI (SBEB) Regulations 2021. The Compensation Committee reserves the right to amend this Policy periodically to ensure ongoing compliance with regulatory changes.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Overall governance and approval of the ESOP Scheme and this Policy.
+*   **Compensation Committee:** Administration and interpretation of the Scheme and this Policy, approval of grants, determination of eligibility criteria, vesting schedules, and Exercise Price.
+*   **Human Resources Department:** Administering employee eligibility, maintaining records, communicating with employees regarding grants and vesting, and facilitating the exercise process.
+*   **Finance Department:** Managing the financial aspects of the ESOP, including accounting for share-based payments, processing Exercise Price payments, and assisting with tax implications.
+*   **Legal & Compliance Department:** Ensuring adherence to the Companies Act, 2013, SEBI (SBEB) Regulations 2021, and other applicable laws and regulations; advising on policy interpretation and documentation.
+*   **Employees:** Understanding the terms and conditions of the grant, fulfilling performance and service conditions, and managing their personal tax obligations.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed at least once every financial year by the Compensation Committee, in consultation with the Legal & Compliance and Human Resources departments, or earlier if necessitated by changes in regulatory requirements, market practices, or internal strategic objectives.
+
+**7. Effective Date**
+
+This Policy is effective from **October 26, 2023**.

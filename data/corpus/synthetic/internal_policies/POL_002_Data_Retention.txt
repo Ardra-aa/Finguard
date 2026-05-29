@@ -1,0 +1,91 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**BharatFinServ Ltd.: Data Retention and Records Management Policy**
+
+**Policy Version:** 1.0
+**Date of Issue:** October 26, 2023
+
+---
+
+**1. Purpose**
+
+This Data Retention and Records Management Policy ("Policy") establishes BharatFinServ Ltd.'s commitment to the systematic management, retention, and secure disposal of all data and records. The purpose of this Policy is to ensure compliance with applicable legal and regulatory obligations across all operating jurisdictions (India and the European Union), protect the privacy and rights of data subjects, mitigate operational and legal risks, optimize storage resources, and facilitate efficient business operations by ensuring the availability of necessary information when required. BharatFinServ is dedicated to maintaining the accuracy, integrity, and confidentiality of all information under its control.
+
+**2. Scope**
+
+This Policy applies to all data and records, irrespective of their format (physical or digital), created, received, stored, processed, and managed by BharatFinServ Ltd. and its subsidiaries, affiliates, and business units globally, including but not limited to its Mumbai HQ, Bengaluru technology hub, GIFT City IFSC operations, and Frankfurt EU subsidiary. This encompasses customer data (related to NBFC, insurance, asset management), HR records, financial transaction data, operational logs, IT system data, contractual agreements, intellectual property, and internal communications. The Policy applies to all BharatFinServ employees (permanent, temporary, contractual), consultants, third-party vendors, and any other individuals or entities who create, access, or manage BharatFinServ's data and records.
+
+**3. Definitions**
+
+*   **Data Retention:** The practice and duration of keeping data for a specific period to meet legal, regulatory, or business requirements.
+*   **Record:** Any information created, received, and maintained by BharatFinServ as evidence of a business activity, transaction, decision, or process. Records can be in any format, including electronic documents, databases, emails, physical files, and audio/video recordings.
+*   **Personal Data:** As per GDPR Article 4(1), any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+*   **Sensitive Personal Data or Information (SPDI):** As defined under the Indian Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, includes financial information, health conditions, sexual orientation, biometric information, and more.
+*   **Data Subject:** The natural person whose Personal Data is processed by BharatFinServ.
+*   **Data Controller:** The natural or legal person, public authority, agency, or other body which, alone or jointly with others, determines the purposes and means of the processing of Personal Data. BharatFinServ acts as a Data Controller for the data it collects.
+*   **Processing:** Any operation or set of operations which is performed on Personal Data or on sets of Personal Data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
+*   **Legal Hold:** A directive issued by the Legal & Compliance Department to preserve all forms of relevant data and records when litigation, regulatory inquiry, or internal investigation is pending or reasonably anticipated. A Legal Hold suspends normal data retention and disposal schedules.
+
+**4. Policy Details**
+
+**4.1. Data Retention Principles**
+
+BharatFinServ adheres to the following principles for data retention:
+*   **Necessity:** Data shall be retained only for as long as necessary to fulfil the purposes for which it was collected, or as required by legal, regulatory, or contractual obligations. This aligns with GDPR Article 5(1)(e) on storage limitation.
+*   **Legal Compliance:** All retention periods shall be established in compliance with relevant laws and regulations, including the Indian Information Technology Act, 2000, the RBI Master Direction – Know Your Customer (MD KYC) requirements, and the EU General Data Protection Regulation (GDPR).
+*   **Data Minimisation:** Only data truly necessary for business purposes or regulatory compliance shall be collected and retained.
+*   **Accuracy and Integrity:** Retained data must be accurate, complete, and protected from unauthorized alteration or loss.
+*   **Confidentiality:** Appropriate security measures shall be implemented to protect retained data from unauthorized access or disclosure.
+*   **Transparency:** Where required, data subjects will be informed about the retention periods applicable to their Personal Data.
+
+**4.2. Retention Schedules and Periods**
+
+BharatFinServ shall maintain detailed, category-specific data retention schedules. These schedules will outline minimum and maximum retention periods for various types of data and records based on statutory, regulatory, and business requirements. Examples include:
+*   **Customer KYC Records (RBI MD KYC):** Minimum 5 years post-cessation of business relationship.
+*   **Financial Transaction Records:** Typically 7 to 10 years, as per tax and financial reporting regulations in relevant jurisdictions.
+*   **Human Resources Records:** Typically 7 to 10 years post-cessation of employment, varying by jurisdiction for specific record types.
+*   **Contractual Agreements:** Minimum 7 to 10 years after termination or expiration.
+*   **IT System Logs:** Generally 1 to 3 years, for security auditing and incident response.
+*   **Personal Data (GDPR Art 5(1)(e)):** Retained no longer than is necessary for the purposes for which the Personal Data are processed. Where specific legal retention periods are not defined, the duration will be determined based on justified business need and risk assessment.
+
+The Legal & Compliance Department, in conjunction with relevant business units and the IT Department, is responsible for establishing, reviewing, and updating these retention schedules, ensuring adherence to IT Act 2000, GDPR, RBI MD KYC, and other applicable laws.
+
+**4.3. Data Storage and Security**
+
+All data and records, whether physical or digital, shall be stored securely throughout their retention lifecycle.
+*   **Digital Records:** Must be stored on approved systems with robust security controls including encryption, access controls (role-based), regular backups, intrusion detection, and data loss prevention mechanisms. Data stored in EU-based systems for EU data subjects will comply with GDPR's territorial scope and data transfer requirements.
+*   **Physical Records:** Must be stored in secure, restricted-access environments (e.g., locked cabinets, secure archives) with appropriate environmental controls.
+*   The IT Department is responsible for implementing and maintaining the technical infrastructure and security measures for digital records. Access to records will be strictly on a need-to-know basis, monitored, and audited regularly.
+
+**4.4. Data Disposal and Erasure**
+
+Upon expiration of the prescribed retention period, or when data is no longer necessary for its original purpose and no legal hold is in effect, data and records must be securely and irreversibly disposed of.
+*   **Physical Records:** Shall be shredded, incinerated, or otherwise physically destroyed to prevent reconstruction.
+*   **Digital Records:** Shall be erased, overwritten, degaussed, or physically destroyed (for media) using industry-standard, secure methods to render the data irrecoverable.
+*   **Right to Erasure (GDPR Art 17):** BharatFinServ shall maintain procedures for promptly and securely responding to data subject requests for erasure ("right to be forgotten") unless there is a legitimate overriding reason for retention (e.g., legal obligation, exercise or defence of legal claims).
+*   All disposal activities must be documented, including the date, method of disposal, and the records disposed of.
+
+**4.5. Legal Holds and Exceptions**
+
+Normal data retention and disposal schedules are suspended when a Legal Hold is issued.
+*   **Trigger:** A Legal Hold may be issued by the Legal & Compliance Department in response to actual or anticipated litigation, regulatory inquiries, government investigations, or internal investigations.
+*   **Procedure:** Upon receiving a Legal Hold notice, all affected employees and departments must immediately cease any destruction or alteration of specified records and data, and ensure their preservation.
+*   **Scope:** Legal Holds may apply to specific categories of data, custodians, or timeframes as outlined in the notice.
+*   **Release:** A Legal Hold remains in effect until formally released by the Legal & Compliance Department. All employees must comply with Legal Hold directives.
+
+**5. Responsibilities**
+
+*   **Board of Directors/Senior Management:** Provide overall oversight and strategic direction for data governance and ensure adequate resources are allocated for Policy implementation.
+*   **Legal & Compliance Department:** Own this Policy, interpret legal and regulatory requirements (including IT Act 2000, GDPR, RBI MD KYC), establish and maintain retention schedules, issue and manage Legal Holds, and act as the primary point of contact for data subject rights requests. The Data Protection Officer (DPO), where appointed, will fall under this department's purview for GDPR compliance.
+*   **IT Department:** Responsible for implementing and maintaining the technical infrastructure for secure data storage, backup, retrieval, and secure disposal of digital records, and for ensuring system compliance with retention schedules.
+*   **Human Resources Department:** Responsible for managing the retention and disposal of employee data in accordance with this Policy and labour laws.
+*   **Department Heads/Managers:** Ensure their respective departments comply with this Policy, adhere to established retention schedules, and communicate Policy requirements to their teams.
+*   **All Employees:** Are individually responsible for understanding and complying with this Policy in their daily work, and for promptly escalating any non-compliance or potential breaches to their manager or the Legal & Compliance Department.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed at least annually by the Legal & Compliance Department, in consultation with the IT Department and other relevant stakeholders. Reviews will also be conducted whenever there are significant changes in legal or regulatory requirements (e.g., amendments to IT Act 2000, new RBI directives, changes to GDPR interpretations), business operations, or technological capabilities.
+
+**7. Effective Date**
+
+This Policy is effective as of **October 26, 2023**.

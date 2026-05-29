@@ -1,0 +1,85 @@
+REGULATORY — RESERVE BANK OF INDIA
+
+**RBI Guidelines on Data Retention for Financial Institutions**
+
+**Document ID:** RBI-DATA-RETENTION-IN-2021
+**Regulation Reference:** RBI/2021-22/DOR/AML/04
+**Effective Date:** April 1, 2021
+**Jurisdiction:** India (IN)
+**Regulatory Scope:** Banking / Financial Institutions
+**Risk Level:** MEDIUM
+
+---
+
+**1. Preamble**
+
+In exercise of the powers conferred under Section 35A of the Banking Regulation Act, 1949 and Prevention of Money Laundering Act (PMLA), 2002, the Reserve Bank of India issues these guidelines on data retention requirements for all regulated financial institutions in India. These guidelines are intended to ensure adequate record-keeping for regulatory supervision, audit trail maintenance, and anti-money laundering compliance.
+
+**2. Applicability**
+
+These guidelines apply to:
+(a) All scheduled commercial banks operating in India
+(b) All Non-Banking Financial Companies (NBFCs)
+(c) All payment system operators and participants
+(d) Housing Finance Companies
+(e) Cooperative banks
+
+**3. Mandatory Retention Periods**
+
+3.1. **Transaction Records — 8-Year Mandatory Retention:**
+All financial transaction records, including but not limited to:
+(a) Deposits and withdrawal records
+(b) Fund transfer records (NEFT, RTGS, IMPS, UPI)
+(c) Trade and settlement records
+(d) Loan disbursement and repayment records
+(e) Foreign exchange transaction records
+shall be maintained for a minimum period of 8 years from the date of the transaction.
+
+3.2. **KYC Documents — 5 Years After Account Closure:**
+All KYC records including:
+(a) Customer identification documents
+(b) Beneficial ownership records
+(c) Customer due diligence records
+(d) Enhanced due diligence records for high-risk customers
+shall be maintained for a minimum period of 5 years after the termination of the business relationship or closure of the account.
+
+3.3. **Suspicious Transaction Reports (STRs):**
+All records related to STRs filed with FIU-IND shall be retained for a minimum period of 8 years from the date of filing.
+
+3.4. **Audit Trail Records:**
+System audit logs, access logs, and transaction audit trails shall be maintained for a minimum period of 8 years.
+
+**4. Format and Storage Requirements**
+
+4.1. Records may be maintained in electronic or physical form, provided:
+(a) Electronic records shall be stored in tamper-proof systems with adequate backup
+(b) Records shall be readily retrievable within 48 hours of a regulatory request
+(c) Adequate security measures shall be implemented to protect the confidentiality and integrity of stored data
+
+4.2. Data localisation: Critical data pertaining to Indian customers and operations shall be stored within the territorial boundaries of India. A copy may be maintained overseas for backup purposes only.
+
+**5. Conflict with International Data Retention Standards**
+
+5.1. Financial institutions operating across multiple jurisdictions may face conflicts between Indian data retention requirements and regulations in other jurisdictions. Specifically:
+
+5.2. **GDPR Conflict:** The European Union's General Data Protection Regulation (GDPR) mandates data minimisation and storage limitation, with financial records retention typically limited to 3 years after purpose fulfilment. This directly conflicts with India's mandatory 8-year retention requirement for financial transaction records. Institutions operating in both jurisdictions must implement data segregation measures to ensure compliance with both regulatory regimes.
+
+5.3. **Singapore PDPA Conflict:** Singapore's Personal Data Protection Act requires retention only as long as necessary for business or legal purposes. Institutions with cross-border operations must maintain separate data governance frameworks for each jurisdiction.
+
+5.4. **Resolution Framework:** Where retention requirements conflict:
+(a) For data exclusively relating to Indian customers: Indian retention periods shall apply
+(b) For data exclusively relating to foreign customers: Local jurisdiction rules shall apply
+(c) For cross-border data: The institution shall apply data segregation and dual compliance, retaining Indian data per RBI norms and foreign data per the applicable foreign regulation
+
+**6. Regulatory Reporting**
+
+6.1. Financial institutions shall submit an annual certification to the RBI confirming compliance with data retention requirements.
+
+6.2. Any instances of premature data destruction or loss shall be reported to the RBI within 7 working days.
+
+**7. Penalties**
+
+7.1. Non-compliance with data retention requirements may attract penalties under the Banking Regulation Act, PMLA, and RBI directions, including monetary penalties and restrictions on business activities.
+
+---
+**[RBI Guidelines on Data Retention — Effective April 1, 2021]**

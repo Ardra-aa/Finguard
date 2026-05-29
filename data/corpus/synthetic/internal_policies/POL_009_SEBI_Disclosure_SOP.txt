@@ -1,0 +1,93 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Standard Operating Procedure (SOP) for SEBI Disclosure Obligations**
+
+**Document ID:** BFS/COMPL/SOP/001/2024
+**Version:** 1.0
+**Effective Date:** [Insert Date: e.g., October 26, 2024]
+**Access:** compliance_officer, cfo, ceo
+**Jurisdiction:** India (IN)
+
+---
+
+**1. Purpose**
+
+The purpose of this Standard Operating Procedure (SOP) is to ensure that BharatFinServ Ltd. (hereinafter referred to as "the Company") complies fully with all applicable disclosure obligations mandated by the Securities and Exchange Board of India (SEBI), particularly those specified under the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ("LODR Regulations"). This SOP aims to establish a robust framework for timely, accurate, complete, fair, and non-selective dissemination of all material information to the stock exchanges and the public, thereby upholding transparency, protecting the interests of all stakeholders, and enhancing corporate governance.
+
+**2. Scope**
+
+This SOP applies to all employees, Key Managerial Personnel (KMPs), Directors, officers, and departments of BharatFinServ Ltd. and its subsidiaries (including those in GIFT City IFSC, Frankfurt, etc.) who are involved in the generation, assessment, approval, or dissemination of information that may be subject to disclosure requirements under SEBI regulations. This includes, but is not limited to, the Legal, Finance, Compliance, Investor Relations, Corporate Communications, and Business Development departments.
+
+**3. Definitions**
+
+*   **Company:** BharatFinServ Ltd.
+*   **SEBI:** Securities and Exchange Board of India.
+*   **Stock Exchanges:** BSE Limited and National Stock Exchange of India Limited, where the Company's securities are listed.
+*   **LODR Regulations:** SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended from time to time.
+*   **Material Event/Information:** Any event or information specified in Part A of Schedule III of the LODR Regulations or any other event/information deemed material based on criteria outlined in Regulation 30(4) of the LODR Regulations.
+*   **KMP:** Key Managerial Personnel as defined under the Companies Act, 2013, and the LODR Regulations.
+*   **Compliance Officer:** The Company Secretary designated as the Compliance Officer under the LODR Regulations, responsible for ensuring compliance with all SEBI regulations.
+
+**4. Policy Details**
+
+This section outlines the detailed procedures for compliance with SEBI disclosure obligations.
+
+**4.1. Principles of Disclosure**
+All disclosures made by the Company shall adhere to the following principles:
+    *   **Timeliness:** Information shall be disclosed promptly upon the occurrence of an event or decision, ensuring that the market receives it as soon as reasonably possible.
+    *   **Accuracy:** All information must be factually correct and free from material misstatements or omissions.
+    *   **Completeness:** Disclosures must provide all relevant information necessary for informed decision-making by investors.
+    *   **Fairness & Non-Selectivity:** Information must be disclosed broadly to the entire market simultaneously, avoiding any selective disclosure to a particular group of investors or analysts.
+    *   **Clarity & Readability:** Disclosures shall be presented in a clear, concise, and understandable manner, free from jargon where possible.
+    *   **Consistency:** Disclosures on the same subject should be consistent across all platforms (e.g., stock exchange filings, website, press releases).
+
+**4.2. Disclosure of Material Events or Information (Regulation 30)**
+    *   **Identification:** Any employee, KMP, or Director who becomes aware of a potential material event or information (as per Part A of Schedule III of the LODR Regulations, e.g., acquisitions, mergers, changes in control, new projects, regulatory actions, litigation, financial restructuring, or any other event deemed material under Regulation 30(4)) must immediately notify the Compliance Officer.
+    *   **Assessment:** The Compliance Officer, in consultation with the CEO, CFO, and other relevant functional heads, shall assess the materiality of the event or information. This assessment shall be based on whether the event/information is likely to significantly affect the price of the Company's securities or is otherwise considered material by the Board of Directors/Audit Committee.
+    *   **Approval:** For Category A events (events for which disclosure is mandatory), the Company Secretary (CS) shall prepare the disclosure draft. For Category B events (events requiring application of materiality criteria), the disclosure draft and materiality assessment shall be approved by the CEO/CFO or a committee of KMPs duly authorized by the Board, before public dissemination. In significant cases, Board approval may be sought.
+    *   **Timeline:** Disclosures shall be made to the stock exchanges within thirty minutes of the event occurring or the decision being taken, whichever is earlier. For events emanating from a board meeting, the disclosure must be made within thirty minutes of the conclusion of the board meeting.
+    *   **Record Keeping:** All internal communications, approvals, and a detailed rationale for materiality assessment (or non-materiality) shall be documented and maintained by the Compliance department for a minimum of eight years.
+
+**4.3. Disclosure of Financial Results (Regulation 33)**
+    *   **Board Meeting for Results:** The Company shall intimate the stock exchanges at least five working days in advance of any Board Meeting scheduled to consider and approve financial results (quarterly, half-yearly, or annual).
+    *   **Approval Process:** Financial results, along with the audit report (for annual results) or limited review report (for quarterly/half-yearly results), must be approved by the Board of Directors. The Audit Committee shall review the financial results before submission to the Board.
+    *   **Submission & Publication:** The approved financial results, along with segment reporting, cash flow statements, and the auditor's report/limited review report, shall be submitted to the stock exchanges within thirty minutes of the conclusion of the Board Meeting. Concurrently, the results shall be published in at least one English national daily and one regional language newspaper, and also hosted on the Company's website.
+    *   **Investor Relations:** Following the disclosure, an earnings call or analyst meet may be arranged, the transcript/audio recording of which shall be made available on the Company's website as per LODR Regulations.
+
+**4.4. Website Maintenance and Disclosures (Regulation 46)**
+    *   **Mandatory Information:** The Company's official website (www.bharatfinserv.com) shall host all information mandated by Regulation 46 of the LODR Regulations. This includes, but is not limited to:
+        *   Details of the Company's business.
+        *   Financial results (quarterly, half-yearly, annual).
+        *   Shareholding pattern.
+        *   Policies (e.g., Materiality of Events, Archival Policy, Code of Conduct).
+        *   Details of the KMPs and Directors.
+        *   Contact information of the Compliance Officer and investor grievance redressal.
+        *   Transcripts of investor calls, presentations made to analysts/investors.
+        *   All official disclosures made to stock exchanges.
+    *   **Timeliness of Updates:** The Compliance Officer, in coordination with the IT and Corporate Communications departments, is responsible for ensuring that the website is updated promptly following any new disclosure or event.
+    *   **Archival Policy:** The Company shall maintain an archival policy for all past disclosures, clearly defining the period for which information remains publicly accessible on the website.
+
+**4.5. Training, Monitoring, and Non-Compliance**
+    *   **Training:** Regular training sessions shall be conducted for all relevant employees, KMPs, and Directors to ensure awareness and understanding of SEBI disclosure obligations and this SOP.
+    *   **Monitoring & Review:** The Compliance Officer shall continuously monitor the Company's compliance with SEBI disclosure requirements and conduct periodic internal reviews.
+    *   **Consequences of Non-Compliance:** Failure to comply with SEBI disclosure obligations may lead to significant penalties, fines, suspension of trading, reputational damage, and potential legal action from SEBI. Internally, non-compliance may result in disciplinary action against individuals responsible, up to and including termination of employment.
+
+**5. Responsibilities**
+
+*   **Board of Directors/Audit Committee:** Overall oversight of compliance with LODR Regulations; review and approval of financial results and other significant disclosures; approval of policies relevant to disclosures.
+*   **Chief Executive Officer (CEO) / Chief Financial Officer (CFO):** Provide leadership and ensure financial and operational information is accurate and timely for disclosure; approve specific disclosures as per delegated authority.
+*   **Compliance Officer (Company Secretary):** Primary responsibility for ensuring compliance with LODR Regulations; coordinate and manage all disclosures; liaison with stock exchanges and SEBI; maintain records; conduct training.
+*   **Legal Department:** Advise on legal interpretations of regulations; review disclosures for legal accuracy.
+*   **Finance Department:** Responsible for accurate and timely preparation of financial data and results for disclosure.
+*   **Investor Relations/Corporate Communications:** Manage communication with investors and analysts; ensure consistent messaging post-disclosure; manage website content.
+*   **All Employees/KMPs/Directors:** Promptly inform the Compliance Officer of any potential material event or information.
+
+**6. Review Cycle**
+
+This SOP shall be reviewed annually by the Compliance Officer, in consultation with the Legal and Finance departments, or earlier if there are any significant changes in SEBI regulations or the Company's operations. Any amendments will be approved by the Board of Directors or a duly authorized committee thereof.
+
+**7. Effective Date**
+
+[Insert Date: e.g., October 26, 2024]
+
+---

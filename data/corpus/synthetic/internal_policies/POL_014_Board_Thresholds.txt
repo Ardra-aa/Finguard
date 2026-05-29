@@ -1,0 +1,87 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Policy: Board Approval Thresholds for Capital Expenditure**
+
+**Policy ID:** BFL/POL/2024/CAPEX-001
+**Version:** 1.0
+**Effective Date:** September 1, 2024
+**Access:** CEO, CFO, Legal Counsel
+
+---
+
+**1. Purpose**
+
+The purpose of this Policy is to establish clear, structured, and compliant thresholds and procedures for the approval of Capital Expenditure (CapEx) across BharatFinServ Ltd. and its subsidiaries. This ensures robust corporate governance, prudent financial management, and efficient allocation of resources, while adhering to statutory and regulatory requirements. By defining specific approval authorities, this Policy aims to streamline decision-making processes, enhance accountability, and safeguard the interests of shareholders and stakeholders.
+
+**2. Scope**
+
+This Policy applies to all proposed Capital Expenditure across BharatFinServ Ltd. and its wholly-owned subsidiaries, joint ventures, and associate companies where BharatFinServ Ltd. has management control, irrespective of geographic location (including operations in Mumbai, Bengaluru, GIFT City IFSC, Frankfurt EU subsidiary, or other global presences). This includes, but is not limited to, investments in property, plant, and equipment; technology infrastructure (hardware and software); office fit-outs; acquisition of intellectual property rights; and significant project-specific investments that meet the definition of Capital Expenditure. This Policy does not cover operational expenditure.
+
+**3. Definitions**
+
+For the purpose of this Policy, the following definitions apply:
+
+*   **Board:** Refers to the Board of Directors of BharatFinServ Ltd.
+*   **Capital Expenditure (CapEx):** Funds used by the Company to acquire, upgrade, and maintain physical assets such as property, plants, buildings, technology infrastructure, or equipment. It is typically a one-time investment with a useful life exceeding one year, intended to create future economic benefits, and is capitalised on the balance sheet.
+*   **Company:** Refers to BharatFinServ Ltd. and, where applicable, its subsidiaries and associates.
+*   **Management Committee (MC):** A senior executive committee comprising the CEO, CFO, and other designated functional heads, responsible for strategic and operational oversight, as constituted by the Board.
+*   **Approving Authority:** The individual or committee empowered by this Policy to sanction Capital Expenditure proposals up to specified thresholds.
+*   **Companies Act, 2013:** Refers to the Companies Act, 2013, including rules and regulations framed thereunder, as amended from time to time.
+*   **SEBI LODR Regulations:** Refers to the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015, as amended from time to time.
+
+**4. Policy Details**
+
+This section outlines the specific thresholds, processes, and regulatory considerations for Capital Expenditure approvals.
+
+**4.1. General Principles of Approval**
+All Capital Expenditure proposals must demonstrate alignment with the Company’s strategic objectives, contribute to long-term value creation, be financially viable, and comply with all applicable laws and regulations. Proposals must be thoroughly evaluated, including a robust financial analysis, risk assessment, and return on investment (ROI) projection, before submission to the relevant Approving Authority.
+
+**4.2. Capital Expenditure Approval Matrix**
+The following thresholds dictate the required level of approval for Capital Expenditure proposals:
+
+*   **Up to INR 5 Crores:**
+    *   **Approving Authority:** Concerned Department Head(s) and Chief Financial Officer (CFO).
+    *   **Process:** Detailed proposal submitted to the CFO for review and joint approval. The CFO shall ensure funds availability and alignment with budget.
+*   **Above INR 5 Crores up to INR 25 Crores:**
+    *   **Approving Authority:** Chief Executive Officer (CEO).
+    *   **Process:** Proposal, with recommendation from the CFO, submitted to the CEO for review and approval. The CEO shall consider strategic alignment and overall business impact.
+*   **Above INR 25 Crores up to INR 75 Crores:**
+    *   **Approving Authority:** Management Committee (MC).
+    *   **Process:** Proposal, with joint recommendation from the CEO and CFO, presented to the MC for deliberation and approval. Minutes of the MC meeting approving the CapEx shall be maintained.
+*   **Above INR 75 Crores up to INR 200 Crores:**
+    *   **Approving Authority:** Board of Directors.
+    *   **Process:** Proposal, with recommendation from the MC, presented to the Board for review and approval. Such approvals shall be recorded in the minutes of the Board meeting. This aligns with the general powers of the Board under Section 179 of the Companies Act, 2013.
+*   **Above INR 200 Crores or Specific Strategic Initiatives:**
+    *   **Approving Authority:** Board of Directors, potentially requiring Shareholder Approval.
+    *   **Process:** For CapEx proposals exceeding INR 200 Crores, or those involving significant undertakings, acquisitions, or divestitures that may fall under the purview of Section 180 of the Companies Act, 2013 (e.g., sale/lease of undertaking, borrowing beyond specific limits), the Board shall convene to consider the proposal. If applicable under Section 180, the Board shall recommend the proposal for approval by shareholders via a Special Resolution at a General Meeting, after taking due advice from Legal Counsel.
+
+**4.3. Approval Process and Documentation**
+All CapEx proposals must originate from the respective department or business unit, clearly outlining the business case, projected costs, funding source, timeline, expected benefits, and risk mitigation strategies. A standardised CapEx request form, approved by the CFO, must be used. All approvals must be documented, and supporting materials retained for audit purposes and regulatory compliance. Regular reports on sanctioned CapEx and project progress shall be submitted to the CFO, CEO, MC, and the Board as per their respective thresholds and monitoring requirements.
+
+**4.4. Regulatory Compliance**
+The Company is committed to strict adherence to all applicable laws and regulations.
+*   **Companies Act, 2013:** This Policy ensures compliance with Section 179 (Powers of Board) by clearly delineating the Board’s authority for significant CapEx and Section 180 (Restrictions on powers of Board) for transactions that may require shareholder approval. The Legal Counsel shall advise on the applicability of Section 180 on a case-by-case basis.
+*   **SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015:** Regulation 17 (Board of Directors) mandates the Board’s responsibility for establishing robust governance frameworks, including financial controls and approval mechanisms. This Policy directly supports compliance with these requirements by defining clear responsibilities and thresholds for decision-making.
+
+**4.5. Emergency and Exceptional Approvals**
+In circumstances of genuine emergency, where immediate CapEx is critical to prevent significant financial loss, operational disruption, or to address regulatory non-compliance, and awaiting the standard approval cycle is not feasible, the CEO may provide interim approval for CapEx up to INR 25 Crores. Any such emergency approval must be immediately reported to the CFO and subsequently ratified by the Management Committee at its next scheduled meeting. For emergency CapEx above INR 25 Crores, the CEO and CFO must jointly seek an urgent approval from the Chairman of the Board, with subsequent ratification by the full Board at its next meeting. Comprehensive documentation explaining the emergency and the rationale for immediate action must be maintained.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Overall oversight, approval of policies, final approval for high-value CapEx, and ensuring compliance with Sections 179 and 180 of the Companies Act, 2013, and SEBI LODR Regulation 17.
+*   **Chief Executive Officer (CEO):** Strategic direction for CapEx, approval of mid-range CapEx, and ensuring operational alignment.
+*   **Chief Financial Officer (CFO):** Financial evaluation of all CapEx proposals, ensuring budget availability, financial prudence, maintaining records, and recommending CapEx to higher authorities.
+*   **Management Committee (MC):** Review and approval of specific CapEx proposals as per thresholds, ensuring alignment with strategic goals and financial plans.
+*   **Department Heads:** Initiation of CapEx proposals, preparation of detailed business cases, and ensuring proper utilisation of approved funds.
+*   **Legal Counsel:** Advising on statutory and regulatory compliance, particularly Sections 179 and 180 of the Companies Act, 2013, and SEBI LODR Regulations, regarding all CapEx proposals and approval processes.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed at least once every two years, or earlier if necessitated by changes in statutory or regulatory requirements (e.g., amendments to the Companies Act, 2013, or SEBI LODR Regulations), significant changes in the Company's business strategy, or internal operational requirements. Any amendments shall be approved by the Board of Directors.
+
+**7. Effective Date**
+
+This Policy is effective from September 1, 2024. All Capital Expenditure proposals initiated on or after this date shall be governed by the provisions of this Policy.
+
+---
+End of Policy Document

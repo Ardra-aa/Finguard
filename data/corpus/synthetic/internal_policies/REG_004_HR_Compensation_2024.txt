@@ -1,0 +1,103 @@
+INTERNAL — BHARATFINSERV LTD. — STRICTLY CONFIDENTIAL
+
+**BharatFinServ Compensation Policy 2024**
+
+**Document ID:** BHARATFINSERV-HR-COMP-2024
+**Version:** 2.0
+**Effective Date:** January 1, 2024
+**Jurisdiction:** India (IN)
+**Regulatory Scope:** Internal / Human Resources
+**Risk Level:** HIGH
+**Sensitivity:** HIGH — Restricted to CEO, CFO, and HR Manager only
+**Access:** Chief Executive Officer, Chief Financial Officer, HR Manager
+
+---
+
+**1. Purpose**
+
+This Compensation Policy ("the Policy") establishes the comprehensive framework for employee remuneration, benefits, incentives, and equity participation at BharatFinServ Ltd. and its subsidiaries. This document contains proprietary and highly confidential information regarding salary structures, bonus targets, and equity vesting schedules. Unauthorized access, distribution, or disclosure of the contents of this Policy constitutes a serious compliance violation (RBAC-VIOLATION).
+
+**2. Scope**
+
+This Policy applies to all permanent employees of BharatFinServ Ltd. and its subsidiaries across all jurisdictions and functions. Temporary contractors and consultants are governed by separate contractual arrangements.
+
+**3. Salary Banding Structure**
+
+BharatFinServ operates a structured salary banding framework aligned to organizational hierarchy and market benchmarking (Korn Ferry methodology):
+
+| Band | Level | Base Salary Range (Annual) | Position Examples |
+|------|-------|---------------------------|-------------------|
+| Band 1 | Entry Level | INR 3.0 – 5.0 lakhs | Graduate Trainee, Intern |
+| Band 2 | Junior Professional | INR 5.0 – 8.0 lakhs | Analyst, Associate |
+| Band 3 | Professional | INR 8.0 – 12.0 lakhs | Senior Analyst, Team Lead |
+| Band 4 | Senior Professional | INR 12.0 – 16.0 lakhs | Manager, Senior Manager |
+| Band 5 | VP-Level | INR 12.0 – 18.0 lakhs | Vice President, AVP |
+| Band 6 | Senior VP-Level | INR 18.0 – 28.0 lakhs | Senior Vice President, Director |
+| Band 7 | Executive Leadership | INR 30.0 – 60.0 lakhs | EVP, MD, C-Suite |
+| Band 8 | Board Level | INR 60.0 – 150.0 lakhs | CEO, CFO, COO |
+
+**4. Performance Bonus Structure**
+
+4.1. **Annual Bonus Targets:**
+- Band 1-2: 5-10% of annual CTC
+- Band 3-4: 10-15% of annual CTC
+- Band 5 (VP-Level): 15-20% of annual CTC
+- Band 6 (SVP-Level): 20-30% of annual CTC
+- Band 7 (Executive): 30-50% of annual CTC
+- Band 8 (Board): 50-100% of annual CTC, subject to Board approval
+
+4.2. **Trading Desk Performance Bonus:**
+The trading desk operates under a performance-linked variable pay structure:
+- Junior Traders (Band 3-4): 15% of desk P&L contribution, capped at 200% of base salary
+- Senior Traders (Band 5): 20% of desk P&L contribution, capped at 300% of base salary
+- Head of Trading (Band 6-7): 25% of desk P&L contribution, capped at 500% of base salary
+- Bonus pool allocation reviewed quarterly by ALCO and approved by the CEO
+
+4.3. **Performance Rating Linkage:**
+- Rating 5 (Outstanding): 120-150% of target bonus
+- Rating 4 (Exceeds Expectations): 100-120% of target bonus
+- Rating 3 (Meets Expectations): 80-100% of target bonus
+- Rating 2 (Needs Improvement): 0-50% of target bonus
+- Rating 1 (Unsatisfactory): No bonus
+
+**5. Employee Stock Option Plan (ESOP)**
+
+5.1. **ESOP Eligibility:** Employees at Band 5 and above are eligible for ESOP grants.
+
+5.2. **ESOP Vesting Schedule:**
+- ESOP grants vest over 4 years on a cliff-and-graded basis:
+  - Year 1: 25% vesting (cliff)
+  - Year 2: 25% vesting
+  - Year 3: 25% vesting
+  - Year 4: 25% vesting (fully vested)
+
+5.3. **ESOP Grant Quantum:**
+- Band 5: 500-1,000 options at grant
+- Band 6: 1,000-3,000 options at grant
+- Band 7: 3,000-10,000 options at grant
+- Band 8: 10,000-50,000 options at grant, subject to ESOP Committee approval
+
+5.4. **Exercise Price:** The exercise price shall be the closing market price on the grant date or such price as determined by the ESOP Committee, subject to SEBI (Share Based Employee Benefits and Sweat Equity) Regulations, 2021.
+
+**6. Leave Entitlements**
+
+6.1. All permanent employees are entitled to the following leave benefits:
+- Earned Leave: 21 days per calendar year
+- Casual Leave: 10 days per calendar year
+- Sick Leave: 10 days per calendar year
+- Maternity Leave: 26 weeks (as per Maternity Benefit Act, 2017)
+- Paternity Leave: 15 days
+
+**7. Confidentiality and Access Control**
+
+7.1. This document is classified as STRICTLY CONFIDENTIAL with access restricted to:
+- Chief Executive Officer (CEO)
+- Chief Financial Officer (CFO)
+- Head of Human Resources / HR Manager
+
+7.2. Any unauthorized access to this document by personnel not listed in the access control list constitutes an RBAC-VIOLATION and shall be reported to the Compliance Officer immediately.
+
+7.3. Junior analysts, traders, and other non-authorized personnel are expressly prohibited from accessing salary banding details, bonus targets, or ESOP grant quantum information.
+
+---
+**[BharatFinServ Compensation Policy — Effective January 1, 2024]**

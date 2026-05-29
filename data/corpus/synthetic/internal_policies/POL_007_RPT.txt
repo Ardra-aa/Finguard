@@ -1,0 +1,92 @@
+**INTERNAL - BHARATFINSERV LTD. - FICTIONAL**
+
+**Related Party Transactions Policy**
+
+**Document ID:** BFS/POL/RPT/V1.0
+**Version:** 1.0
+**Effective Date:** September 1, 2023
+**Review Cycle:** Annual
+**Access:** Compliance Officer, CFO, CEO, Legal Counsel
+
+---
+
+**1. Purpose**
+
+The purpose of this Related Party Transactions (RPT) Policy ("Policy") is to establish a framework for the identification, review, approval, and disclosure of transactions between BharatFinServ Ltd. (the "Company" or "BharatFinServ") and its Related Parties. This Policy aims to ensure that all RPTs are conducted in a fair and transparent manner, on an arm's length basis, and are in the best interest of the Company and its stakeholders. It seeks to protect the interests of minority shareholders, maintain good corporate governance standards, and ensure compliance with applicable laws and regulations, including the Companies Act, 2013, the Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015 ("SEBI LODR Regulations"), and Ind AS 24 (Related Party Disclosures).
+
+**2. Scope**
+
+This Policy applies to all directors, Key Managerial Personnel (KMP), employees, and all entities within BharatFinServ's group, including its holding, subsidiary, associate companies, and joint ventures, wherever they operate (e.g., Mumbai, Bengaluru, GIFT City IFSC, Frankfurt EU). It covers all types of transactions with Related Parties, irrespective of materiality, whether entered into directly or indirectly. Compliance with this Policy is mandatory for all personnel involved in any capacity that may lead to an RPT or its approval.
+
+**3. Definitions**
+
+For the purpose of this Policy, the following definitions shall apply:
+
+*   **Audit Committee (AC):** Means the Audit Committee of the Board of Directors of BharatFinServ Ltd., constituted in accordance with Section 177 of the Companies Act, 2013, and Regulation 18 of the SEBI LODR Regulations.
+*   **Arm's Length Basis:** A transaction is considered to be on an arm's length basis if it is conducted as if between two unrelated parties, each acting independently and in its own self-interest, without any undue influence or control from the other. This typically implies market-based pricing and terms.
+*   **Key Managerial Personnel (KMP):** As defined under Section 2(51) of the Companies Act, 2013, and includes the CEO, MD, Company Secretary, CFO, and such other officer as may be prescribed.
+*   **Material Related Party Transaction:** As per Regulation 23 of the SEBI LODR Regulations, a transaction with a related party shall be considered material if the transaction(s) to be entered into individually or taken together with previous transactions during a financial year, exceeds ten percent of the annual consolidated turnover of the company as per the last audited financial statements of the company. The Board may also designate other transactions as material based on specific circumstances.
+*   **Related Party:** As defined under Section 2(76) of the Companies Act, 2013, and Regulation 2(1)(zb) of the SEBI LODR Regulations, and Ind AS 24. A party is related to BharatFinServ if:
+    *   It is a director or his/her relative.
+    *   It is KMP or his/her relative.
+    *   It is a firm, private company, or public company in which a director or manager is a partner, director, or member (as per Companies Act definition).
+    *   It is a private company in which a director or manager is a director or holds along with his relatives, more than two percent of its paid-up share capital.
+    *   It is a body corporate whose Board of Directors, managing director, or manager is accustomed to act in accordance with the advice, directions, or instructions of a director or manager.
+    *   Any person or entity holding significant influence or control over the Company.
+    *   The Company's holding company, subsidiary company, associate company, or a joint venture of the Company or a subsidiary of a holding company to which the Company is also a subsidiary.
+    *   Any other person or entity falling under the purview of related party definitions under applicable accounting standards (Ind AS 24).
+*   **Related Party Transaction (RPT):** As defined under Section 188 of the Companies Act, 2013, and Regulation 2(1)(zc) of the SEBI LODR Regulations. An RPT means any transaction involving a transfer of resources, services, or obligations between BharatFinServ and a related party, regardless of whether a price is charged. This includes, but is not limited to:
+    *   Sale, purchase, or supply of any goods or materials.
+    *   Selling or otherwise disposing of, or buying, property of any kind.
+    *   Leasing of property of any kind.
+    *   Availing or rendering of any services.
+    *   Appointment of any agent for purchase or sale of goods, materials, services, or property.
+    *   Underwriting a subscription of securities or derivatives thereof, of the company.
+    *   Any related party's appointment to any office or place of profit in the company, its subsidiary, or associate company.
+    *   Remuneration to KMP.
+
+**4. Policy Details**
+
+**4.1 Identification of Related Parties and Transactions**
+All directors and KMP shall provide declarations periodically, at least annually, and promptly upon any change, identifying their related parties and disclosing any potential or existing transactions with the Company. The Company Secretary, in consultation with the Legal and Finance teams, shall maintain a comprehensive register of all identified Related Parties and monitor potential RPTs.
+
+**4.2 Approval Process for Related Party Transactions**
+
+*   **Audit Committee Approval:** All RPTs (other than those specifically exempted) require prior approval of the Audit Committee. The Audit Committee shall consider factors such as the nature of the transaction, related party's interest, financial impact, arm's length basis, and any alternative arrangements available. No director or member of the Audit Committee shall participate in any discussion or vote on any RPT in which he/she is a related party.
+*   **Board of Directors Approval:** Any RPT which is not in the ordinary course of business or not on an arm's length basis, or any Material RPT (even if in the ordinary course and on arm's length terms, if it exceeds certain thresholds), shall also require prior approval of the Board of Directors. The concerned director shall not participate in discussions or vote on such resolutions.
+*   **Shareholders' Approval:** As per Section 188 of the Companies Act, 2013, and Regulation 23 of the SEBI LODR Regulations, all Material RPTs (even if in the ordinary course of business and on an arm's length basis), and any RPT which is not in the ordinary course of business or not on an arm's length basis and exceeds prescribed thresholds, shall require approval of the shareholders by an ordinary or special resolution, as applicable. Related parties shall abstain from voting on such resolutions.
+*   **Exemptions:** RPTs entered into in the ordinary course of business and on an arm's length basis generally do not require approval from the Board or shareholders under Section 188 of the Companies Act, 2013. However, under SEBI LODR Regulation 23, all Material RPTs require Audit Committee approval, and Material RPTs exceeding certain thresholds will also require shareholder approval, even if they are in the ordinary course of business and on an arm's length basis.
+
+**4.3 Principles for Evaluating RPTs**
+The Audit Committee and Board, while evaluating RPTs, shall ensure that:
+*   Transactions are executed strictly on an arm's length basis, supported by appropriate benchmarking or third-party valuations where necessary.
+*   The terms and conditions of the transaction are fair and reasonable to BharatFinServ.
+*   The transaction is consistent with the Company's strategic objectives and is not prejudicial to the interests of the Company or its shareholders.
+*   Adequate disclosure of all material facts related to the transaction is available to the approving authority.
+*   Any potential or actual conflict of interest is appropriately managed and mitigated.
+
+**4.4 Reporting and Disclosures**
+*   **Internal Records:** The Company Secretary shall maintain a record of all RPTs, including details of approvals obtained, in a format compliant with statutory requirements.
+*   **Financial Statements:** Disclosures related to RPTs shall be made in the Company's financial statements in accordance with Ind AS 24.
+*   **Stock Exchanges:** The Company shall make all necessary periodic disclosures of RPTs to the stock exchanges (BSE and NSE) in compliance with Regulation 23 of the SEBI LODR Regulations, including details of all material RPTs on a quarterly basis.
+*   **Board Report:** Details of RPTs will be included in the Board's Report to shareholders as required by the Companies Act, 2013.
+
+**4.5 Consequences of Non-Compliance**
+Any violation of this Policy may lead to disciplinary action against the concerned employees, KMP, or directors, up to and including termination of employment or directorship. Furthermore, non-compliance with the Companies Act, 2013, or SEBI LODR Regulations can result in significant monetary penalties, legal proceedings, and reputational damage to BharatFinServ.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Has overall responsibility for the governance of RPTs and approving this Policy.
+*   **Audit Committee:** Primarily responsible for reviewing and approving all RPTs, monitoring compliance with this Policy, and making recommendations to the Board or shareholders.
+*   **Company Secretary & Legal Counsel:** Responsible for advising the Board, Audit Committee, and management on RPT compliance, maintaining records, and ensuring timely disclosures to regulatory authorities.
+*   **CFO & Finance Team:** Responsible for identifying potential RPTs, assisting in valuation and financial analysis of such transactions, and ensuring accurate financial reporting.
+*   **Compliance Officer:** Responsible for continuous monitoring of adherence to this Policy, providing guidance on its interpretation, and reporting compliance status to the Audit Committee.
+*   **All Directors, KMP, and Employees:** Responsible for identifying and promptly disclosing any relationships or transactions that may constitute an RPT to the Company Secretary or their immediate supervisor.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed by the Audit Committee and subsequently approved by the Board of Directors annually, or more frequently if there are significant changes in applicable laws, regulations, or the Company's business operations.
+
+**7. Effective Date**
+
+This Policy is effective from September 1, 2023.

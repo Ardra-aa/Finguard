@@ -1,0 +1,106 @@
+REGULATORY — MONETARY AUTHORITY OF SINGAPORE
+
+**MAS Technology Risk Management Guidelines**
+
+**Document ID:** MAS-TRM-SG-2021
+**Regulation Reference:** MAS/TRM/2021/01
+**Effective Date:** January 18, 2021
+**Jurisdiction:** Singapore (SG)
+**Regulatory Scope:** Banking / Technology Risk
+**Risk Level:** HIGH
+
+---
+
+**1. Introduction**
+
+The Monetary Authority of Singapore (MAS) issues these Technology Risk Management (TRM) Guidelines to set out risk management principles and best practices for technology risk governance, IT security, and operational resilience. These Guidelines apply to all financial institutions regulated by MAS, including banks, insurers, capital markets services licence holders, and payment service providers operating in Singapore.
+
+**2. Scope and Applicability**
+
+2.1. These Guidelines apply to:
+(a) All banks licensed under the Banking Act (Cap. 19)
+(b) All insurers licensed under the Insurance Act (Cap. 142)
+(c) All holders of capital markets services licences
+(d) All payment service providers
+(e) All financial holding companies and their subsidiaries in Singapore
+
+2.2. Foreign financial institutions with Singapore operations shall comply with these Guidelines for their Singapore-based systems and data.
+
+**3. Technology Risk Governance**
+
+3.1. The Board of Directors and senior management of a financial institution are responsible for establishing a sound and robust technology risk management framework.
+
+3.2. Financial institutions shall appoint a Chief Information Security Officer (CISO) or equivalent to oversee cybersecurity and technology risk management.
+
+3.3. A Technology Risk Committee shall be established to oversee technology risk at the enterprise level.
+
+**4. Outsourcing and Third-Party Risk**
+
+4.1. Financial institutions shall perform thorough due diligence before engaging any outsourcing service provider for critical technology services.
+
+4.2. **Cloud Outsourcing Requirements:**
+(a) Material outsourcing arrangements shall be notified to MAS
+(b) Financial institutions shall maintain access to data and systems at all times
+(c) Contractual safeguards shall include right-to-audit provisions
+(d) Business continuity plans shall address concentration risk in cloud arrangements
+
+4.3. **Outsourcing to Related Entities:** Where technology services are outsourced to related entities within a group, the same due diligence and contractual standards shall apply.
+
+**5. Data Localisation for Singapore Operations**
+
+5.1. Financial institutions shall ensure that customer data relating to Singapore operations is adequately protected and accessible to MAS for supervisory purposes.
+
+5.2. **Data Residency:** Critical systems and data pertaining to Singapore booking operations shall be maintained within data centres accessible to MAS. Where data is stored overseas:
+(a) MAS shall be notified of the overseas storage location
+(b) The financial institution shall ensure that MAS has the right to access such data without impediment
+(c) Adequate measures shall be in place to ensure data availability even if cross-border data flows are disrupted
+
+5.3. **Data Classification:** All customer data shall be classified according to sensitivity:
+- Restricted: Customer financial data, transaction records
+- Confidential: Customer personal data, KYC records
+- Internal: Operational data, non-customer data
+- Public: Published reports, regulatory filings
+
+**6. Cross-Border Data Transfer Restrictions**
+
+6.1. Financial institutions shall assess the risks associated with cross-border data transfers, including:
+(a) Legal and regulatory risks in the receiving jurisdiction
+(b) Data protection standards in the receiving jurisdiction
+(c) Political and sovereignty risks
+(d) Operational risks including network connectivity and latency
+
+6.2. **Transfer Safeguards:**
+(a) Contractual protections ensuring equivalent data protection standards
+(b) Encryption in transit and at rest
+(c) Access controls limiting overseas access to the minimum necessary
+(d) Logging and monitoring of all cross-border data access
+
+6.3. **Conflict with Other Jurisdictions:** Where Singapore data protection requirements conflict with requirements in other jurisdictions (e.g., India's RBI data localisation requirements, EU's GDPR cross-border transfer restrictions):
+(a) Singapore data shall be governed by Singapore law
+(b) The financial institution shall implement data segregation to manage multi-jurisdictional compliance
+(c) MAS shall be notified of any material conflicts identified
+
+**7. Cybersecurity Requirements**
+
+7.1. Financial institutions shall implement multi-factor authentication for all critical systems and high-risk transactions.
+
+7.2. Penetration testing shall be conducted at least annually for internet-facing systems and applications.
+
+7.3. Vulnerability assessments shall be conducted quarterly, with critical vulnerabilities remediated within 7 days.
+
+**8. Incident Reporting**
+
+8.1. Technology incidents that have a material impact on operations or customers shall be reported to MAS within 1 hour of discovery.
+
+8.2. A post-incident review shall be completed within 14 days and findings shared with MAS.
+
+**9. Anti-Money Laundering (AML) Technology Controls**
+
+9.1. Financial institutions shall implement technology-enabled AML controls including:
+(a) Automated transaction monitoring systems
+(b) Sanctions screening against OFAC, UN, and MAS sanctions lists
+(c) Customer risk profiling using data analytics
+(d) Network analysis for detecting complex money laundering typologies
+
+---
+**[MAS Technology Risk Management Guidelines — Effective January 18, 2021]**

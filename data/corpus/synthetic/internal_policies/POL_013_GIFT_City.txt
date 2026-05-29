@@ -1,0 +1,63 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Operating Framework for BharatFinServ GIFT City IFSC Entity**
+
+**Document ID:** BFS/GIFT/OP/V1.0
+**Version:** 1.0
+**Date:** October 26, 2023
+
+---
+
+**1.0 Purpose**
+
+This Operating Framework (the "Framework") establishes the foundational principles, policies, and procedures governing the establishment, operation, and ongoing conduct of BharatFinServ's entity within the International Financial Services Centre (IFSC) at GIFT City, India (the "GIFT City Entity"). Its primary objective is to ensure that the GIFT City Entity operates with the highest standards of regulatory compliance, operational efficiency, risk management, and ethical conduct, aligning with both domestic and international best practices for financial services. This Framework aims to provide clarity on roles, responsibilities, and operational guidelines to safeguard BharatFinServ's reputation, mitigate financial and regulatory risks, and foster sustainable growth within the IFSC ecosystem.
+
+**2.0 Scope**
+
+This Framework applies to all employees, officers, directors, contractors, and agents of the BharatFinServ GIFT City Entity, as well as any divisions, departments, or functions that interact with or provide services to the GIFT City Entity. It covers all financial activities, service offerings, and operational processes undertaken by the GIFT City Entity, including but not limited to banking, insurance, asset management, and IT services. This Framework must be read in conjunction with all applicable internal BharatFinServ policies and procedures, as well as relevant statutory and regulatory requirements across all jurisdictions of operation, including India and Singapore.
+
+**3.0 Definitions**
+
+*   **BharatFinServ:** Refers to BharatFinServ Ltd., the ultimate parent company, listed on BSE/NSE.
+*   **GIFT City Entity:** The specific operational unit of BharatFinServ established and licensed to operate within the International Financial Services Centre (IFSC) at GIFT City, Gujarat, India.
+*   **IFSC:** International Financial Services Centre.
+*   **IFSCA:** International Financial Services Centres Authority, the unified regulator for the development and regulation of financial products, financial services, and financial institutions in the IFSC in India.
+*   **FEMA:** Foreign Exchange Management Act, 1999, and its associated rules and regulations.
+*   **AML/CFT:** Anti-Money Laundering and Countering the Financing of Terrorism.
+*   **KYC:** Know Your Customer.
+*   **Group:** Refers to BharatFinServ Ltd. and all its subsidiaries and associated entities globally.
+
+**4.0 Policy Details**
+
+**4.1 Regulatory Compliance & Governance**
+The GIFT City Entity shall operate in strict adherence to all applicable laws, regulations, guidelines, and directives issued by the IFSCA, the Reserve Bank of India (RBI), and other relevant Indian regulatory bodies. This includes, but is not limited to, the IFSCA (Banking) Regulations, 2020, for banking operations, and specific regulations for insurance, asset management, and capital market activities. The GIFT City Entity shall establish robust governance structures, including a dedicated board or governing committee with clearly defined terms of reference, independent oversight functions (e.g., Internal Audit, Risk, Compliance), and clear reporting lines to the BharatFinServ Group. All compliance activities shall be documented and subject to regular internal and external audits. Furthermore, the BharatFinServ Group maintains a unified, risk-based AML/CFT framework applicable across its global operations, ensuring adherence to international standards and best practices, including principles similar to those articulated in MAS Notice 637 for Financial Groups, as applicable to managing group-wide risks across different jurisdictions.
+
+**4.2 Operational Structure & Internal Controls**
+The GIFT City Entity shall establish a clear organizational structure with defined roles, responsibilities, and reporting lines. Adequate segregation of duties shall be maintained to prevent conflicts of interest and reduce the risk of error or fraud. Comprehensive internal control systems, including policies for financial reporting, operational processes, IT systems, and human resources, shall be developed, implemented, and regularly reviewed. These controls must be commensurate with the scale and complexity of the GIFT City Entity's operations and the specific risks identified. All operational processes shall be documented, and standard operating procedures (SOPs) shall be developed and made accessible to relevant personnel.
+
+**4.3 Client Onboarding & Due Diligence**
+All client onboarding processes for the GIFT City Entity shall adhere to stringent KYC, AML, and CFT standards, as prescribed by IFSCA and other relevant regulatory authorities. This includes robust customer identification procedures, beneficial ownership verification, ongoing transaction monitoring, and suspicious transaction reporting. Enhanced Due Diligence (EDD) shall be applied to high-risk clients and transactions. The GIFT City Entity must ensure that all client relationships are established and maintained in full compliance with the Foreign Exchange Management Act, 1999 (FEMA) and its associated regulations, particularly concerning cross-border transactions and permissible activities for IFSC entities. No transaction or relationship shall be entered into if proper due diligence cannot be completed to the satisfaction of the Compliance Officer.
+
+**4.4 Financial Transactions & Reporting**
+All financial transactions undertaken by the GIFT City Entity shall be accurately recorded, adequately documented, and processed in a timely manner. Compliance with FEMA 1999 regulations, particularly regarding the inward and outward remittance of funds, foreign currency exposures, and reporting requirements to Indian regulatory bodies (including the RBI, where applicable, via IFSCA), is paramount. The GIFT City Entity shall maintain separate books of accounts from the domestic entities of BharatFinServ and prepare financial statements in accordance with applicable accounting standards prescribed by IFSCA. Regular and accurate financial reporting, both to the IFSCA and to the BharatFinServ Group management, shall be ensured, covering performance, financial position, and regulatory compliance metrics.
+
+**4.5 Data Management & Cybersecurity**
+The GIFT City Entity shall implement comprehensive policies and procedures for the collection, storage, processing, transmission, and disposal of all data, with particular emphasis on sensitive financial and client information. This includes adherence to applicable data privacy laws and cybersecurity frameworks prescribed by IFSCA and international best practices. Robust cybersecurity measures, including intrusion detection, data encryption, access controls, regular vulnerability assessments, and incident response plans, shall be in place to protect against unauthorized access, data breaches, and cyber threats. All third-party vendors and service providers handling data on behalf of the GIFT City Entity must also comply with these data management and cybersecurity standards.
+
+**5.0 Responsibilities**
+
+*   **Chief Executive Officer (CEO), GIFT City Entity:** Overall accountability for the implementation and adherence to this Framework, fostering a culture of compliance and ethical conduct.
+*   **Chief Financial Officer (CFO), BharatFinServ Group:** Responsible for ensuring financial integrity, appropriate capital allocation, and accurate financial reporting of the GIFT City Entity to the Group.
+*   **Compliance Officer, GIFT City Entity:** Primary responsibility for developing, implementing, and monitoring compliance with this Framework and all applicable regulations, including reporting to IFSCA and the BharatFinServ Group Compliance Officer.
+*   **All Employees, GIFT City Entity:** Responsible for understanding and complying with this Framework, reporting any suspected breaches or non-compliance to the Compliance Officer.
+
+**6.0 Review Cycle**
+
+This Operating Framework shall be reviewed annually, or more frequently if necessitated by significant changes in regulatory landscape, operational structure, or business strategy, by the Compliance Officer of the GIFT City Entity in consultation with the BharatFinServ Group Compliance and Legal teams. Any amendments shall require approval from the Board of Directors of the GIFT City Entity and the relevant committees of BharatFinServ Ltd.
+
+**7.0 Effective Date**
+
+This Operating Framework is effective as of November 15, 2023.
+
+---
+**Access Level:** CFO, Compliance Officer, CEO

@@ -1,0 +1,75 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**DIVIDEND DISTRIBUTION AND CAPITAL ALLOCATION POLICY**
+
+**Policy Number:** BFS-FIN-POL-003
+**Version:** 1.0
+**Effective Date:** October 26, 2023
+**Review Cycle:** Annually
+
+---
+
+**1. Purpose**
+The purpose of this Dividend Distribution and Capital Allocation Policy (the "Policy") is to establish a robust and transparent framework for managing BharatFinServ Ltd.'s capital effectively. This Policy aims to balance sustainable shareholder returns with prudent capital allocation for strategic growth, innovation, and maintaining financial stability across all its business segments and geographies. It ensures compliance with all applicable regulatory requirements and internal risk appetite frameworks, thereby fostering long-term value creation for all stakeholders.
+
+**2. Scope**
+This Policy applies to BharatFinServ Ltd. (the "Company") and all its domestic and international subsidiaries, including but not limited to its NBFC, insurance, asset management, and IT services divisions, its operations in GIFT City IFSC, and its EU subsidiary in Frankfurt. It governs all decisions pertaining to the distribution of dividends, capital deployment across various business units, share buybacks, and other capital management initiatives. This Policy is binding on the Board of Directors (the "Board"), management, and all employees involved in financial decision-making processes.
+
+**3. Definitions**
+*   **Board:** The Board of Directors of BharatFinServ Ltd.
+*   **Capital Allocation:** The strategic process of deploying financial resources across the Company's business units, investments, and projects to achieve strategic objectives and maximize shareholder value.
+*   **Distributable Profits:** Profits available for distribution as dividends, calculated in accordance with the Companies Act, 2013 (India), and analogous statutory provisions in other relevant jurisdictions (e.g., Singapore, European Union).
+*   **FEMA:** The Foreign Exchange Management Act, 1999 (India), and its associated rules and regulations.
+*   **MAS Notice 637:** The Monetary Authority of Singapore Notice 637 – Capital Adequacy Requirements for Banks Incorporated in Singapore, and similar capital requirements for other financial institutions in Singapore.
+*   **Payout Ratio:** The proportion of net profit after tax distributed to shareholders as dividends.
+*   **Regulatory Capital:** The minimum capital required to be held by the Company and its subsidiaries as mandated by relevant sectoral regulators, including but not limited to the Reserve Bank of India (RBI), Insurance Regulatory and Development Authority of India (IRDAI), Securities and Exchange Board of India (SEBI), Monetary Authority of Singapore (MAS), and Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) in Germany.
+*   **Share Buyback:** The repurchase by the Company of its own shares from the open market or existing shareholders.
+
+**4. Policy Details**
+
+**4.1. General Principles of Capital Allocation**
+BharatFinServ Ltd. shall allocate capital based on the following priorities:
+    *   **Regulatory Compliance:** Ensure all business units maintain capital adequacy above minimum regulatory thresholds (e.g., CRAR for NBFCs, Solvency II for the EU insurance entity, MAS Notice 637 for Singapore operations).
+    *   **Strategic Growth:** Fund profitable organic growth initiatives, technological advancements, and strategic mergers and acquisitions that align with the Company's long-term vision.
+    *   **Financial Stability:** Maintain strong liquidity buffers, robust credit ratings, and an optimal capital structure to ensure resilience against economic downturns and market volatility.
+    *   **Risk Management:** Align capital deployment with the Company's approved risk appetite framework, ensuring adequate capital for various risks inherent in its NBFC, insurance, asset management, and IT services businesses.
+    *   **Efficiency:** Optimize the use of capital to maximize Return on Equity (ROE) and other value-creation metrics.
+
+**4.2. Dividend Distribution Philosophy**
+The Company is committed to a sustainable and progressive dividend policy, aiming to provide consistent and competitive returns to shareholders while retaining sufficient capital for business growth and regulatory obligations. The dividend policy will be dynamic, adapting to the Company's financial performance, capital requirements, and prevailing economic conditions. All dividend declarations shall strictly adhere to Section 123 of the Companies Act, 2013, concerning the declaration of dividends, and similar provisions applicable to subsidiaries in other jurisdictions.
+
+**4.3. Factors Influencing Dividend Decisions**
+The Board shall consider the following factors when recommending dividend distribution:
+    *   **Financial Performance:** Current and projected profitability, net cash flows from operations, unappropriated profits, and reserves available for distribution.
+    *   **Capital Adequacy & Growth:** The need to maintain robust Regulatory Capital levels for all regulated entities (NBFC, insurance, asset management) and to fund planned capital expenditure, strategic investments, and expansion across domestic and international markets.
+    *   **Liquidity Position:** Availability of sufficient cash and liquid assets to comfortably cover dividend payouts without compromising operational liquidity or debt service obligations.
+    *   **Leverage & Gearing:** The Company's overall debt levels and its ability to maintain a healthy debt-to-equity ratio.
+    *   **Shareholder Expectations:** Balancing the desire for regular shareholder returns with the imperative to re-invest for long-term value creation.
+    *   **Regulatory & Legal Compliance:** Adherence to all statutory and regulatory requirements pertaining to dividend distribution in India (Companies Act, SEBI LODR) and other operating jurisdictions (e.g., BaFin regulations for the EU subsidiary, MAS regulations for the Singapore subsidiary).
+    *   **Economic Outlook:** Domestic and global economic conditions, industry-specific trends (e.g., insurance claim ratios, credit growth for NBFCs), and market volatility.
+
+**4.4. Mechanisms of Shareholder Return**
+The primary mechanism for returning value to shareholders will be:
+    *   **Cash Dividends:** Declared by the Board and approved by shareholders, subject to the availability of Distributable Profits and compliance with all statutory requirements.
+    *   **Share Buybacks:** The Board may consider share buybacks as an alternative or complementary mechanism to enhance shareholder value, particularly when the Company's shares are perceived to be undervalued, or for optimizing the capital structure. Any buyback program shall be subject to applicable laws and necessary regulatory approvals.
+    *   **Special Dividends:** In instances of exceptional profits from asset sales or extraordinary financial performance, the Board may recommend special dividends on a case-by-case basis, maintaining prudence and long-term financial health.
+
+**4.5. Inter-company Dividends and Repatriation**
+Dividend distribution from subsidiaries to the parent company, BharatFinServ Ltd., will be executed in strict compliance with the local regulations of the subsidiary's jurisdiction. This includes, but is not limited to, capital adequacy requirements (e.g., MAS Notice 637 for Singapore-based entities) and profit distribution rules. Repatriation of funds, including dividends and capital, from international subsidiaries to India will strictly adhere to the provisions of the Foreign Exchange Management Act (FEMA), 1999, and any other applicable foreign exchange regulations. The impact of such distributions on the subsidiary's own capital adequacy and growth plans will be thoroughly assessed prior to approval.
+
+**5. Responsibilities**
+*   **Board of Directors:** Has ultimate responsibility for the approval of this Policy, its annual review, and the final decision on dividend recommendations and significant capital allocation proposals.
+*   **Chief Financial Officer (CFO):** Responsible for developing and recommending the dividend and capital allocation strategy, managing the Company's capital structure, ensuring compliance with all financial regulations, and providing accurate financial forecasts and analysis to the Board.
+*   **Chief Executive Officer (CEO):** Responsible for driving strategic growth initiatives, presenting business cases for capital allocation, and ensuring alignment of capital deployment with the Company's overall strategic objectives.
+*   **Audit Committee:** Oversees the integrity of the Company's financial reporting and internal controls related to dividend distribution and capital management processes.
+*   **Company Secretary:** Ensures compliance with all statutory and regulatory requirements for dividend declaration, payout, and related disclosures, including those under the Companies Act, 2013, and SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015.
+*   **Risk Management Function:** Assesses the capital adequacy requirements against the Company's risk appetite and provides input on the capital implications of various business risks.
+*   **Treasury Function:** Manages the Company's liquidity and cash flow to ensure timely dividend payments and efficient funding of capital investments.
+
+**6. Review Cycle**
+This Policy shall be reviewed by the Board of Directors at least annually, or earlier if there are significant changes in statutory or regulatory requirements, the Company's business strategy, financial performance, or prevailing market conditions across its operating jurisdictions (India, Singapore, EU).
+
+**7. Effective Date**
+This Policy is effective from October 26, 2023.
+
+---

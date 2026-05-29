@@ -1,0 +1,97 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Mergers, Acquisitions and Strategic Investment Policy**
+
+**Document Ref:** BFS/LEGAL/POLICY/MA&SI/V1.0
+**Effective Date:** 25 May 2024
+**Review Cycle:** Annual
+
+---
+
+**1. Purpose**
+
+This Mergers, Acquisitions and Strategic Investment Policy ("Policy") establishes a robust, consistent, and transparent framework for BharatFinServ Ltd. ("BharatFinServ" or "the Company") and its subsidiaries globally to identify, evaluate, approve, execute, and integrate merger, acquisition, and strategic investment activities. The Policy aims to ensure that all such transactions are aligned with the Company’s strategic objectives, conducted with due diligence and integrity, comply with all applicable legal and regulatory requirements, protect shareholder value, and mitigate potential risks. This framework is crucial for facilitating BharatFinServ’s growth, market expansion, technological advancement, and diversification across its NBFC, insurance, asset management, and IT services businesses.
+
+**2. Scope**
+
+This Policy applies to all proposed and executed Mergers, Acquisitions, and Strategic Investments undertaken by BharatFinServ Ltd. and its consolidated entities, including subsidiaries, joint ventures, and branches, across all geographical jurisdictions where BharatFinServ operates, including but not limited to India (IN), Singapore (SG), and the European Union (EU). This encompasses:
+*   **Mergers and Demergers:** Consolidations, amalgamations, demergers, and schemes of arrangement.
+*   **Acquisitions:** Purchases of shares, equity interests, assets, businesses, or divisions, whether controlling or non-controlling stakes.
+*   **Strategic Investments:** Significant minority equity investments, joint ventures, strategic partnerships, and venture capital investments aimed at fostering innovation or market access.
+This Policy covers all stages of a transaction, from initial screening and due diligence through negotiation, approval, closing, and post-transaction integration.
+
+**3. Definitions**
+
+*   **Acquisition:** The purchase of a controlling or non-controlling interest in the shares, equity, assets, or business operations of another entity.
+*   **Amalgamation/Merger:** The legal process by which two or more companies combine to form a new company or one company is absorbed by another, as defined under the Companies Act, 2013.
+*   **Board:** The Board of Directors of BharatFinServ Ltd.
+*   **Due Diligence:** A comprehensive and systematic investigation into the financial, legal, commercial, operational, IT, HR, and regulatory affairs of a target entity before a transaction.
+*   **FEMA:** Foreign Exchange Management Act, 1999, and its associated rules and regulations.
+*   **Integration:** The process of combining the operations, systems, cultures, and personnel of two or more entities following a merger or acquisition.
+*   **M&A:** Mergers and Acquisitions, an umbrella term for transactions involving the consolidation or acquisition of assets or entities.
+*   **Strategic Investment:** A significant capital outlay in another entity, often for a minority stake, aimed at achieving specific strategic objectives such as market expansion, technology access, or capability enhancement, distinct from short-term financial trading.
+*   **Target:** The entity, business, or assets that are the subject of a proposed M&A or Strategic Investment transaction.
+*   **SEBI Takeover Code:** The Securities and Exchange Board of India (Substantial Acquisition of Shares and Takeovers) Regulations, 2011, governing public offers and acquisitions of listed companies.
+
+**4. Policy Details**
+
+**4.1. Strategic Rationale and Initial Assessment**
+All proposed M&A and Strategic Investment activities must originate from a clear strategic rationale aligned with BharatFinServ’s long-term business objectives, such as market leadership, product innovation, geographic expansion, technology acquisition, cost synergies, or diversification. An initial assessment involves:
+*   **Opportunity Identification:** Sourcing potential targets through market intelligence, investment banks, or internal strategic reviews.
+*   **Preliminary Screening:** High-level evaluation of the target's business model, market position, financial performance, and cultural fit.
+*   **Confidentiality:** Execution of non-disclosure agreements (NDAs) to protect sensitive information during initial discussions.
+*   **Initial Proposal:** Presentation of a preliminary business case, including strategic objectives, potential benefits, and high-level risk assessment, to the relevant Business Head and the CEO/CFO for preliminary endorsement.
+
+**4.2. Due Diligence and Valuation**
+Upon preliminary endorsement, a comprehensive due diligence process will be initiated, led by the Legal Counsel, Finance, and relevant Business Units, with support from external advisors where necessary.
+*   **Scope:** Due diligence must cover all material aspects, including legal, financial, commercial, operational, IT, HR, tax, environmental, and regulatory compliance. Special attention shall be paid to licensing, intellectual property, data privacy (e.g., GDPR for EU operations), anti-money laundering (AML), and know-your-customer (KYC) compliance.
+*   **Risk Assessment:** Identification and quantification of all material risks associated with the target, including contingent liabilities, regulatory non-compliance, and integration challenges.
+*   **Valuation:** A thorough valuation exercise using appropriate methodologies (e.g., discounted cash flow, comparable company analysis, precedent transactions) to determine a fair and justifiable transaction price, ensuring shareholder value protection.
+*   **Regulatory Compliance:** Assessment of regulatory hurdles and approvals required in India, Singapore, EU, and other relevant jurisdictions (e.g., RBI, IRDAI, SEBI, Competition Commission of India, BaFin, MAS).
+
+**4.3. Approval Process**
+All M&A and Strategic Investment transactions require multi-tiered internal and external approvals based on their nature, size, and strategic impact.
+*   **Investment Committee:** Reviews due diligence findings, valuation, and proposed terms, providing a recommendation to the Board. It may have delegated authority for smaller strategic investments within defined limits.
+*   **Board of Directors:** For significant transactions, final approval rests with the Board, considering the Investment Committee's recommendation, legal counsel's advice, and strategic fit. This includes ensuring compliance with the Companies Act, 2013 (specifically sections 230-240 for schemes of arrangement, amalgamations, and compromises), and SEBI Takeover Code for listed entities, where applicable.
+*   **Shareholder Approval:** Mandatory for transactions requiring shareholder consent as per the Companies Act, 2013, SEBI Takeover Code, or other applicable regulations.
+*   **Regulatory Approvals:** Obtaining all necessary approvals from relevant regulatory bodies in the jurisdictions involved, including approvals under FEMA for cross-border transactions involving Indian entities, and corresponding financial regulators in Singapore and the EU.
+*   **Government Approvals:** Compliance with foreign direct investment (FDI) policies and obtaining any necessary government clearances.
+
+**4.4. Negotiation, Documentation, and Closing**
+Once internal and regulatory approvals are obtained, the negotiation and documentation phase commences, led by Legal Counsel and the business team.
+*   **Term Sheet:** Formalisation of key commercial terms and conditions.
+*   **Definitive Agreements:** Drafting and execution of binding agreements such as Share Purchase Agreements, Asset Purchase Agreements, Scheme of Amalgamation/Arrangement, or Joint Venture Agreements, ensuring robust indemnities, warranties, representations, and closing conditions. All documents must be legally sound and protect BharatFinServ’s interests.
+*   **Regulatory Filings:** Timely and accurate filing of all required disclosures with stock exchanges (BSE, NSE), SEBI, Registrar of Companies (ROC), and other relevant authorities in all applicable jurisdictions.
+*   **Financing:** Securing appropriate financing arrangements for the transaction.
+*   **Closing:** Satisfying all pre-conditions and executing the transaction closing as per the definitive agreements.
+
+**4.5. Post-Transaction Integration and Monitoring**
+Successful integration is critical for realizing the strategic objectives and value from M&A activities.
+*   **Integration Team:** Formation of a dedicated integration team comprising representatives from relevant functions (e.g., Operations, IT, HR, Finance, Legal, Compliance).
+*   **Integration Plan:** Development and execution of a detailed integration plan addressing operational, technological, cultural, and human resource aspects, with clear milestones and KPIs.
+*   **Value Realization:** Monitoring the achievement of identified synergies, cost efficiencies, and revenue growth targets.
+*   **Performance Review:** Regular review of the acquired/merged entity's performance against strategic objectives and financial targets, with periodic reports to the Board and relevant committees.
+*   **Compliance Post-Acquisition:** Ensuring the acquired entity fully complies with BharatFinServ’s internal policies and external regulations, including cybersecurity, data privacy, and ethical conduct.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Ultimate responsibility for policy oversight, approving significant transactions, and ensuring adherence to legal and regulatory frameworks.
+*   **Investment Committee:** Reviewing, evaluating, and recommending transactions to the Board, or approving transactions within delegated authority limits.
+*   **CEO & CFO:** Providing strategic direction, leading negotiations for major transactions, allocating resources, and ensuring financial viability and strategic fit.
+*   **Legal Counsel (Internal & External):** Guiding the entire M&A process, conducting legal due diligence, drafting and reviewing transaction documents, ensuring compliance with the Companies Act, SEBI Takeover Code, FEMA, and other international laws (e.g., EU, SG), and managing legal risks.
+*   **Business Heads:** Identifying strategic opportunities, conducting commercial and operational due diligence, and leading post-transaction integration for their respective domains.
+*   **Finance Department:** Performing financial analysis, valuation, structuring funding, and managing financial integration and reporting.
+*   **Compliance Department:** Ensuring adherence to all internal policies, regulatory requirements (including RBI, IRDAI, SEBI), AML/KYC standards, and ethical guidelines across all jurisdictions.
+*   **Human Resources Department:** Managing HR due diligence, talent integration, cultural alignment, and employee relations post-transaction.
+*   **IT Department:** Assessing IT infrastructure, systems integration, and cybersecurity aspects.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed annually by the Legal and Compliance Departments, in consultation with the CEO and CFO. Revisions may be undertaken sooner if necessitated by significant changes in applicable laws, regulations, corporate strategy, or market conditions affecting M&A and Strategic Investment activities.
+
+**7. Effective Date**
+
+This Policy is effective from **25 May 2024**.
+
+---
+*This is an internal document of BharatFinServ Ltd. and contains proprietary information. Unauthorized circulation or disclosure is prohibited.*

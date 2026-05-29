@@ -1,0 +1,62 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**BharatFinServ Ltd. Revenue Recognition Policy under Ind AS 115**
+
+**1. Purpose**
+The purpose of this policy is to establish comprehensive principles for recognizing revenue derived from contracts with customers across all business segments of BharatFinServ Ltd. This policy aims to ensure consistent application of Ind AS 115, "Revenue from Contracts with Customers," across the company's financial reporting and operations. By adhering to these principles, BharatFinServ Ltd. will provide users of its financial statements with useful information about the nature, amount, timing, and uncertainty of revenue and cash flows arising from contracts with customers, in full compliance with Indian accounting standards and regulatory requirements.
+
+**2. Scope**
+This policy applies to all revenue streams arising from contracts with customers within BharatFinServ Ltd.'s operations, including but not limited to, revenue from NBFC services (excluding interest income and financial guarantees which fall under Ind AS 109), specific insurance-related services (e.g., administrative fees not directly linked to insurance coverage under Ind AS 104/117), asset management fees, and IT services. This policy does not apply to revenue derived from:
+*   Financial instruments, including interest and dividend income, which are governed by Ind AS 109, "Financial Instruments."
+*   Insurance contracts (premiums and claims) as defined by Ind AS 104, "Insurance Contracts" (and subsequently Ind AS 117, "Insurance Contracts," once effective).
+*   Lease contracts, which are governed by Ind AS 116, "Leases."
+*   Any other transactions specifically excluded from the scope of Ind AS 115 by other Ind AS.
+
+**3. Definitions**
+*   **Customer:** A party that has contracted with BharatFinServ Ltd. to obtain goods or services that are an output of the entity's ordinary activities in exchange for consideration.
+*   **Contract:** An agreement between two or more parties that creates enforceable rights and obligations. This can be written, oral, or implied by customary business practices.
+*   **Performance Obligation (PO):** A promise in a contract with a customer to transfer a distinct good or service (or a series of distinct goods or services that are substantially the same and have the same pattern of transfer to the customer).
+*   **Transaction Price:** The amount of consideration BharatFinServ Ltd. expects to be entitled to in exchange for transferring promised goods or services to a customer, excluding amounts collected on behalf of third parties.
+*   **Revenue:** Income arising in the course of an entity's ordinary activities.
+
+**4. Policy Details**
+
+**4.1. Application of the Five-Step Model**
+BharatFinServ Ltd. shall recognize revenue by applying the following five-step model as prescribed by Ind AS 115:
+1.  **Identify the contract(s) with a customer:** A contract exists when it has commercial substance, the parties have approved it, their rights and payment terms are identifiable, and collection of consideration is probable.
+2.  **Identify the performance obligations in the contract:** Determine the distinct promises to transfer goods or services to the customer.
+3.  **Determine the transaction price:** Ascertain the total consideration expected in exchange for transferring the promised goods or services, accounting for variable consideration, time value of money, and non-cash consideration.
+4.  **Allocate the transaction price to the performance obligations:** Distribute the transaction price to each distinct performance obligation based on its relative standalone selling price (SSP).
+5.  **Recognize revenue when (or as) the entity satisfies a performance obligation:** Revenue is recognized when (or as) BharatFinServ Ltd. transfers control of the promised goods or services to the customer.
+
+**4.2. Identification of Performance Obligations and Transaction Price**
+*   **Performance Obligations:** A good or service is distinct if: (a) the customer can benefit from the good or service on its own or with other readily available resources, AND (b) the promise to transfer the good or service is separately identifiable from other promises in the contract. For BharatFinServ Ltd., distinct performance obligations may include: loan processing services (NBFC), portfolio management services (Asset Management), software development and ongoing IT maintenance (IT Services), or financial advisory services.
+*   **Transaction Price:** The transaction price includes fixed amounts, estimated variable consideration (e.g., performance-based fees, early payment discounts), and the effect of the time value of money if a significant financing component exists. Variable consideration is estimated using either the 'expected value' or 'most likely amount' method and is recognized only to the extent that it is highly probable that a significant reversal in the amount of cumulative revenue recognized will not occur.
+
+**4.3. Allocation and Satisfaction of Performance Obligations**
+*   **Allocation:** The transaction price is allocated to each distinct performance obligation in proportion to its relative standalone selling price (SSP). If SSP is not directly observable, BharatFinServ Ltd. will estimate it using suitable methods such as adjusted market assessment, expected cost plus a margin, or the residual approach.
+*   **Satisfaction of Performance Obligations:**
+    *   **Over Time:** Revenue is recognized over time if one of the following criteria is met: (a) the customer simultaneously receives and consumes the benefits as BharatFinServ performs; (b) BharatFinServ's performance creates or enhances an asset that the customer controls as the asset is created; or (c) BharatFinServ's performance does not create an asset with an alternative use to the entity, and BharatFinServ has an enforceable right to payment for performance completed to date. Many of BharatFinServ's service contracts, such as ongoing IT support, recurring asset management fees, and continuous advisory services, are typically recognized over time.
+    *   **At a Point in Time:** Revenue is recognized at a point in time when the customer obtains control of the good or service. Indicators of control include: BharatFinServ's present right to payment, legal title to the asset, physical possession of the asset, significant risks and rewards of ownership, and customer acceptance of the asset. Examples include one-off software license sales or completion of specific project milestones in IT services.
+
+**4.4. Contract Costs and Contract Modifications**
+*   **Costs to Obtain a Contract:** Incremental costs of obtaining a contract with a customer (e.g., sales commissions) are capitalized as an asset if they are expected to be recovered. The asset is amortized on a systematic basis consistent with the transfer of the goods or services to which the asset relates.
+*   **Costs to Fulfil a Contract:** Costs incurred to fulfil a contract (e.g., certain IT development costs directly attributable to a specific customer contract) are capitalized if they meet the criteria for asset recognition under Ind AS 115, including that they enhance resources, are expected to be recovered, and relate directly to the contract.
+*   **Contract Modifications:** A contract modification exists when the parties to a contract approve a change that either creates new or changes existing enforceable rights and obligations. Modifications are accounted for either as a separate contract, a termination of the existing contract and creation of a new one, or as part of the existing contract, based on whether the modification adds distinct goods/services at a price reflecting their standalone selling price.
+
+**4.5. Presentation and Disclosure**
+*   **Financial Statement Presentation:** Revenue from contracts with customers will be presented in the Statement of Profit and Loss in accordance with the requirements of Schedule III to the Companies Act, 2013, distinguishing between revenue from operations and other income. Contract assets (e.g., unbilled revenue for satisfied performance obligations), contract liabilities (e.g., advances received for unsatisfied performance obligations), and costs to obtain/fulfil a contract will be presented appropriately on the Balance Sheet.
+*   **Disclosures:** BharatFinServ Ltd. will provide qualitative and quantitative disclosures to enable users of financial statements to understand the nature, amount, timing, and uncertainty of revenue and cash flows arising from contracts with customers, as required by Ind AS 115. This includes disaggregation of revenue by type or segment, information about contract balances, performance obligations, and significant judgments made in applying the standard.
+
+**5. Responsibilities**
+*   **Chief Financial Officer (CFO):** Has overall responsibility for the implementation, adherence, and oversight of this Revenue Recognition Policy.
+*   **Finance Department:** Responsible for the accurate and timely application of Ind AS 115, maintaining proper documentation, ensuring consistent revenue recognition across segments, and preparing all relevant disclosures.
+*   **Business Heads/Unit Controllers:** Responsible for providing accurate and timely contract information to the Finance Department, understanding the revenue recognition implications for their respective business segments (NBFC, Insurance, Asset Management, IT Services), and ensuring internal controls are effective.
+*   **Internal Audit:** Responsible for periodically reviewing compliance with this policy and the effectiveness of related internal controls.
+*   **External Auditors:** Will review the application of this policy as part of the annual statutory audit process.
+
+**6. Review Cycle**
+This policy shall be reviewed annually by the Finance Department and approved by the CFO. Reviews may occur more frequently if there are significant changes in accounting standards (e.g., amendments to Ind AS 115), BharatFinServ Ltd.'s business operations, or relevant regulatory requirements.
+
+**7. Effective Date**
+This policy is effective from April 1, 2024, for all contracts with customers within the scope of Ind AS 115.

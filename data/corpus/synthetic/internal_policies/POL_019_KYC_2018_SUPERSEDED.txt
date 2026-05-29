@@ -1,0 +1,69 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Client KYC Policy 2018 (SUPERSEDED by POL_005 effective 2023-04-01)**
+
+**Document ID:** KYC-POL-2018-001
+**Version:** 1.0
+**Effective Date:** 2018-07-01
+**Superseded By:** POL_005 (Client KYC Policy 2023), effective 2023-04-01
+**Review Cycle:** Annually (prior to supersession)
+**Jurisdiction:** India (IN)
+**Access:** Compliance Officer, Junior Analyst
+
+---
+
+**1. Purpose**
+
+The primary purpose of the BharatFinServ Ltd. Client Know Your Customer (KYC) Policy 2018 was to establish a comprehensive framework for identifying and verifying the identity of all prospective and existing clients, and for monitoring their transactions. This policy was designed to ensure compliance with the regulatory requirements set forth by the Reserve Bank of India (RBI) through its Master Direction – KYC, 2016 (as amended from time to time during its effective period). It aimed to mitigate the risks associated with financial crime, including money laundering (ML) and terrorist financing (TF), thereby protecting the integrity and reputation of BharatFinServ Ltd. This policy also served to ensure that BharatFinServ adhered to its obligations as a regulated entity in India, establishing robust controls to prevent the misuse of its financial services by criminals. While this policy is now superseded, it served as the foundational document for client due diligence practices within BharatFinServ Ltd. during its operational period.
+
+**2. Scope**
+
+This policy applied to all employees, agents, representatives, and business units of BharatFinServ Ltd., its subsidiaries, and associated entities operating within the jurisdiction of India. This included all segments of BharatFinServ's operations, such as Non-Banking Financial Company (NBFC) services, insurance, asset management, and IT services, wherever client interaction and financial transactions occurred. The policy covered all types of clients, including individuals, corporates, partnerships, trusts, and other legal entities, at the point of onboarding and throughout the entire client relationship lifecycle. It stipulated the procedures for client identification, verification, risk assessment, and ongoing monitoring activities until its supersession.
+
+**3. Definitions**
+
+For the purpose of this policy, the following definitions applied:
+
+*   **Anti-Money Laundering (AML):** A set of procedures, laws, and regulations designed to stop the practice of generating income through illegal actions.
+*   **Beneficial Owner (BO):** The natural person(s) who ultimately owns or controls a client and/or the natural person on whose behalf a transaction is being conducted.
+*   **Client/Customer:** A person or entity maintaining an account and/or having a business relationship with BharatFinServ Ltd.
+*   **Countering the Financing of Terrorism (CFT):** Measures taken to combat the funding of terrorist acts and organisations.
+*   **Enhanced Due Diligence (EDD):** Additional scrutiny applied to high-risk clients, beneficial owners, or transactions.
+*   **Know Your Customer (KYC):** The process of verifying the identity of clients, assessing their suitability, and identifying their beneficial owners.
+*   **Politically Exposed Person (PEP):** Individuals who are or have been entrusted with prominent public functions by a foreign country or within India, and their family members or close associates.
+*   **Regulated Entity (RE):** As defined by RBI, including NBFCs, which are subject to the provisions of the PMLA and associated rules and directions.
+
+**4. Policy Details**
+
+BharatFinServ Ltd. implemented the following procedures for client identification, verification, and monitoring:
+
+**4.1 Customer Identification Program (CIP)**
+All clients, whether individual or non-individual, were required to undergo a robust CIP at the time of establishing a relationship. This involved obtaining satisfactory evidence of identity and address. For individuals, acceptable documents included Aadhaar card, PAN card, Passport, Driving License, NREGA Job Card (as per RBI MD KYC 2016). For non-individuals, documents such as Certificate of Incorporation, Memorandum and Articles of Association, Board Resolution, partnership deed, trust deed, and valid official address proof were mandatory. Documents were verified against original copies or through secure digital means where available and permissible by regulation.
+
+**4.2 Beneficial Ownership Identification**
+For all non-individual clients, a systematic process was followed to identify and verify the identity of the Beneficial Owner(s). This involved identifying natural persons who held more than 25% of shares/capital/profits in the case of companies/firms, or 15% in the case of trusts, or who exercised control through other means. Where no natural person met these thresholds, the senior managing official of the entity was identified as the BO. Reasonable steps were taken to verify the identity of such individuals using the same procedures as for individual clients.
+
+**4.3 Risk Categorisation and Enhanced Due Diligence (EDD)**
+Clients were categorised into 'low', 'medium', or 'high' risk based on factors such as their identity, social/financial status, nature of business activity, and country of origin. This risk assessment was conducted at onboarding and periodically reviewed. For high-risk clients, which included PEPs, clients from high-risk jurisdictions, or those engaged in certain types of businesses, Enhanced Due Diligence (EDD) measures were applied. EDD included obtaining additional information on the client's source of funds and wealth, purpose of transaction, increased frequency of monitoring, and obtaining senior management approval for establishing and continuing the relationship.
+
+**4.4 Ongoing Monitoring**
+BharatFinServ Ltd. maintained a system of ongoing monitoring of client accounts and transactions throughout the business relationship. This included scrutiny of transactions to ensure they were consistent with the client's risk profile, source of funds, and business activity. Any deviation or unusual transaction pattern was escalated for further investigation. KYC records were periodically updated, particularly for high-risk clients, and whenever there was a change in client information, beneficial ownership, or business activities.
+
+**4.5 Record Keeping**
+All KYC documents, client identification data, transaction records, and related correspondence were preserved for a minimum period of ten (10) years from the date of the cessation of the business relationship or completion of the transaction, as mandated by the Prevention of Money Laundering Act (PMLA), 2002, and RBI guidelines. Records were stored securely, ensuring confidentiality and integrity, and were readily retrievable for regulatory inspections or internal audits.
+
+**5. Responsibilities**
+
+*   **Board of Directors/Senior Management:** Held ultimate responsibility for approving this policy and overseeing its effective implementation across all entities.
+*   **Compliance Officer (CO):** Was responsible for the overall implementation and enforcement of this policy, providing guidance, conducting training, and reporting breaches or suspicious activities to the relevant authorities (e.g., FIU-IND).
+*   **Business Units/Front-line Staff:** Were responsible for the accurate and timely collection of KYC documents, adherence to the CIP, BO identification, and transaction monitoring procedures for their respective clients. They were the first line of defence.
+*   **Internal Audit:** Was responsible for periodically reviewing the effectiveness of the KYC processes and controls and reporting findings to the Board/Audit Committee.
+*   **Legal Department:** Advised on regulatory changes and ensured policy alignment with applicable laws and regulations.
+
+**6. Review Cycle**
+
+This policy was subject to an annual review by the Compliance Department, or more frequently if significant changes in regulatory requirements (e.g., amendments to RBI MD KYC 2016 or PMLA), internal processes, or risk profiles necessitated such a review. The last review under this policy occurred prior to the formulation and subsequent supersession by POL_005.
+
+**7. Effective Date**
+
+This Client KYC Policy 2018 became effective on **July 1, 2018**. It remained in force and governed all client KYC procedures within BharatFinServ Ltd. until its formal supersession by **POL_005 (Client KYC Policy 2023)**, which became effective on **April 1, 2023**.

@@ -1,0 +1,82 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Capital Adequacy Policy for NBFC Subsidiary**
+
+**Document ID:** BFS/POL/NBFC/CA/2024/001
+**Version:** 1.0
+**Effective Date:** January 1, 2024
+**Review Cycle:** Annually, or as required by regulatory changes
+**Access:** Chief Financial Officer, Compliance Officer, Board of Directors
+
+---
+
+**1. Purpose**
+
+This Capital Adequacy Policy ("the Policy") establishes the framework for managing the capital of BharatFinServ NBFC Ltd. (hereinafter referred to as "the NBFC Subsidiary") to ensure its ongoing financial soundness, stability, and compliance with all applicable regulatory requirements. The primary objective is to maintain adequate capital levels commensurate with the risks undertaken by the NBFC Subsidiary, protect depositors' and creditors' interests, absorb potential losses, and support future business growth while enhancing stakeholder confidence. This Policy aligns with the Reserve Bank of India (RBI) prudential norms for Non-Banking Financial Companies (NBFCs).
+
+**2. Scope**
+
+This Policy applies to all operations, business activities, and financial exposures of BharatFinServ NBFC Ltd. It covers the calculation, monitoring, reporting, and management of capital adequacy as per the regulatory guidelines issued by the Reserve Bank of India. All employees, management, and the Board of Directors of the NBFC Subsidiary are bound by the provisions of this Policy.
+
+**3. Definitions**
+
+*   **BharatFinServ NBFC Ltd. (NBFC Subsidiary):** The Non-Banking Financial Company subsidiary of BharatFinServ Ltd., regulated by the Reserve Bank of India.
+*   **Capital to Risk-weighted Assets Ratio (CRAR):** The ratio of the NBFC Subsidiary's capital (Tier I and Tier II) to its total risk-weighted assets (RWA).
+*   **Tier I Capital (Core Capital):** Equity capital, free reserves, statutory reserves, capital reserves, and other disclosed reserves. It represents the most permanent and readily available form of capital to absorb losses.
+*   **Tier II Capital (Supplementary Capital):** Revaluation reserves, general provisions, specific provisions (to the extent permitted), hybrid capital instruments, and subordinated debt. It can absorb losses in a winding-up scenario.
+*   **Risk-Weighted Assets (RWA):** The sum of the risk-weighted values of all on-balance sheet and off-balance sheet exposures, calculated by applying prescribed risk weights to various asset classes based on their perceived riskiness.
+*   **RBI Master Direction – Reserve Bank of India (Prudential Regulations for NBFCs) Directions, 2023 (RBI MD NBFCs Prudential 2023):** The comprehensive regulatory framework governing prudential norms for NBFCs in India.
+
+**4. Policy Details**
+
+**4.1. Minimum Capital to Risk-Weighted Assets Ratio (CRAR)**
+
+The NBFC Subsidiary shall at all times maintain a minimum CRAR as prescribed by the Reserve Bank of India for its specific classification (e.g., Base Layer, Middle Layer, Upper Layer NBFC) under the regulatory framework. Currently, the minimum CRAR for applicable NBFCs is **15%**, with a minimum Tier I Capital of **10%** of RWA. The NBFC Subsidiary shall endeavour to maintain a buffer above the minimum regulatory requirement to provide resilience against unforeseen adverse events and facilitate strategic growth. The specific CRAR thresholds and capital components will be updated in line with amendments to the RBI MD NBFCs Prudential 2023.
+
+**4.2. Capital Components and Calculation**
+
+The NBFC Subsidiary's capital will be classified into Tier I and Tier II Capital strictly in accordance with the definitions and methodologies prescribed in the RBI MD NBFCs Prudential 2023.
+*   **Tier I Capital:** Shall include paid-up equity capital, share premium, statutory reserves, capital reserves (representing surplus arising out of sale of assets), and other disclosed free reserves. Intangible assets and losses shall be deducted from Tier I capital.
+*   **Tier II Capital:** Shall include revaluation reserves (discounted by 55%), general provisions and loss reserves (up to a specified percentage of RWA), hybrid capital instruments, and subordinated debt. The aggregate of Tier II Capital eligible for inclusion in CRAR shall not exceed 100% of Tier I Capital.
+All calculations will adhere to the accounting standards and regulatory adjustments specified by the RBI.
+
+**4.3. Risk-Weighted Assets (RWA) Calculation**
+
+The NBFC Subsidiary shall calculate its total RWA by applying the risk weights specified in the RBI MD NBFCs Prudential 2023 to its on-balance sheet and off-balance sheet exposures.
+*   **Credit Risk:** Assets will be risk-weighted based on their nature (e.g., standard assets, sub-standard assets, doubtful assets, loss assets), counterparty credit rating, and the existence of eligible credit risk mitigants. Specific provisions will be made for non-performing assets as per extant regulations.
+*   **Market Risk:** For NBFCs with trading books or significant exposures to interest rate, foreign exchange, or equity price risks, appropriate capital charges will be calculated and incorporated into RWA, as specified by RBI guidelines.
+*   **Operational Risk:** Where applicable, the capital charge for operational risk will be computed as per RBI directives, typically as a percentage of gross income or other specified methodologies.
+The methodology for RWA calculation will be meticulously documented and periodically reviewed by the Risk Management Department and the Audit Committee.
+
+**4.4. Capital Planning, Stress Testing, and Internal Capital Adequacy Assessment Process (ICAAP)**
+
+The NBFC Subsidiary shall implement a robust capital planning process, projecting capital requirements for at least three years, considering business growth plans, asset quality trends, and profit retention strategies. This process will include:
+*   **Stress Testing:** Regular stress tests will be conducted to assess the NBFC Subsidiary's resilience to various adverse scenarios (e.g., severe deterioration in asset quality, interest rate shocks, economic downturns). The results will inform capital planning and potential capital contingency measures.
+*   **ICAAP:** The NBFC Subsidiary shall maintain an Internal Capital Adequacy Assessment Process (ICAAP) to identify, measure, monitor, and manage its capital adequacy in relation to its risk profile. The ICAAP will consider all material risks, not just those covered by the Pillar 1 regulatory capital requirements, and will be reviewed and approved by the Board annually.
+
+**4.5. Reporting, Monitoring, and Disclosure**
+
+The NBFC Subsidiary shall establish clear procedures for the internal monitoring and external reporting of its capital adequacy position.
+*   **Internal Reporting:** Monthly reports on CRAR, capital components, and RWA shall be submitted to the Asset-Liability Management Committee (ALCO), Risk Management Committee, and Chief Financial Officer. Quarterly reports, including ICAAP updates and stress test results, shall be presented to the Board of Directors and its sub-committees.
+*   **Regulatory Reporting:** All statutory returns related to capital adequacy shall be submitted to the RBI within the prescribed timelines, in the format specified by the regulator.
+*   **Disclosure:** The NBFC Subsidiary shall adhere to all disclosure requirements related to capital adequacy as mandated by the RBI and other applicable regulations, ensuring transparency for stakeholders.
+
+**5. Responsibilities**
+
+*   **Board of Directors:** Overall responsibility for approving and overseeing the implementation of this Policy, ensuring the NBFC Subsidiary maintains adequate capital, and reviewing the ICAAP and stress test results.
+*   **Audit Committee:** Reviews the integrity of the financial reporting, capital adequacy calculations, and internal controls related to capital management.
+*   **Chief Financial Officer (CFO):** Responsible for the accurate calculation, monitoring, and reporting of CRAR, managing the capital structure, and leading the capital planning process.
+*   **Compliance Officer:** Ensures adherence to all regulatory requirements pertaining to capital adequacy, including reporting timelines and disclosures.
+*   **Risk Management Department:** Identifies, assesses, and monitors all material risks, develops and implements stress testing scenarios, and provides input for the ICAAP.
+*   **Treasury Department:** Manages liquidity and funding, coordinating with the CFO on capital raising activities.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed annually by the Chief Financial Officer and the Compliance Officer, in consultation with the Risk Management Department. Any amendments or updates necessitated by changes in regulatory requirements (specifically RBI MD NBFCs Prudential 2023), business strategy, or internal processes shall be submitted to the Board of Directors for approval. Ad-hoc reviews may be conducted as required.
+
+**7. Effective Date**
+
+This Policy is effective from January 1, 2024.
+
+---
+**[End of Policy Document]**

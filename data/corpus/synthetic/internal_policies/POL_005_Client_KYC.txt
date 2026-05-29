@@ -1,0 +1,64 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**Client KYC and Customer Due Diligence Policy**
+
+**Document ID:** BFS/COMPL/KYC/001
+**Version:** 1.0
+**Effective Date:** October 1, 2024
+
+---
+
+**1. Purpose**
+
+This Client KYC (Know Your Customer) and Customer Due Diligence (CDD) Policy ("the Policy") sets out the framework for BharatFinServ Ltd. ("BharatFinServ" or "the Company") to prevent its services from being used for money laundering (ML), terrorist financing (TF), fraud, or other illicit activities. The Policy ensures compliance with statutory and regulatory obligations, notably the Prevention of Money Laundering Act, 2002 (PMLA 2002) and its associated rules, and the Reserve Bank of India (RBI) Master Direction – Know Your Customer (MD KYC) 2023 (as amended from time to time). By establishing robust KYC and CDD procedures, BharatFinServ aims to protect its reputation, maintain financial integrity, and contribute to the global fight against financial crime across all its business operations, including NBFC, insurance, asset management, and IT services.
+
+**2. Scope**
+
+This Policy applies to all clients, prospective clients, and related parties (e.g., beneficial owners, authorized signatories) across all of BharatFinServ's entities, divisions, and subsidiaries, irrespective of their geographical location, including operations in India, GIFT City IFSC, and the Frankfurt EU subsidiary. It encompasses all employees, contractual staff, and third-party agents involved in client onboarding, relationship management, transaction processing, and monitoring activities. The Policy covers all stages of the client relationship, from initial engagement and onboarding through ongoing monitoring and termination.
+
+**3. Definitions**
+
+*   **KYC (Know Your Customer):** The process of verifying the identity of clients and understanding their activities and risk profiles.
+*   **CDD (Customer Due Diligence):** The comprehensive process of gathering and verifying client information, assessing ML/TF risks, and monitoring the client relationship.
+*   **EDD (Enhanced Due Diligence):** Additional and more stringent measures applied to clients categorized as high-risk.
+*   **PEP (Politically Exposed Person):** Individuals who are or have been entrusted with prominent public functions by a foreign country, domestic PEPS, or international organizations.
+*   **UBO (Ultimate Beneficial Owner):** The natural person(s) who ultimately own or control a client and/or the natural person(s) on whose behalf a transaction is being conducted.
+*   **ML/TF (Money Laundering / Terrorist Financing):** The process of concealing the origins of illegally obtained money/funds, or providing funds for terrorist activities.
+*   **FIU-IND (Financial Intelligence Unit - India):** The central national agency responsible for receiving, processing, analyzing, and disseminating information relating to suspect financial transactions.
+
+**4. Policy Details**
+
+**a. Customer Identification Program (CIP)**
+BharatFinServ shall establish and maintain a rigorous CIP to verify the identity of every new client before commencing a business relationship. This includes obtaining and verifying identity and address details for individuals (e.g., PAN, Aadhaar, Passport, driving license) and legal entity registration documents (e.g., Certificate of Incorporation, Memorandum and Articles of Association, PAN) for non-individual clients. Verification must be undertaken through reliable, independent sources (e.g., official government databases, certified copies). Crucially, the Ultimate Beneficial Owner (UBO) for all clients, particularly legal persons and trusts, must be identified and verified.
+
+**b. Risk Assessment and Categorization**
+A risk-based approach shall be adopted for all clients, categorizing them as low, medium, or high-risk based on an assessment of various factors. These factors include client type (e.g., individual, corporate, trust), geographical location of operations, nature of business, source of funds, purpose of the relationship, payment channels, and the products/services utilized. Higher-risk clients will be subjected to more stringent CDD measures and more frequent monitoring. Client risk profiles shall be reviewed periodically and updated promptly upon any change in circumstances.
+
+**c. Ongoing Monitoring of Client Relationships**
+BharatFinServ commits to continuous monitoring of client relationships and transactions. This involves scrutinizing transactions to ensure they are consistent with the client's known business activities, risk profile, and source of funds. Regular reviews of client accounts and KYC documents (KYC refresh) will be conducted, particularly for higher-risk categories. Any unusual or suspicious patterns of activity, significant changes in client behaviour, or adverse media mentions related to the client must be promptly escalated to the Compliance Officer (AML Officer) for further investigation.
+
+**d. Enhanced Due Diligence (EDD)**
+EDD measures shall be applied to all high-risk clients, including but not limited to Politically Exposed Persons (PEPs), clients from high-risk jurisdictions, those involved in high-value or complex transactions, and clients with opaque ownership structures. EDD will involve additional steps such as obtaining senior management approval for onboarding, verifying the source of wealth and source of funds, gathering more extensive background information, and conducting more frequent and intensive ongoing monitoring.
+
+**e. Record Keeping and Reporting**
+All records pertaining to client identification, account information, transactions, and correspondence, including the data and documents used for CDD, must be maintained for a period of at least five years after the business relationship is terminated, in accordance with PMLA 2002 and RBI MD KYC 2023. Any unusual or suspicious transactions identified by employees must be immediately reported to the Compliance Officer (AML Officer) for review. If, upon review, a transaction is deemed suspicious, a Suspicious Transaction Report (STR) will be filed with FIU-IND within the prescribed timelines. Cash Transaction Reports (CTRs) will also be filed as required.
+
+**5. Responsibilities**
+
+*   **Board of Directors/Senior Management:** Provide overall oversight, approve the Policy, and ensure adequate resources are allocated for its effective implementation.
+*   **Compliance Officer (AML Officer):** Responsible for the effective implementation of this Policy, providing guidance, conducting staff training, filing STRs/CTRs with FIU-IND, and liaising with regulatory authorities.
+*   **Business Heads:** Ensure that their respective business units and employees comply with this Policy and act as the first line of defense in identifying and escalating potential ML/TF risks.
+*   **Client-Facing Staff (Junior/Senior Analysts):** Responsible for collecting accurate client information, performing initial verification, conducting ongoing monitoring, and promptly reporting any suspicious activities or concerns to the Compliance Officer.
+*   **Internal Audit:** Periodically review the effectiveness and adherence to this Policy and related procedures, reporting findings to the Audit Committee and Board.
+
+**6. Review Cycle**
+
+This Policy shall be reviewed at least annually by the Compliance Department, in consultation with relevant stakeholders. Reviews will also be triggered by significant changes in regulatory requirements (e.g., amendments to PMLA 2002 or RBI MD KYC 2023), internal operational changes, or significant ML/TF incidents impacting the financial sector.
+
+**7. Effective Date**
+
+This Policy is effective from October 1, 2024, and supersedes all previous KYC/CDD policies and guidelines.
+
+---
+
+**Access:** senior_analyst, compliance_officer, junior_analyst

@@ -1,0 +1,103 @@
+INTERNAL - BHARATFINSERV LTD. - FICTIONAL
+
+**WHISTLEBLOWER AND VIGIL MECHANISM POLICY**
+
+**Policy ID:** BFL/CORP/PLCY/WB/V01
+**Effective Date:** 26 October 2023
+**Review Cycle:** Biennial
+**Version:** 1.0
+
+---
+
+**1. PURPOSE**
+
+BharatFinServ Ltd. (hereinafter referred to as "the Company") is committed to conducting its business with the highest standards of integrity, transparency, and ethical conduct. This Whistleblower and Vigil Mechanism Policy ("the Policy") is established to provide a formal channel for all employees and Directors of the Company, including those in its subsidiaries (Mumbai HQ, Bengaluru tech, GIFT City IFSC, Frankfurt EU subsidiary), to report genuine concerns about unethical behaviour, actual or suspected fraud, violation of laws, rules, regulations, or the Company’s Code of Conduct and policies.
+
+The primary objective of this Policy is to:
+a. Establish a robust vigil mechanism in compliance with the provisions of Section 177 of the Companies Act, 2013, and Regulation 22 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ("SEBI LODR Reg 22").
+b. Ensure that the Company maintains a safe and secure environment for employees and Directors to raise concerns without fear of reprisal or victimization.
+c. Promote a culture of accountability and transparency within the organization.
+d. Facilitate appropriate and timely investigation into all reported matters and take necessary corrective actions.
+
+**2. SCOPE**
+
+This Policy applies to all permanent, contractual, and temporary employees, Directors, officers, and members of the senior management of BharatFinServ Ltd. and its subsidiaries, both within India and internationally. It also extends to any vendor, business associate, consultant, or third-party partner of the Company who may become aware of reportable matters concerning the Company.
+
+The Policy covers a wide range of reportable matters, including but not limited to:
+*   Fraudulent financial reporting or other financial irregularities.
+*   Misuse or theft of Company assets.
+*   Unethical or improper conduct, including conflicts of interest.
+*   Bribery, corruption, or kickbacks.
+*   Violation of legal or regulatory obligations.
+*   Breach of the Company’s Code of Conduct or internal policies.
+*   Harassment, discrimination, or workplace safety violations.
+*   Any other illegal or unethical conduct that may impact the Company's reputation or financial well-being.
+
+This Policy is not intended to address general employee grievances or complaints related to terms and conditions of employment, which should be raised through the Company's Human Resources grievance redressal mechanisms.
+
+**3. DEFINITIONS**
+
+*   **Company:** BharatFinServ Ltd., its subsidiaries, and any other entity controlled by it.
+*   **Audit Committee:** The Audit Committee of the Board of Directors of BharatFinServ Ltd., constituted in accordance with Section 177 of the Companies Act, 2013, and SEBI LODR Reg 22.
+*   **Protected Disclosure:** A concern raised by a Whistleblower regarding any Reportable Matter under this Policy, made in good faith.
+*   **Subject:** The person against whom a Protected Disclosure is made.
+*   **Vigil Mechanism:** The mechanism established by this Policy for Directors and employees to report genuine concerns.
+*   **Whistleblower/Complainant:** An employee or Director who makes a Protected Disclosure under this Policy.
+*   **Whistleblower Officer:** The Company Secretary or the Compliance Officer, designated to receive and process Protected Disclosures initially, acting under the guidance and oversight of the Audit Committee.
+
+**4. POLICY DETAILS**
+
+**4.1. Eligibility and Reportable Matters**
+Any employee, Director, or covered third-party who becomes aware of a Reportable Matter is eligible to make a Protected Disclosure. The disclosure must be made in good faith, based on reasonable belief, and not for personal gain or malicious intent. The focus of the disclosure must be on protecting the Company’s interests and upholding its values.
+
+**4.2. Reporting Mechanism**
+Protected Disclosures should preferably be made in writing, via email or physical letter, to the Whistleblower Officer (Company Secretary or Compliance Officer). In cases where the Whistleblower believes the Whistleblower Officer is involved in the alleged misconduct, the disclosure should be made directly to the Chairman of the Audit Committee.
+
+Contact details for reporting:
+*   **Whistleblower Officer (Company Secretary/Compliance Officer):**
+    *   Email: whistleblower@bharatfinserv.com
+    *   Address: [Company Secretary's Office Address], BharatFinServ Ltd., Mumbai, India.
+*   **Chairman, Audit Committee:**
+    *   Email: auditcommittee.chairman@bharatfinserv.com
+    *   Address: [Audit Committee Office Address], BharatFinServ Ltd., Mumbai, India.
+
+The disclosure should include sufficient details such as the nature of the concern, names of individuals involved (if known), dates, locations, and any supporting evidence. While anonymous disclosures are permitted, the Company encourages Whistleblowers to identify themselves to facilitate effective investigation.
+
+**4.3. Protection to Whistleblowers**
+BharatFinServ Ltd. is committed to protecting Whistleblowers from any form of discrimination, retaliation, or victimization (e.g., adverse employment action such as termination, demotion, transfer, harassment, or threats) as a result of making a Protected Disclosure in good faith. The identity of the Whistleblower will be kept confidential to the maximum extent possible, consistent with the need to conduct a thorough investigation and comply with legal requirements.
+However, this protection does not extend to Whistleblowers who make disclosures known to be false, frivolous, or malicious. Such actions may lead to disciplinary action against the Whistleblower.
+
+**4.4. Investigation Process**
+Upon receipt of a Protected Disclosure, the Whistleblower Officer or the Audit Committee Chairman will:
+a. **Acknowledge Receipt:** Acknowledge receipt of the disclosure within seven (7) working days, wherever the identity of the Whistleblower is known.
+b. **Initial Assessment:** The Audit Committee (or Whistleblower Officer under its guidance) will conduct an initial assessment to determine if the disclosure falls within the scope of this Policy.
+c. **Investigation:** If warranted, the Audit Committee will authorize a thorough and impartial investigation. This may involve forming an investigation panel, engaging internal or external experts, or assigning the task to specific individuals.
+d. **Confidentiality:** All parties involved in the investigation, including the Whistleblower, Subject, and investigators, must maintain strict confidentiality to protect the integrity of the process and the individuals involved.
+e. **Fair Hearing:** The Subject of a Protected Disclosure will be provided an adequate opportunity to present their case before any adverse conclusions are reached.
+f. **Timelines:** Investigations will be conducted expeditiously, and efforts will be made to complete them within a reasonable timeframe (e.g., 90 days from the date of initiating the investigation), subject to the complexity of the matter.
+
+**4.5. Decision and Action**
+Based on the investigation report, the Audit Committee will review the findings and recommend appropriate action to the Board of Directors. Actions may include:
+*   Disciplinary measures against the Subject, ranging from a warning to termination of employment, and potential legal action.
+*   Remedial measures to prevent recurrence of similar incidents.
+*   Improvements to internal controls or policies.
+*   Reporting to regulatory authorities if required by law.
+The Whistleblower will be informed of the general outcome of the investigation, without disclosing confidential details related to disciplinary actions taken or personal information of other individuals.
+
+**5. RESPONSIBILITIES**
+
+*   **Board of Directors:** Has overall responsibility for overseeing the implementation and effectiveness of this Policy.
+*   **Audit Committee:** Responsible for administering, monitoring, reviewing, and ensuring adherence to this Policy. It oversees all investigations, ensures Whistleblower protection, and reports significant findings to the Board. The Audit Committee shall have direct access to internal and external resources for investigations.
+*   **Whistleblower Officer (Company Secretary/Compliance Officer):** Acts as the primary point of contact for receiving Protected Disclosures, maintains records of disclosures, and assists the Audit Committee in its duties under this Policy.
+*   **All Employees and Directors:** Have a responsibility to understand and comply with this Policy and to report genuine concerns about Reportable Matters.
+*   **Heads of Departments/Business Units:** Are responsible for promoting awareness of this Policy within their teams and cooperating with investigations.
+
+**6. REVIEW CYCLE**
+
+This Policy shall be reviewed biennially by the Audit Committee and approved by the Board of Directors, or earlier if necessitated by changes in regulatory requirements (e.g., Companies Act, SEBI LODR Reg 22), significant incidents, or Board directives.
+
+**7. EFFECTIVE DATE**
+
+This Policy is effective from 26 October 2023.
+
+---
