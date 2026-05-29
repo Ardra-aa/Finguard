@@ -1,4 +1,19 @@
+// ==========================================================================
 // src/context/AuthContext.js
+// Authentication Context and Demo User Definitions
+// ==========================================================================
+// Provides React Context for user authentication state.
+//
+// DEMO_USERS: Array of 8 pre-defined BharatFinServ employees with different
+//   roles (junior_analyst, senior_analyst, compliance_officer, legal_counsel,
+//   cfo, ceo) and jurisdictions (IN, SG, EU).
+//
+// AuthProvider exports:
+//   user      -- Currently logged-in demo user object (or null)
+//   sessionId -- Unique session ID for leakage tracking (format: sess-{email}-{timestamp})
+//   login()   -- Set the active user and generate a new session ID
+//   logout()  -- Clear user and session state
+// ==========================================================================
 import React, { createContext, useContext, useState } from "react";
 
 // 8 demo users from the implementation doc

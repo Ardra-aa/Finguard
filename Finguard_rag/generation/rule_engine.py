@@ -139,7 +139,7 @@ RULES: List[DeonticRule] = [
             "when acquiring shares beyond the threshold."
         ),
         patterns=[
-            r"(?:avoid|bypass|skip|no\s+need\s+for)\s+(?:the\s+)?(?:open|mandatory)\s+offer",
+            r"(?:avoid|bypass|skip|no\s+need\s+for)\s+(?:the\s+)?(?:mandatory\s+open\s+offer|(?:open|mandatory)\s+offer)",
             r"acquire\s+(?:shares|stake)\s+(?:without|bypassing)\s+(?:open\s+)?offer",
         ],
         severity="HIGH",

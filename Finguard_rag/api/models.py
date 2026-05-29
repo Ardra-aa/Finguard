@@ -1,5 +1,16 @@
 """
-M11 — FastAPI Request/Response Models
+M11 -- FastAPI Request/Response Models
+============================================================================
+Pydantic models that define the API contract between the React frontend
+and the FastAPI backend.  All fields are validated automatically by FastAPI.
+
+Models:
+    QueryRequest    -- Incoming query payload from the frontend
+    QueryResponse   -- Full pipeline response including compliance data
+    SourceDoc       -- Summarised source document for citation display
+    LeakageReport   -- Per-session leakage audit report
+    HealthResponse  -- Health check response
+    SessionSummary  -- Admin dashboard session overview
 """
 from __future__ import annotations
 from pydantic import BaseModel

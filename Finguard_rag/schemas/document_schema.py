@@ -1,4 +1,17 @@
-# finguard_rag/schemas/document_schema.py
+"""
+Finguard_rag/schemas/document_schema.py
+============================================================================
+Shared data contracts used by ALL modules in the FinGuard-RAG pipeline.
+Every inter-module API call uses one of these dataclasses.
+
+Dataclasses:
+    FinancialDocument   -- A single regulatory document chunk with metadata
+    UserContext         -- The authenticated user's session context
+    RankedDocument      -- A retrieved document with relevance and risk scores
+    ComplianceResponse  -- The full generation output with compliance status
+    DefenseResult       -- Combined leakage + conflict detection output
+    AgentResponse       -- Multi-step agent output with execution trace
+"""
 from dataclasses import dataclass, field
 from typing import List, Optional
 from datetime import date

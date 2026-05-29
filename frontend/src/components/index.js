@@ -1,14 +1,24 @@
+// ==========================================================================
 // src/components/index.js
-// All shared UI components
+// Shared UI Components for FinGuard-RAG Frontend
+// ==========================================================================
+// Exports:
+//   ComplianceBadge  -- Colour-coded PASS/WARNING/FAIL badge
+//   LeakageAlert     -- Leakage risk notification banner
+//   ConflictNotice   -- Jurisdiction conflict warning with recommendations
+//   SourceCitations  -- Document citation pills with jurisdiction info
+//   AgentTrace       -- Collapsible agent reasoning trace viewer
+//   Spinner          -- Loading animation
+// ==========================================================================
 
 import React from "react";
 
 // ── ComplianceBadge ─────────────────────────────────────────────────────────
 export function ComplianceBadge({ status }) {
   const map = {
-    PASS:    { bg: "#d1fae5", color: "#065f46", label: "✓ PASS" },
-    WARNING: { bg: "#fef3c7", color: "#92400e", label: "⚠ WARNING" },
-    FAIL:    { bg: "#fee2e2", color: "#991b1b", label: "✗ FAIL" },
+    PASS:    { bg: "#d1fae5", color: "#065f46", label: "[PASS]" },
+    WARNING: { bg: "#fef3c7", color: "#92400e", label: "[WARNING]" },
+    FAIL:    { bg: "#fee2e2", color: "#991b1b", label: "[FAIL]" },
     UNKNOWN: { bg: "#f3f4f6", color: "#374151", label: "? UNKNOWN" },
   };
   const s = map[status] || map.UNKNOWN;
@@ -34,7 +44,7 @@ export function LeakageAlert({ risk, details = [] }) {
       borderRadius: 8, padding: "12px 16px", marginBottom: 12,
     }}>
       <strong style={{ color: isHigh ? "#991b1b" : "#92400e" }}>
-        {isHigh ? "🚨 HIGH Leakage Risk" : "⚠ LOW Leakage Risk"}
+        {isHigh ? "[ALERT] HIGH Leakage Risk" : "[WARN] LOW Leakage Risk"}
       </strong>
       {details.map((d, i) => (
         <p key={i} style={{ margin: "4px 0 0", fontSize: 13, color: "#374151" }}>{d}</p>
@@ -51,7 +61,7 @@ export function ConflictNotice({ detected, conflictingRules = [], recommendation
       background: "#eff6ff", border: "1px solid #bfdbfe",
       borderRadius: 8, padding: "12px 16px", marginBottom: 12,
     }}>
-      <strong style={{ color: "#1e40af" }}>⚖ Jurisdiction Conflict Detected</strong>
+      <strong style={{ color: "#1e40af" }}>[CONFLICT] Jurisdiction Conflict Detected</strong>
       <ul style={{ margin: "8px 0 0", paddingLeft: 18 }}>
         {conflictingRules.map((r, i) => (
           <li key={i} style={{ fontSize: 13, color: "#374151", marginBottom: 4 }}>{r}</li>
@@ -81,7 +91,7 @@ export function SourceCitations({ sources = [] }) {
             background: "#f3f4f6", border: "1px solid #e5e7eb",
             borderRadius: 6, padding: "3px 10px", fontSize: 12, color: "#374151",
           }}>
-            📄 {s.doc_id}
+            [DOC] {s.doc_id}
             <span style={{
               marginLeft: 6, fontSize: 11, color: "#6b7280",
             }}>
@@ -110,7 +120,7 @@ export function AgentTrace({ trace = [] }) {
           fontSize: 12, color: "#374151",
         }}
       >
-        {open ? "▲ Hide" : "▼ Show"} Agent Trace ({trace.length} steps)
+        {open ? "[-] Hide" : "[+] Show"} Agent Trace ({trace.length} steps)
       </button>
       {open && (
         <div style={{ marginTop: 8, borderLeft: "3px solid #e5e7eb", paddingLeft: 12 }}>

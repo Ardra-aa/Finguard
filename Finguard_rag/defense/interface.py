@@ -1,24 +1,29 @@
 """
 defense/interface.py
-====================
-PUBLIC INTERFACE FOR M8 + M9.
+============================================================================
+PUBLIC INTERFACE FOR M8 (Leakage Detection) + M9 (Conflict Resolution).
 
-Teammates (Amala's retrieval, Devna's generation) call ONLY this function.
-They must NOT import LeakageDetector or ConflictResolver directly.
+This is the ONLY function that other modules should call to invoke the
+defence layer. Do NOT import LeakageDetector or ConflictResolver directly.
 
 Usage:
-    from Finguard_rag.defense.interface import defend, DefenseResult
+    from Finguard_rag.defense.interface import defend
 
-    result: DefenseResult = defend(
+    result = defend(
         session_id   = ctx.session_id,
         user_id      = ctx.user_id,
         role         = ctx.role,
         query        = query_text,
         response     = generated_answer,
-        source_docs  = ranked_docs,          # List[RankedDocument]
+        source_docs  = ranked_docs,
         user_context = ctx,
         mock_mode    = False,
     )
+
+Execution order:
+    1. M8 LeakageDetector.detect()  -- checks query + session for leakage
+    2. M9 ConflictResolver.resolve() -- checks source docs for jurisdiction conflicts
+    3. Merges results into a single dict
 """
 
 from __future__ import annotations

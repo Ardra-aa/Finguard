@@ -1,13 +1,19 @@
 """
-M8 — Role-Inference Leakage Detector
+M8 -- Role-Inference Leakage Detector
+============================================================================
 Detects cross-query inference attacks within a single session.
 
 A junior_analyst might ask individually-permitted questions that,
 combined over a session, reconstruct salary/board data restricted to ceo/cfo.
 This module catches that pattern.
 
-Enhanced: Now includes QUERY-LEVEL sensitivity detection that fires BEFORE
-RBAC filtering, so even if docs are blocked, the query intent is flagged.
+Detection layers (checked in order):
+  1. Cross-Role Salary Patterns -- explicit "salary of X" phrases
+  2. Query-Level Sensitivity   -- keyword match against SENSITIVE_PATTERNS
+  3. Session-Level Graph       -- embedding similarity across all session queries
+
+Layer 1 and 2 fire BEFORE document retrieval, so even if all salary
+documents are RBAC-blocked, the query intent itself is flagged and blocked.
 """
 
 from __future__ import annotations
@@ -29,8 +35,9 @@ except Exception:
 # Query-Level Sensitivity Detection (fires BEFORE RBAC / doc retrieval)
 # ---------------------------------------------------------------------------
 SENSITIVE_PATTERNS = {
-    "compensation": ["salary", "ctc", "band 5", "band 6", "package",
-                     "compensation", "pay grade", "pay scale", "salary band"],
+    "compensation": ["salary", "salaries", "ctc", "band 5", "band 6", "package",
+                     "compensation", "pay grade", "pay scale", "salary band",
+                     "remuneration"],
     "equity":       ["esop", "vesting", "stock option", "equity grant",
                      "rsu", "share allocation"],
     "bonus":        ["bonus", "incentive", "variable pay", "performance pay",

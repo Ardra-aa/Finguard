@@ -1,1 +1,1 @@
-# tests package
+# FinGuard-RAG Test Suite

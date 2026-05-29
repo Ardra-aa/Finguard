@@ -1,4 +1,16 @@
+// ==========================================================================
 // src/App.js
+// FinGuard-RAG Application Shell
+// ==========================================================================
+// Root component that provides:
+//   - AuthProvider context wrapping the entire application
+//   - Top navigation bar with "Query" and "Admin" tabs
+//   - User info display and sign-out button
+//   - Page routing: LoginPage (unauthenticated), QueryPage, AdminPage
+//
+// Admin tab is only visible to privileged roles:
+//   ceo, cfo, compliance_officer, legal_counsel
+// ==========================================================================
 import React, { useState } from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import { LoginPage }  from "./pages/LoginPage";

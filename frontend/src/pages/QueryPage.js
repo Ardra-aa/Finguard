@@ -1,4 +1,18 @@
+// ==========================================================================
 // src/pages/QueryPage.js
+// Main Compliance Query Interface
+// ==========================================================================
+// Handles the full query lifecycle:
+//   1. User types a compliance question in the textarea
+//   2. On submit, sends POST /query to the FastAPI backend
+//   3. Displays the response with compliance badge, answer, sources,
+//      leakage alerts, conflict notices, and agent trace
+//   4. Maintains a clickable history of the last 10 queries
+//
+// Error handling:
+//   - HTTP 403 (blocked): Shows red "Query Blocked" banner with details
+//   - Other errors: Shows amber warning banner
+// ==========================================================================
 import React, { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { postQuery } from "../api/client";
@@ -55,7 +69,7 @@ export function QueryPage() {
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={e => { if (e.key === "Enter" && e.ctrlKey) handleSubmit(); }}
-          placeholder="Ask a compliance question… (Ctrl+Enter to submit)"
+          placeholder="Ask a compliance question... (Ctrl+Enter to submit)"
           rows={3}
           style={{
             flex: 1, borderRadius: 8, border: "1px solid #cbd5e1",
@@ -73,7 +87,7 @@ export function QueryPage() {
             opacity: (loading || !query.trim()) ? 0.5 : 1,
           }}
         >
-          {loading ? "…" : "Ask"}
+          {loading ? "..." : "Ask"}
         </button>
       </div>
 
@@ -86,7 +100,7 @@ export function QueryPage() {
           background: "#fee2e2", border: "1px solid #fca5a5",
           borderRadius: 8, padding: "16px 20px",
         }}>
-          <strong style={{ color: "#991b1b" }}>🚨 Query Blocked</strong>
+          <strong style={{ color: "#991b1b" }}>[BLOCKED] Query Blocked</strong>
           <p style={{ margin: "6px 0 0", fontSize: 14, color: "#374151" }}>
             {error.detail?.error}
           </p>
@@ -102,7 +116,7 @@ export function QueryPage() {
           background: "#fef3c7", border: "1px solid #fcd34d",
           borderRadius: 8, padding: 14, color: "#92400e", fontSize: 14,
         }}>
-          ⚠ {error.detail}
+          [!] {error.detail}
         </div>
       )}
 

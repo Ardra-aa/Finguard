@@ -1,4 +1,14 @@
+// ==========================================================================
 // src/pages/AdminPage.js
+// Session Monitoring Dashboard (Admin-only)
+// ==========================================================================
+// Displays all tracked sessions from the backend (/admin/sessions endpoint).
+// Each session card shows: user_id, role, session_id, query count, start time,
+// and a colour-coded leakage risk badge (NONE=green, LOW=amber, HIGH=red).
+//
+// Visible only to: ceo, cfo, compliance_officer, legal_counsel
+// (access controlled in App.js Shell component)
+// ==========================================================================
 import React, { useEffect, useState } from "react";
 import { getAllSessions } from "../api/client";
 import { Spinner } from "../components";
@@ -32,7 +42,7 @@ export function AdminPage() {
   return (
     <div style={{ maxWidth: 1000, margin: "0 auto", padding: 24 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
-        <h2 style={{ margin: 0, color: "#1e3a5f" }}>Admin — All Sessions</h2>
+        <h2 style={{ margin: 0, color: "#1e3a5f" }}>Admin -- All Sessions</h2>
         <button
           onClick={refresh}
           style={{
@@ -41,7 +51,7 @@ export function AdminPage() {
             fontSize: 13, fontWeight: 600,
           }}
         >
-          ↻ Refresh
+          Refresh
         </button>
       </div>
 

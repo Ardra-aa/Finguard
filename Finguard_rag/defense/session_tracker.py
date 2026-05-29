@@ -1,7 +1,20 @@
 """
-M8 — Session Tracker
-Per-session query history store (in-memory, thread-safe).
-Keyed by session_id.
+M8 -- Session Tracker
+============================================================================
+Per-session query history store (in-memory, thread-safe singleton).
+
+Each session is identified by a unique session_id (generated at login).
+The tracker stores all queries made within a session along with their
+embeddings, sensitivity classifications, and retrieved document IDs.
+
+Data model:
+    SessionTracker (singleton)
+      +-- SessionRecord (per session_id)
+            +-- QueryRecord (per query within the session)
+
+Used by:
+    - LeakageDetector: to build the sensitivity graph across queries
+    - API routes: to serve session reports on the admin dashboard
 """
 
 from __future__ import annotations

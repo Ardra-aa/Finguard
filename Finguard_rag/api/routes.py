@@ -1,11 +1,17 @@
 """
-M11 — FastAPI Route Handlers
-Full RAG pipeline wired:
-  1. Role/jurisdiction-aware document selection (rich mock corpus)
-  2. Real Gemini generation via generation/interface.py
-  3. Real compliance validation (Layer A symbolic + Layer B neural)
-  4. Defence: M8 leakage detection + M9 conflict resolution
-  5. Structured QueryResponse returned to frontend
+M11 -- FastAPI Route Handlers
+============================================================================
+Orchestrates the full FinGuard-RAG pipeline for each incoming query:
+
+  Step 1: Defence pre-check   -- M8 leakage detection fires BEFORE retrieval
+  Step 2: Document retrieval   -- Role/jurisdiction-aware document selection
+  Step 3: LLM generation       -- Gemini 2.5 Flash via generation/interface.py
+  Step 4: Compliance validation -- Layer A symbolic + Layer B neural rules
+  Step 5: Defence post-check   -- M8 full leakage check + M9 conflict resolution
+  Step 6: Response assembly    -- Structured QueryResponse returned to frontend
+
+The built-in mock corpus (_ALL_DOCS) provides realistic regulatory content
+for all demo roles without requiring ChromaDB to be populated.
 """
 
 from __future__ import annotations
@@ -13,6 +19,7 @@ from datetime import date as dt, date
 from typing import List
 
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import JSONResponse
 
 from .models import (
     QueryRequest, QueryResponse, HealthResponse,
@@ -392,8 +399,22 @@ _ALL_DOCS: List[FinancialDocument] = [
 def _select_docs(query: str, user_context: UserContext, top_k: int = 5) -> List[RankedDocument]:
     """
     Policy-aware + keyword-relevance document selector.
-    Filters by role and jurisdiction, then ranks by keyword overlap with query.
-    Falls back to chromaDB retrieve() if available.
+
+    Selection pipeline:
+      1. Attempt real ChromaDB retrieval first (if populated)
+      2. Fall back to the built-in mock corpus if ChromaDB is empty
+      3. Filter documents by: role access, jurisdiction match, temporal validity
+      4. Score remaining documents by keyword overlap with the query
+      5. Apply scope-specific boosting (e.g., "sebi" query boosts securities docs)
+      6. Return top-k results as RankedDocument objects
+
+    Args:
+        query:        The user's compliance question.
+        user_context: UserContext with role, jurisdiction, reference_date.
+        top_k:        Maximum number of documents to return (default 5).
+
+    Returns:
+        List[RankedDocument] sorted by descending final_score.
     """
     # Try real retrieval first
     try:
@@ -466,6 +487,8 @@ def _select_docs(query: str, user_context: UserContext, top_k: int = 5) -> List[
 
 
 def _format_source_doc(doc: FinancialDocument) -> SourceDoc:
+    """Convert a FinancialDocument to a SourceDoc for API response.
+    Truncates content to 300 characters for the response payload."""
     return SourceDoc(
         doc_id=doc.doc_id,
         content=doc.content[:300] + "..." if len(doc.content) > 300 else doc.content,
@@ -511,11 +534,13 @@ async def query_endpoint(req: QueryRequest):
         mock_mode=False,
     )
     if pre_defense["leakage_risk"] == "HIGH":
-        raise HTTPException(
+        return JSONResponse(
             status_code=403,
-            detail={
-                "error": "Query blocked: high role-inference leakage risk detected.",
-                "details": pre_defense["leakage_details"],
+            content={
+                "detail": {
+                    "error": "Query blocked: high role-inference leakage risk detected.",
+                    "details": pre_defense["leakage_details"],
+                }
             },
         )
 

@@ -1,6 +1,14 @@
 """
-M11 — FastAPI Application Entry Point
-Run with: uvicorn Finguard_rag.api.main:app --reload --port 8000
+M11 -- FastAPI Application Entry Point
+============================================================================
+Creates the FastAPI app, configures CORS middleware for the React frontend,
+and mounts all route handlers from routes.py.
+
+Run with:
+    uvicorn Finguard_rag.api.main:app --reload --port 8000
+
+Swagger UI available at:
+    http://localhost:8000/docs
 """
 
 from fastapi import FastAPI

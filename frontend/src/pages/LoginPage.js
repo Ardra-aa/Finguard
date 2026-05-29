@@ -1,4 +1,12 @@
+// ==========================================================================
 // src/pages/LoginPage.js
+// Demo User Selection Page
+// ==========================================================================
+// Renders a card with 8 demo user buttons from AuthContext.DEMO_USERS.
+// Clicking a user button calls login(demoUser) which sets the active user
+// and generates a unique session_id for leakage tracking.
+// No password is required -- this is a demo-only authentication flow.
+// ==========================================================================
 import React from "react";
 import { DEMO_USERS, useAuth } from "../context/AuthContext";
 
