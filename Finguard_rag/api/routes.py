@@ -1,26 +1,26 @@
 """
 M11 — FastAPI Route Handlers
 4 endpoints:
-    POST /query                      — main RAG query
-    GET  /health                     — liveness check
+    POST /query                        — main RAG query (with mock-mode defence pipeline)
+    GET  /health                       — liveness check
     GET  /session/{session_id}/leakage — M8 leakage report for a session
-    GET  /admin/sessions             — admin view of all sessions
+    GET  /admin/sessions               — admin audit view of all sessions
 """
 
 from __future__ import annotations
-from datetime import date
+from datetime import date as dt
 from typing import List
 
 from fastapi import APIRouter, HTTPException
 
 from .models import (
     QueryRequest, QueryResponse, HealthResponse,
-    LeakageReport, SessionSummary, SourceDoc,
+    LeakageReport, SessionSummary,
 )
 from ..defense.interface import defend
 from ..defense.session_tracker import SessionTracker
 
-router = APIRouter()
+router   = APIRouter()
 _tracker = SessionTracker()
 
 
@@ -28,35 +28,31 @@ _tracker = SessionTracker()
 # POST /query
 # ---------------------------------------------------------------------------
 @router.post("/query", response_model=QueryResponse)
-async def query(req: QueryRequest):
+async def query_endpoint(req: QueryRequest):
     """
-    Main query endpoint. Runs the full FinGuard-RAG pipeline.
-
-    In production: wire retrieval.interface + agent.interface + generation.interface.
-    For now: returns a structured mock with defense modules fully active.
+    Main query endpoint.  Wires the defence module (M8 + M9) around a stub
+    retrieval + generation step.  Replace the stub sections with real calls
+    once retrieval.interface and agent.interface are available.
     """
-    from datetime import date as dt
-
     ref_date = req.reference_date or dt.today()
 
-    # ----------------------------------------------------------------
-    # Step 1: Retrieval (stub — replace with retrieval.interface call)
-    # ----------------------------------------------------------------
-    # Mock ranked docs — teammates will inject real RankedDocument objects
-    mock_ranked_docs = []  # List[RankedDocument]
+    # ── Step 1: Retrieval stub ────────────────────────────────────────────
+    # Replace with:  from ..retrieval.interface import retrieve
+    #                ranked_docs = retrieve(req.query, user_ctx, top_k=5)
+    mock_ranked_docs = []          # List[RankedDocument]
 
-    # ----------------------------------------------------------------
-    # Step 2: Generation (stub — replace with agent.interface call)
-    # ----------------------------------------------------------------
+    # ── Step 2: Generation stub ───────────────────────────────────────────
+    # Replace with:  from ..agent.interface import agent_run
+    #                agent_resp = agent_run(req.query, user_ctx)
+    #                mock_answer = agent_resp.final_response.answer
     mock_answer = (
-        f"Based on the applicable regulations for jurisdiction {req.jurisdiction}, "
-        f"here is the compliance guidance for your query: '{req.query}'. "
-        f"Please refer to the relevant regulatory provisions."
+        f"Based on applicable regulations for jurisdiction {req.jurisdiction}, "
+        f"here is the compliance guidance for your query: \"{req.query}\". "
+        f"Please refer to SEBI LODR 2015, RBI Master Directions, and Companies Act 2013 "
+        f"for the full regulatory provisions relevant to your role ({req.role})."
     )
 
-    # ----------------------------------------------------------------
-    # Step 3: Defense (M8 + M9 — FULLY WIRED)
-    # ----------------------------------------------------------------
+    # ── Step 3: Build UserContext ─────────────────────────────────────────
     from ..schemas.document_schema import UserContext
     user_ctx = UserContext(
         user_id        = req.user_id,
@@ -66,34 +62,33 @@ async def query(req: QueryRequest):
         session_id     = req.session_id,
     )
 
+    # ── Step 4: Defence (M8 leakage + M9 conflict) ───────────────────────
     defense_result = defend(
         session_id   = req.session_id,
         user_id      = req.user_id,
         role         = req.role,
         query        = req.query,
         response     = mock_answer,
-        source_docs  = mock_ranked_docs,
+        source_docs  = mock_ranked_docs,   # [] until retrieval is wired
         user_context = user_ctx,
         mock_mode    = req.mock_mode,
     )
 
-    # Block query if HIGH leakage risk
+    # Block query if HIGH leakage risk detected
     if defense_result["leakage_risk"] == "HIGH":
         raise HTTPException(
-            status_code=403,
-            detail={
-                "error":   "Query blocked: high leakage risk detected.",
+            status_code = 403,
+            detail = {
+                "error":   "Query blocked: high role-inference leakage risk detected.",
                 "details": defense_result["leakage_details"],
             },
         )
 
-    # ----------------------------------------------------------------
-    # Step 4: Build response
-    # ----------------------------------------------------------------
+    # ── Step 5: Return structured response ────────────────────────────────
     return QueryResponse(
         answer                       = mock_answer,
-        sources                      = [],  # populated when retrieval is wired
-        compliance_status            = "PASS" if not defense_result["conflict_detected"] else "WARNING",
+        sources                      = [],      # populated when retrieval is wired
+        compliance_status            = "WARNING" if defense_result["conflict_detected"] else "PASS",
         violations                   = [],
         conflicts                    = defense_result["conflicting_rules"],
         leakage_risk                 = defense_result["leakage_risk"],

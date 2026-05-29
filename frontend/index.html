@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinGuard-RAG · BharatFinServ Compliance Portal</title>
+  <meta name="description" content="Secure compliance RAG system for BharatFinServ Ltd. — role-based financial regulatory query portal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- React 18 + ReactDOM via CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Babel Standalone — transpiles JSX in-browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0d1117;
+      --surface:    #161b22;
+      --surface2:   #21262d;
+      --border:     #30363d;
+      --accent:     #2563eb;
+      --accent-glow:#3b82f6;
+      --green:      #10b981;
+      --amber:      #f59e0b;
+      --red:        #ef4444;
+      --blue:       #3b82f6;
+      --text:       #e6edf3;
+      --muted:      #8b949e;
+      --radius:     10px;
+    }
+
+    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; }
+
+    #root { min-height: 100vh; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--surface); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* Animations */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37,99,235,0); }
+      50%       { box-shadow: 0 0 16px 4px rgba(37,99,235,0.35); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -400px 0; }
+      100% { background-position: 400px 0; }
+    }
+
+    .fade-in { animation: fadeIn 0.3s ease both; }
+
+    /* Spinner */
+    .spinner {
+      display: inline-block; width: 40px; height: 40px;
+      border: 4px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.75s linear infinite;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: var(--accent); color: #fff; border: none;
+      border-radius: 8px; padding: 10px 22px; cursor: pointer;
+      font-weight: 600; font-size: 14px; font-family: inherit;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .btn-primary:hover { background: #1d4ed8; }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    .btn-ghost {
+      background: none; color: var(--muted); border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 16px; cursor: pointer;
+      font-size: 13px; font-family: inherit; transition: color 0.15s, border-color 0.15s;
+    }
+    .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+
+    /* Badges */
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      border-radius: 20px; padding: 3px 10px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.03em;
+    }
+    .badge-pass    { background: rgba(16,185,129,0.15); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+    .badge-warning { background: rgba(245,158,11,0.15); color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }
+    .badge-fail    { background: rgba(239,68,68,0.15);  color: var(--red);   border: 1px solid rgba(239,68,68,0.3); }
+    .badge-none    { background: rgba(139,148,158,0.15); color: var(--muted); border: 1px solid var(--border); }
+    .badge-role    { background: rgba(37,99,235,0.15);  color: var(--blue);  border: 1px solid rgba(37,99,235,0.3); }
+    .badge-low     { background: rgba(245,158,11,0.12); color: var(--amber); border: 1px solid rgba(245,158,11,0.3); }
+    .badge-high    { background: rgba(239,68,68,0.12);  color: var(--red);   border: 1px solid rgba(239,68,68,0.3); }
+
+    /* Cards */
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px;
+    }
+
+    /* Alert boxes */
+    .alert {
+      border-radius: 8px; padding: 14px 18px; margin-bottom: 14px;
+      font-size: 14px; animation: fadeIn 0.2s ease both;
+    }
+    .alert-red    { background: rgba(239,68,68,0.08);  border: 1px solid rgba(239,68,68,0.3);  color: #fca5a5; }
+    .alert-amber  { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.3); color: #fde68a; }
+    .alert-blue   { background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.3); color: #93c5fd; }
+
+    /* Inputs */
+    textarea, input {
+      background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+      border-radius: 8px; padding: 10px 14px; font-size: 14px;
+      font-family: inherit; transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none; resize: vertical;
+    }
+    textarea:focus, input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+    }
+
+    /* Trace step colors */
+    .trace-THINK { color: #a78bfa; }
+    .trace-ACT   { color: #38bdf8; }
+    .trace-OBS   { color: #34d399; }
+
+    /* Skeleton loader */
+    .skeleton {
+      background: linear-gradient(90deg, var(--surface2) 25%, var(--border) 50%, var(--surface2) 75%);
+      background-size: 400px 100%;
+      animation: shimmer 1.4s ease infinite;
+      border-radius: 6px; height: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, useContext, createContext, useCallback } = React;
+
+    /* ══════════════════════════════════════════════════════
+       AUTH CONTEXT
+    ══════════════════════════════════════════════════════ */
+    const DEMO_USERS = [
+      { user_id:"arjun.kumar@bharatfinserv.in",   role:"junior_analyst",     jurisdiction:"IN",     name:"Arjun Kumar",    avatar:"AK" },
+      { user_id:"priya.sharma@bharatfinserv.in",  role:"senior_analyst",     jurisdiction:"IN",     name:"Priya Sharma",   avatar:"PS" },
+      { user_id:"rajesh.patel@bharatfinserv.in",  role:"compliance_officer", jurisdiction:"IN",     name:"Rajesh Patel",   avatar:"RP" },
+      { user_id:"aisha.nair@bharatfinserv.in",    role:"legal_counsel",      jurisdiction:"IN",     name:"Aisha Nair",     avatar:"AN" },
+      { user_id:"vikram.singh@bharatfinserv.in",  role:"cfo",                jurisdiction:"IN",     name:"Vikram Singh",   avatar:"VS" },
+      { user_id:"sunita.rao@bharatfinserv.in",    role:"ceo",                jurisdiction:"IN",     name:"Sunita Rao",     avatar:"SR" },
+      { user_id:"li.wei@bharatfinserv.sg",        role:"senior_analyst",     jurisdiction:"SG",     name:"Li Wei",         avatar:"LW" },
+      { user_id:"hans.mueller@bharatfinserv.eu",  role:"compliance_officer", jurisdiction:"EU",     name:"Hans Mueller",   avatar:"HM" },
+    ];
+
+    const ROLE_COLORS = {
+      ceo:                "#f59e0b",
+      cfo:                "#8b5cf6",
+      compliance_officer: "#10b981",
+      legal_counsel:      "#3b82f6",
+      senior_analyst:     "#6366f1",
+      junior_analyst:     "#64748b",
+      it_admin:           "#0ea5e9",
+      auditor_external:   "#ec4899",
+    };
+
+    const AuthCtx = createContext(null);
+    function AuthProvider({ children }) {
+      const [user, setUser]          = useState(null);
+      const [sessionId, setSessionId]= useState(null);
+      const login  = (u) => { setUser(u); setSessionId(`sess-${u.user_id}-${Date.now()}`); };
+      const logout = ()  => { setUser(null); setSessionId(null); };
+      return <AuthCtx.Provider value={{ user, sessionId, login, logout }}>{children}</AuthCtx.Provider>;
+    }
+    const useAuth = () => useContext(AuthCtx);
+
+    /* ══════════════════════════════════════════════════════
+       API CLIENT
+    ══════════════════════════════════════════════════════ */
+    const BASE = "http://localhost:8000";
+
+    async function apiPost(path, body) {
+      const res = await fetch(`${BASE}${path}`, {
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) { const e = await res.json(); throw { status: res.status, detail: e.detail }; }
+      return res.json();
+    }
+    async function apiGet(path) {
+      const res = await fetch(`${BASE}${path}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    }
+
+    /* ══════════════════════════════════════════════════════
+       SHARED COMPONENTS
+    ══════════════════════════════════════════════════════ */
+
+    /* Spinner */
+    function Spinner({ size=40 }) {
+      return (
+        <div style={{ textAlign:"center", padding:"40px 0" }}>
+          <div className="spinner" style={{ width:size, height:size }} />
+        </div>
+      );
+    }
+
+    /* Compliance badge */
+    function ComplianceBadge({ status }) {
+      const map = {
+        PASS:    { cls:"badge badge-pass",    icon:"✓", label:"PASS" },
+        WARNING: { cls:"badge badge-warning", icon:"⚠", label:"WARNING" },
+        FAIL:    { cls:"badge badge-fail",    icon:"✗", label:"FAIL" },
+      };
+      const s = map[status] || { cls:"badge badge-none", icon:"?", label: status || "UNKNOWN" };
+      return <span className={s.cls}>{s.icon} {s.label}</span>;
+    }
+
+    /* Leakage alert */
+    function LeakageAlert({ risk, details = [] }) {
+      if (!risk || risk === "NONE") return null;
+      const isHigh = risk === "HIGH";
+      return (
+        <div className={`alert ${isHigh ? "alert-red" : "alert-amber"}`}>
+          <strong>{isHigh ? "🚨 HIGH Leakage Risk Detected" : "⚠ LOW Leakage Risk"}</strong>
+          <p style={{ marginTop:6, fontSize:13 }}>
+            {isHigh
+              ? "This query sequence has been flagged. The system has detected a potential role-inference leakage attack."
+              : "Elevated sensitivity detected across this session's query history."}
+          </p>
+          {details.map((d, i) => <p key={i} style={{ marginTop:4, fontSize:13, opacity:0.85 }}>• {d}</p>)}
+        </div>
+      );
+    }
+
+    /* Conflict notice */
+    function ConflictNotice({ detected, conflictingRules = [], recommendation = "" }) {
+      if (!detected) return null;
+      return (
+        <div className="alert alert-blue">
+          <strong>⚖ Jurisdiction Conflict Detected</strong>
+          <ul style={{ marginTop:8, paddingLeft:18 }}>
+            {conflictingRules.map((r, i) => <li key={i} style={{ fontSize:13, marginBottom:4 }}>{r}</li>)}
+          </ul>
+          {recommendation && (
+            <div style={{ marginTop:10, padding:"8px 12px", background:"rgba(59,130,246,0.1)", borderRadius:6, fontSize:13 }}>
+              <strong>Conservative Recommendation:</strong> {recommendation}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    /* Source citations */
+    function SourceCitations({ sources = [] }) {
+      if (!sources || !sources.length) return null;
+      return (
+        <div style={{ marginTop:16 }}>
+          <div style={{ fontSize:12, fontWeight:600, color:"var(--muted)", marginBottom:8, textTransform:"uppercase", letterSpacing:"0.05em" }}>
+            📚 Sources ({sources.length})
+          </div>
+          <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
+            {sources.map((s, i) => (
+              <span key={i} style={{
+                background:"var(--surface2)", border:"1px solid var(--border)",
+                borderRadius:6, padding:"5px 12px", fontSize:12, color:"var(--text)",
+                display:"flex", alignItems:"center", gap:6,
+              }}>
+                📄 <strong>{s.doc_id}</strong>
+                <span style={{ color:"var(--muted)" }}>[{s.jurisdiction}] {s.risk_level}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    /* Agent trace */
+    function AgentTrace({ trace = [] }) {
+      const [open, setOpen] = useState(false);
+      if (!trace || !trace.length) return null;
+      return (
+        <div style={{ marginTop:16 }}>
+          <button className="btn-ghost" style={{ fontSize:12 }} onClick={() => setOpen(o => !o)}>
+            {open ? "▲ Hide" : "▼ Show"} Agent Reasoning ({trace.length} steps)
+          </button>
+          {open && (
+            <div className="fade-in" style={{ marginTop:10, borderLeft:"3px solid var(--border)", paddingLeft:14 }}>
+              {trace.map((step, i) => (
+                <div key={i} style={{ marginBottom:10 }}>
+                  <span className={`trace-${step.type}`} style={{ fontWeight:700, fontSize:12, marginRight:6 }}>
+                    [{step.type}]
+                  </span>
+                  <span style={{ fontSize:13, color:"var(--text)", lineHeight:1.5 }}>{step.content}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    /* Avatar */
+    function Avatar({ initials, role, size=36 }) {
+      const color = ROLE_COLORS[role] || "#64748b";
+      return (
+        <div style={{
+          width:size, height:size, borderRadius:"50%",
+          background: `${color}22`, border:`2px solid ${color}44`,
+          display:"flex", alignItems:"center", justifyContent:"center",
+          fontSize:size*0.35, fontWeight:700, color, flexShrink:0,
+        }}>
+          {initials}
+        </div>
+      );
+    }
+
+    /* ══════════════════════════════════════════════════════
+       NAVBAR
+    ══════════════════════════════════════════════════════ */
+    function Navbar({ page, setPage }) {
+      const { user, logout } = useAuth();
+      const isAdmin = ["ceo","compliance_officer"].includes(user?.role);
+      const roleColor = ROLE_COLORS[user?.role] || "#64748b";
+
+      return (
+        <header style={{
+          background:"var(--surface)", borderBottom:"1px solid var(--border)",
+          display:"flex", justifyContent:"space-between", alignItems:"center",
+          padding:"0 24px", position:"sticky", top:0, zIndex:100,
+        }}>
+          {/* Logo */}
+          <div style={{ display:"flex", alignItems:"center", gap:24 }}>
+            <div style={{ padding:"14px 0", display:"flex", alignItems:"center", gap:10 }}>
+              <div style={{
+                width:32, height:32, borderRadius:8,
+                background:"linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)",
+                display:"flex", alignItems:"center", justifyContent:"center",
+                fontSize:16, fontWeight:800, color:"#fff",
+              }}>F</div>
+              <span style={{ fontWeight:800, fontSize:17, color:"var(--text)" }}>
+                FinGuard<span style={{ color:"var(--accent)", fontWeight:400 }}>-RAG</span>
+              </span>
+            </div>
+
+            {/* Nav tabs */}
+            <nav style={{ display:"flex", gap:4 }}>
+              {[
+                { key:"query", label:"Query" },
+                ...(isAdmin ? [{ key:"admin", label:"Admin" }] : []),
+              ].map(({ key, label }) => (
+                <button
+                  key={key}
+                  onClick={() => setPage(key)}
+                  style={{
+                    background: page===key ? "rgba(37,99,235,0.1)" : "none",
+                    border:"none", borderBottom: page===key ? "2px solid var(--accent)" : "2px solid transparent",
+                    color: page===key ? "var(--accent)" : "var(--muted)",
+                    padding:"14px 14px 12px", cursor:"pointer",
+                    fontWeight: page===key ? 600 : 400, fontSize:14, fontFamily:"inherit",
+                    transition:"all 0.15s",
+                  }}
+                >{label}</button>
+              ))}
+            </nav>
+          </div>
+
+          {/* User info */}
+          <div style={{ display:"flex", alignItems:"center", gap:12 }}>
+            <Avatar initials={user?.avatar || user?.name?.slice(0,2)} role={user?.role} />
+            <div>
+              <div style={{ fontSize:13, fontWeight:600, color:"var(--text)" }}>{user?.name}</div>
+              <div style={{ fontSize:11, color: roleColor, fontWeight:500 }}>
+                {user?.role} · {user?.jurisdiction}
+              </div>
+            </div>
+            <button className="btn-ghost" style={{ marginLeft:8 }} onClick={logout}>Sign out</button>
+          </div>
+        </header>
+      );
+    }
+
+    /* ══════════════════════════════════════════════════════
+       LOGIN PAGE
+    ══════════════════════════════════════════════════════ */
+    function LoginPage() {
+      const { login } = useAuth();
+      const [hovered, setHovered] = useState(null);
+
+      return (
+        <div style={{
+          minHeight:"100vh", display:"flex", alignItems:"center", justifyContent:"center",
+          background:"var(--bg)",
+          backgroundImage:"radial-gradient(ellipse at 20% 40%, rgba(37,99,235,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 60%, rgba(124,58,237,0.06) 0%, transparent 60%)",
+        }}>
+          <div style={{ width:"100%", maxWidth:520, padding:"0 20px" }}>
+            {/* Header */}
+            <div style={{ textAlign:"center", marginBottom:36 }}>
+              <div style={{
+                display:"inline-flex", alignItems:"center", justifyContent:"center",
+                width:64, height:64, borderRadius:16, marginBottom:16,
+                background:"linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)",
+                animation:"pulse-glow 2.5s ease-in-out infinite",
+              }}>
+                <span style={{ fontSize:28, fontWeight:800, color:"#fff" }}>F</span>
+              </div>
+              <h1 style={{ fontSize:28, fontWeight:800, color:"var(--text)", margin:"0 0 8px" }}>
+                FinGuard-RAG
+              </h1>
+              <p style={{ color:"var(--muted)", fontSize:14, margin:0 }}>
+                BharatFinServ Ltd. · Secure Compliance Portal
+              </p>
+            </div>
+
+            {/* User selection card */}
+            <div className="card" style={{ padding:0, overflow:"hidden" }}>
+              <div style={{ padding:"20px 24px 14px", borderBottom:"1px solid var(--border)" }}>
+                <div style={{ fontSize:13, fontWeight:500, color:"var(--muted)" }}>
+                  Select a demo user to continue
+                </div>
+              </div>
+
+              <div style={{ display:"flex", flexDirection:"column" }}>
+                {DEMO_USERS.map((u, idx) => {
+                  const roleColor = ROLE_COLORS[u.role] || "#64748b";
+                  const isHov = hovered === u.user_id;
+                  return (
+                    <button
+                      key={u.user_id}
+                      id={`user-${u.role}-${idx}`}
+                      onClick={() => login(u)}
+                      onMouseEnter={() => setHovered(u.user_id)}
+                      onMouseLeave={() => setHovered(null)}
+                      style={{
+                        background: isHov ? "rgba(37,99,235,0.06)" : "none",
+                        border:"none", borderBottom:"1px solid var(--border)",
+                        padding:"14px 24px", cursor:"pointer", textAlign:"left",
+                        display:"flex", alignItems:"center", gap:14,
+                        transition:"background 0.12s",
+                        fontFamily:"inherit",
+                      }}
+                    >
+                      <Avatar initials={u.avatar} role={u.role} size={38} />
+                      <div style={{ flex:1 }}>
+                        <div style={{ fontWeight:600, fontSize:14, color:"var(--text)" }}>{u.name}</div>
+                        <div style={{ fontSize:12, color:"var(--muted)", marginTop:2 }}>
+                          {u.user_id}
+                        </div>
+                      </div>
+                      <div style={{ display:"flex", flexDirection:"column", alignItems:"flex-end", gap:4 }}>
+                        <span style={{
+                          fontSize:11, fontWeight:600, padding:"2px 8px", borderRadius:20,
+                          background:`${roleColor}18`, color:roleColor, border:`1px solid ${roleColor}35`,
+                          whiteSpace:"nowrap",
+                        }}>
+                          {u.role}
+                        </span>
+                        <span style={{ fontSize:11, color:"var(--muted)" }}>
+                          {u.jurisdiction}
+                        </span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div style={{ padding:"14px 24px", borderTop:"1px solid var(--border)", background:"rgba(255,255,255,0.01)" }}>
+                <p style={{ fontSize:12, color:"var(--muted)", margin:0 }}>
+                  🔒 Academic demonstration — BharatFinServ Ltd. is a fictional company.
+                  All data is synthetic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    /* ══════════════════════════════════════════════════════
+       QUERY PAGE
+    ══════════════════════════════════════════════════════ */
+    function QueryPage() {
+      const { user, sessionId } = useAuth();
+      const [query, setQuery]     = useState("");
+      const [loading, setLoading] = useState(false);
+      const [result, setResult]   = useState(null);
+      const [error, setError]     = useState(null);
+      const [history, setHistory] = useState([]);
+
+      async function handleSubmit() {
+        if (!query.trim() || loading) return;
+        setLoading(true); setError(null); setResult(null);
+        try {
+          const res = await apiPost("/query", {
+            query,
+            user_id:      user.user_id,
+            role:         user.role,
+            jurisdiction: user.jurisdiction,
+            session_id:   sessionId,
+          });
+          setResult(res);
+          setHistory(h => [{ query, result: res }, ...h.slice(0, 9)]);
+        } catch (err) {
+          if (err.status === 403) setError({ type:"blocked", detail: err.detail });
+          else setError({ type:"error", detail:"Could not reach API. Is the backend running on port 8000?" });
+        } finally { setLoading(false); }
+      }
+
+      const roleColor = ROLE_COLORS[user?.role] || "#64748b";
+
+      return (
+        <div style={{ maxWidth:860, margin:"0 auto", padding:"28px 20px" }}>
+          {/* Header */}
+          <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:22 }}>
+            <div style={{ flex:1 }}>
+              <h2 style={{ fontWeight:700, fontSize:20, color:"var(--text)", margin:0 }}>Compliance Query</h2>
+              <p style={{ color:"var(--muted)", fontSize:13, margin:"4px 0 0" }}>
+                Querying as <strong style={{ color:"var(--text)" }}>{user.name}</strong>
+                <span style={{
+                  marginLeft:8, padding:"2px 8px", borderRadius:20, fontSize:11,
+                  background:`${roleColor}18`, color:roleColor, border:`1px solid ${roleColor}35`, fontWeight:600,
+                }}>{user.role}</span>
+                <span style={{ marginLeft:6, color:"var(--muted)", fontSize:11 }}>· Session: {sessionId?.slice(-12)}</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Input area */}
+          <div style={{ display:"flex", gap:10, marginBottom:24 }}>
+            <textarea
+              id="query-input"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onKeyDown={e => { if (e.key==="Enter" && e.ctrlKey) handleSubmit(); }}
+              placeholder="Ask a compliance question… (Ctrl+Enter to submit)"
+              rows={4}
+              style={{ flex:1, minHeight:90 }}
+            />
+            <button
+              id="query-submit"
+              className="btn-primary"
+              onClick={handleSubmit}
+              disabled={loading || !query.trim()}
+              style={{ alignSelf:"stretch", minWidth:80 }}
+            >
+              {loading ? "…" : "Ask →"}
+            </button>
+          </div>
+
+          {/* Loading */}
+          {loading && (
+            <div className="card fade-in" style={{ textAlign:"center", padding:"32px 24px" }}>
+              <Spinner />
+              <p style={{ color:"var(--muted)", fontSize:14, marginTop:16 }}>
+                Running compliance pipeline…
+              </p>
+              <div style={{ display:"flex", justifyContent:"center", gap:8, marginTop:12 }}>
+                {["Pre-filter","Retrieval","Generation","Validation","Defense"].map((s, i) => (
+                  <span key={i} style={{ fontSize:11, color:"var(--muted)", padding:"2px 8px", borderRadius:20, border:"1px solid var(--border)" }}>{s}</span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Blocked 403 */}
+          {error?.type === "blocked" && (
+            <div className="alert alert-red fade-in">
+              <strong>🚨 Query Blocked — High Leakage Risk</strong>
+              <p style={{ marginTop:6, fontSize:14 }}>{error.detail?.error}</p>
+              {error.detail?.details?.map((d, i) => (
+                <p key={i} style={{ marginTop:4, fontSize:13, opacity:0.85 }}>• {d}</p>
+              ))}
+            </div>
+          )}
+
+          {/* Generic error */}
+          {error?.type === "error" && (
+            <div className="alert alert-amber fade-in">
+              <strong>⚠ API Error</strong>
+              <p style={{ marginTop:4, fontSize:13 }}>{error.detail}</p>
+            </div>
+          )}
+
+          {/* Result */}
+          {result && !loading && (
+            <div className="card fade-in" style={{ padding:28 }}>
+              {/* Status row */}
+              <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:18, flexWrap:"wrap" }}>
+                <ComplianceBadge status={result.compliance_status} />
+                <span style={{ fontSize:12, color:"var(--muted)" }}>
+                  Confidence: <strong style={{ color:"var(--text)" }}>{(result.confidence_score * 100).toFixed(0)}%</strong>
+                </span>
+                <span style={{ fontSize:12, color:"var(--muted)" }}>
+                  Leakage risk: <strong style={{
+                    color: result.leakage_risk === "HIGH" ? "var(--red)"
+                         : result.leakage_risk === "LOW"  ? "var(--amber)"
+                         : "var(--green)",
+                  }}>{result.leakage_risk}</strong>
+                </span>
+              </div>
+
+              <LeakageAlert risk={result.leakage_risk} details={result.leakage_details} />
+              <ConflictNotice
+                detected={result.conflict_detected}
+                conflictingRules={result.conflicting_rules}
+                recommendation={result.conservative_recommendation}
+              />
+
+              {/* Answer */}
+              <div style={{
+                fontSize:15, color:"var(--text)", lineHeight:1.7,
+                padding:"16px 0", borderBottom:"1px solid var(--border)",
+              }}>
+                {result.answer}
+              </div>
+
+              {/* Violations */}
+              {result.violations?.length > 0 && (
+                <div style={{ marginTop:14 }}>
+                  <div style={{ fontSize:12, fontWeight:600, color:"var(--red)", marginBottom:6, textTransform:"uppercase", letterSpacing:"0.05em" }}>
+                    ✗ Violations
+                  </div>
+                  <ul style={{ paddingLeft:18, margin:0 }}>
+                    {result.violations.map((v, i) => (
+                      <li key={i} style={{ fontSize:13, color:"#fca5a5", marginBottom:4 }}>{v}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <SourceCitations sources={result.sources} />
+              <AgentTrace trace={result.agent_trace} />
+            </div>
+          )}
+
+          {/* Recent queries history */}
+          {history.length > 0 && (
+            <div style={{ marginTop:32 }}>
+              <div style={{ fontSize:12, fontWeight:600, color:"var(--muted)", marginBottom:10, textTransform:"uppercase", letterSpacing:"0.05em" }}>
+                Recent Queries
+              </div>
+              {history.map((h, i) => (
+                <div
+                  key={i}
+                  onClick={() => { setQuery(h.query); setResult(h.result); }}
+                  style={{
+                    background:"var(--surface)", border:"1px solid var(--border)",
+                    borderRadius:8, padding:"10px 16px", marginBottom:8,
+                    cursor:"pointer", fontSize:13, color:"var(--text)",
+                    display:"flex", justifyContent:"space-between", alignItems:"center",
+                    gap:12, transition:"border-color 0.15s",
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor="#3b82f6"}
+                  onMouseLeave={e => e.currentTarget.style.borderColor="var(--border)"}
+                >
+                  <span style={{ flex:1, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap", color:"var(--muted)" }}>
+                    {h.query}
+                  </span>
+                  <ComplianceBadge status={h.result?.compliance_status} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    /* ══════════════════════════════════════════════════════
+       ADMIN PAGE
+    ══════════════════════════════════════════════════════ */
+    function AdminPage() {
+      const [sessions, setSessions] = useState([]);
+      const [loading, setLoading]   = useState(true);
+      const [error, setError]       = useState(null);
+
+      const load = useCallback(() => {
+        setLoading(true); setError(null);
+        apiGet("/admin/sessions")
+          .then(setSessions)
+          .catch(() => setError("Could not load sessions. Is the API running on port 8000?"))
+          .finally(() => setLoading(false));
+      }, []);
+
+      useEffect(() => { load(); }, [load]);
+
+      const riskStyle = (risk) => ({
+        NONE: { cls:"badge badge-none",    label:"NONE" },
+        LOW:  { cls:"badge badge-low",     label:"LOW"  },
+        HIGH: { cls:"badge badge-high",    label:"HIGH" },
+      }[risk] || { cls:"badge badge-none", label: risk || "NONE" });
+
+      return (
+        <div style={{ maxWidth:980, margin:"0 auto", padding:"28px 20px" }}>
+          <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:24 }}>
+            <div>
+              <h2 style={{ fontWeight:700, fontSize:20, color:"var(--text)", margin:0 }}>Admin — Audit Dashboard</h2>
+              <p style={{ color:"var(--muted)", fontSize:13, margin:"4px 0 0" }}>
+                Live session log · Leakage risk monitoring · Query audit trail
+              </p>
+            </div>
+            <button className="btn-primary" onClick={load} style={{ fontSize:13 }}>↻ Refresh</button>
+          </div>
+
+          {/* Stats row */}
+          {!loading && !error && (
+            <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:14, marginBottom:24 }}>
+              {[
+                { label:"Active Sessions", value:sessions.length, color:"var(--blue)" },
+                { label:"HIGH Risk",       value:sessions.filter(s=>s.leakage_risk==="HIGH").length, color:"var(--red)" },
+                { label:"Total Queries",   value:sessions.reduce((a,s)=>a+s.query_count,0), color:"var(--green)" },
+              ].map((stat, i) => (
+                <div key={i} className="card" style={{ padding:"16px 20px", textAlign:"center" }}>
+                  <div style={{ fontSize:28, fontWeight:800, color:stat.color }}>{stat.value}</div>
+                  <div style={{ fontSize:12, color:"var(--muted)", marginTop:4 }}>{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {loading && <Spinner />}
+          {error && <div className="alert alert-red">{error}</div>}
+
+          {!loading && !error && sessions.length === 0 && (
+            <div className="card" style={{ textAlign:"center", padding:"48px 24px" }}>
+              <div style={{ fontSize:40, marginBottom:12 }}>📭</div>
+              <p style={{ color:"var(--muted)", fontSize:14 }}>No sessions yet. Submit a query to get started.</p>
+            </div>
+          )}
+
+          {sessions.map(s => {
+            const roleColor = ROLE_COLORS[s.role] || "#64748b";
+            const rs = riskStyle(s.leakage_risk);
+            return (
+              <div key={s.session_id} className="card fade-in" style={{ marginBottom:12, padding:"18px 22px" }}>
+                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
+                  <div style={{ display:"flex", alignItems:"center", gap:12 }}>
+                    <Avatar initials={(s.user_id||"??").slice(0,2).toUpperCase()} role={s.role} size={40} />
+                    <div>
+                      <div style={{ fontWeight:600, fontSize:14, color:"var(--text)" }}>{s.user_id}</div>
+                      <div style={{ display:"flex", gap:8, alignItems:"center", marginTop:4, flexWrap:"wrap" }}>
+                        <span style={{
+                          fontSize:11, padding:"1px 7px", borderRadius:20, fontWeight:600,
+                          background:`${roleColor}18`, color:roleColor, border:`1px solid ${roleColor}35`,
+                        }}>{s.role}</span>
+                        <span style={{ fontSize:11, color:"var(--muted)" }}>
+                          {s.query_count} {s.query_count === 1 ? "query" : "queries"}
+                        </span>
+                        <span style={{ fontSize:11, color:"var(--muted)" }}>
+                          Started {s.created_at?.slice(0,19)?.replace("T"," ")}
+                        </span>
+                        <span style={{ fontSize:10, color:"var(--muted)", fontFamily:"monospace" }}>
+                          {s.session_id}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <span className={rs.cls} style={{ flexShrink:0 }}>
+                    {s.leakage_risk === "HIGH" ? "🚨 " : s.leakage_risk === "LOW" ? "⚠ " : ""}
+                    {rs.label}
+                  </span>
+                </div>
+
+                {s.alerts?.length > 0 && (
+                  <div style={{ marginTop:12, paddingTop:12, borderTop:"1px solid var(--border)" }}>
+                    <div style={{ fontSize:11, fontWeight:600, color:"var(--red)", marginBottom:6, textTransform:"uppercase" }}>
+                      Alerts
+                    </div>
+                    {s.alerts.map((a, i) => (
+                      <div key={i} style={{ fontSize:12, color:"#fca5a5", marginBottom:4 }}>• {a}</div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+
+    /* ══════════════════════════════════════════════════════
+       ROOT APP
+    ══════════════════════════════════════════════════════ */
+    function Shell() {
+      const { user } = useAuth();
+      const [page, setPage] = useState("query");
+
+      if (!user) return <LoginPage />;
+      return (
+        <div style={{ minHeight:"100vh", background:"var(--bg)" }}>
+          <Navbar page={page} setPage={setPage} />
+          <main>
+            {page === "query" && <QueryPage />}
+            {page === "admin" && ["ceo","compliance_officer"].includes(user.role) && <AdminPage />}
+          </main>
+        </div>
+      );
+    }
+
+    function App() {
+      return (
+        <AuthProvider>
+          <Shell />
+        </AuthProvider>
+      );
+    }
+
+    /* Mount */
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
