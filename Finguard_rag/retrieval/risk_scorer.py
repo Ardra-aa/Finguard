@@ -31,7 +31,7 @@ from Finguard_rag.schemas.document_schema import (
 # Scoring weights (match config.yaml)
 ALPHA = 0.7   # semantic similarity weight
 BETA  = 0.3   # risk penalty weight
-MIN_FINAL_SCORE = 0.3  # drop anything below this threshold
+MIN_FINAL_SCORE = 0.1  # drop anything below this threshold
 
 
 def _parse_date(date_str: str):

@@ -52,7 +52,7 @@ def _run_baseline_on_set(baseline, test_cases: List[dict]) -> List[Dict[str, Any
             "predicted_leakage":      output.get("leakage_risk", "NONE"),
             "conflict_predicted":     output.get("conflict_detected", False),
             "answer":                 output.get("answer", ""),
-            "source_contents":        [s.content if hasattr(s, "content") else str(s)
+            "source_contents":        [s.document.content if hasattr(s, "document") else str(s)
                                        for s in output.get("sources", [])],
             "latency_seconds":        latency,
         }

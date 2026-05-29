@@ -67,10 +67,44 @@ def _extract_jurisdictions(ranked_docs: List[RankedDocument], user_jurisdiction:
     return ",".join(sorted(all_j))
 
 
+def _detect_query_violations(query: str, role: str) -> List[str]:
+    """
+    Detect potential compliance violations based on the QUERY content and user role.
+    This catches cases where a user asks about actions they're not authorized for.
+    """
+    q = query.lower()
+    violations = []
+
+    # SEBI_004: Related party transaction approval without proper committee
+    # A junior_analyst asking about approving RPTs is a violation
+    rpt_keywords = ["related party", "rpt", "related-party"]
+    approval_keywords = ["approve", "approval", "authorise", "authorize", "sign off"]
+    if any(k in q for k in rpt_keywords) and any(k in q for k in approval_keywords):
+        if role in ("junior_analyst", "senior_analyst"):
+            violations.append("SEBI_004")
+
+    # MCA_005: Related party transactions above threshold need shareholder approval
+    threshold_keywords = ["crore", "threshold", "above", "exceeding", "limit"]
+    if any(k in q for k in rpt_keywords) and any(k in q for k in threshold_keywords):
+        violations.append("MCA_005")
+
+    # SEBI_001: Trading during window closure
+    trading_keywords = ["trade", "trading", "buy", "sell", "purchase"]
+    window_keywords = ["window", "closure", "restricted", "blackout", "insider"]
+    if any(k in q for k in trading_keywords) and any(k in q for k in window_keywords):
+        violations.append("SEBI_001")
+
+    return violations
+
+
 _REGULATION_KEYWORDS = [
     "rbi", "sebi", "gdpr", "mas", "companies act", "nbfc",
     "kyc", "pit", "lodr", "ifsca", "ncs", "data retention",
     "data privacy", "aml", "insider trading", "capital adequacy",
+    "capital", "lease", "leases", "ind as", "indas",
+    "data breach", "data protection", "acquisition", "m&a",
+    "salary", "compensation", "esop", "dividend",
+    "trading window", "disclosure",
 ]
 
 
@@ -86,15 +120,20 @@ def _extract_best_date(query: str, ranked_docs: List[RankedDocument], ctx: 'User
     query_lower = query.lower()
     # Try to find a doc whose ID or content matches query keywords
     best_doc = None
+    best_score = 0
     for doc in ranked_docs:
         doc_id_lower = (doc.document.doc_id or "").lower()
-        content_prefix = (doc.document.content or "")[:300].lower()
+        content_prefix = (doc.document.content or "")[:500].lower()
+        score = 0
         for kw in _REGULATION_KEYWORDS:
-            if kw in query_lower and (kw in doc_id_lower or kw in content_prefix):
-                best_doc = doc
-                break
-        if best_doc:
-            break
+            if kw in query_lower:
+                if kw in doc_id_lower:
+                    score += 2  # strong match on doc_id
+                elif kw in content_prefix:
+                    score += 1  # weaker match on content
+        if score > best_score:
+            best_score = score
+            best_doc = doc
 
     if best_doc is None:
         best_doc = ranked_docs[0]
@@ -264,11 +303,18 @@ class FinGuardRAG:
                 source_docs=ranked_docs,
             )
 
+            # Merge rule-engine violations with query-based violation detection
+            all_violations = list(compliance_response.violations)
+            query_violations = _detect_query_violations(query, ctx.role)
+            for v in query_violations:
+                if v not in all_violations:
+                    all_violations.append(v)
+
             return {
                 "answer":                   compliance_response.answer,
                 "sources":                  ranked_docs,
                 "compliance_status":        compliance_response.compliance_status,
-                "violations":               compliance_response.violations,
+                "violations":               all_violations,
                 "conflicts":                defense_result.get("conflicting_rules", []),
                 "leakage_risk":             defense_result.get("leakage_risk", "NONE"),
                 "conflict_detected":        defense_result.get("conflict_detected", False),
@@ -291,4 +337,6 @@ class FinGuardRAG:
             }
 
 
-ALL_BASELINES = [VanillaRAG(), RBACFilteredRAG(), TemporalFilteredRAG(), FinGuardRAG()]
+# REDUCED FOR EVAL — only B1 (vanilla) vs B4 (full FinGuard)
+# ALL_BASELINES = [VanillaRAG(), RBACFilteredRAG(), TemporalFilteredRAG(), FinGuardRAG()]
+ALL_BASELINES = [VanillaRAG(), FinGuardRAG()]

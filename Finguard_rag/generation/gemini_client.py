@@ -58,15 +58,11 @@ _LLM_CFG = _CFG.get("llm", {})
 # ---------------------------------------------------------------------------
 def _call_gemini(prompt: str) -> str:
     """
-    Call Google Gemini 1.5 Flash via the google-generativeai SDK.
-
-    Returns:
-        Raw text response from the model.
-
-    Raises:
-        RuntimeError: If the API key is missing or the call fails.
+    Call Google Gemini 2.5 Flash via the google-generativeai SDK.
+    Includes retry logic with exponential backoff for rate limits.
     """
     import google.generativeai as genai
+    import time
 
     api_key = os.getenv("GEMINI_API_KEY", "")
     if not api_key or api_key == "your_key_here":
@@ -75,24 +71,40 @@ def _call_gemini(prompt: str) -> str:
         )
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(_LLM_CFG.get("model_name", "gemini-2.0-flash-lite"))
+    model = genai.GenerativeModel("gemini-2.5-flash")
 
     generation_config = genai.types.GenerationConfig(
         temperature=_LLM_CFG.get("temperature", 0.3),
         max_output_tokens=_LLM_CFG.get("max_tokens", 2048),
     )
 
-    response = model.generate_content(
-        prompt,
-        generation_config=generation_config,
-    )
+    max_retries = 3
+    for attempt in range(max_retries):
+        # Sleep BEFORE call to respect rate limits (15 RPM = 4s minimum)
+        if attempt == 0:
+            time.sleep(5)
+        else:
+            backoff = 5 * (2 ** attempt)  # 10s, 20s
+            logger.warning("Gemini retry %d/%d — sleeping %ds", attempt + 1, max_retries, backoff)
+            time.sleep(backoff)
 
-    # Gemini may return empty if safety filters fire
-    if not response.text:
-        logger.warning("Gemini returned an empty response (safety filter?)")
-        return "[FinGuard: Gemini safety filter blocked the response. Please rephrase your query.]"
+        try:
+            response = model.generate_content(
+                prompt,
+                generation_config=generation_config,
+            )
 
-    return response.text
+            # Gemini may return empty if safety filters fire
+            if not response.text:
+                logger.warning("Gemini returned an empty response (safety filter?)")
+                return "[FinGuard: Gemini safety filter blocked the response. Please rephrase your query.]"
+
+            return response.text
+
+        except Exception as e:
+            logger.warning("Gemini call attempt %d failed: %s", attempt + 1, e)
+            if attempt == max_retries - 1:
+                raise  # Re-raise on final attempt
 
 
 # ---------------------------------------------------------------------------
@@ -161,11 +173,8 @@ def call_llm(prompt: str, mock_mode: bool = False) -> str:
         logger.info("LLM call — mock_mode=True, returning canned response")
         return _MOCK_RESPONSE
 
-    use_groq = os.getenv("USE_GROQ_FALLBACK", "false").lower() == "true"
-
-    if use_groq:
-        logger.info("Using Groq (Llama 3 70B) as primary LLM")
-        return _call_groq(prompt)
+    # Force Gemini 2.5 Flash for evaluation (Groq disabled)
+    use_groq = False  # os.getenv("USE_GROQ_FALLBACK", "false").lower() == "true"
 
     # Default: try Gemini, fall back to Groq on failure
     try:

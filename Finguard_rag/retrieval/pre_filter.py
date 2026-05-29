@@ -38,7 +38,8 @@ def passes_pre_filter(metadata: dict, user_context: UserContext) -> bool:
     # --- Gate 2: Jurisdiction (user's jurisdiction must appear in doc's CSV) ---
     jurisdiction_str = metadata.get("jurisdiction", "IN")
     jurisdictions = [j.strip() for j in jurisdiction_str.split(",") if j.strip()]
-    if user_context.jurisdiction not in jurisdictions:
+    # GLOBAL jurisdiction matches any user; otherwise user's jurisdiction must be in list
+    if "GLOBAL" not in jurisdictions and user_context.jurisdiction not in jurisdictions:
         return False
 
     # --- Gate 3: Temporal (effective_date <= reference_date) ---

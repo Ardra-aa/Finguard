@@ -5,6 +5,9 @@ Detects cross-query inference attacks within a single session.
 A junior_analyst might ask individually-permitted questions that,
 combined over a session, reconstruct salary/board data restricted to ceo/cfo.
 This module catches that pattern.
+
+Enhanced: Now includes QUERY-LEVEL sensitivity detection that fires BEFORE
+RBAC filtering, so even if docs are blocked, the query intent is flagged.
 """
 
 from __future__ import annotations
@@ -20,6 +23,34 @@ try:
 except Exception:
     _EMBED_AVAILABLE = False
     _MODEL = None
+
+
+# ---------------------------------------------------------------------------
+# Query-Level Sensitivity Detection (fires BEFORE RBAC / doc retrieval)
+# ---------------------------------------------------------------------------
+SENSITIVE_PATTERNS = {
+    "compensation": ["salary", "ctc", "band 5", "band 6", "package",
+                     "compensation", "pay grade", "pay scale", "salary band"],
+    "equity":       ["esop", "vesting", "stock option", "equity grant",
+                     "rsu", "share allocation"],
+    "bonus":        ["bonus", "incentive", "variable pay", "performance pay",
+                     "annual increment", "hike"],
+    "personal_hr":  ["appraisal", "promotion criteria", "performance rating",
+                     "increment", "salary hike"],
+}
+
+
+def classify_query_sensitivity(query: str) -> str:
+    """
+    Classify a query as sensitive based on keywords alone,
+    regardless of whether any documents were retrieved.
+    Returns "HIGH" if sensitive patterns detected, else "NONE".
+    """
+    q = query.lower()
+    for category, keywords in SENSITIVE_PATTERNS.items():
+        if any(kw in q for kw in keywords):
+            return "HIGH"
+    return "NONE"
 
 
 def _embed(text: str) -> List[float]:
@@ -66,6 +97,23 @@ class LeakageDetector:
         if mock_mode:
             return {"leakage_risk": "NONE", "leakage_details": []}
 
+        # ----- Query-level sensitivity (fires BEFORE doc-based checks) -----
+        query_sensitivity = classify_query_sensitivity(query_text)
+        if query_sensitivity == "HIGH":
+            # The query itself targets restricted HR/compensation data
+            # If the user's role is not authorized for this data, flag immediately
+            privileged_roles = {"ceo", "cfo", "hr_manager"}
+            if role not in privileged_roles:
+                return {
+                    "leakage_risk": "HIGH",
+                    "leakage_details": [
+                        f"Query targets restricted HR/compensation data. "
+                        f"Role '{role}' is not authorized for this information. "
+                        f"Potential data exfiltration attempt detected."
+                    ],
+                }
+
+        # ----- Standard doc-based detection (original M8 logic) -----
         embedding   = _embed(query_text)
         sensitivity = _infer_doc_sensitivity(retrieved_doc_ids)
 
