@@ -37,7 +37,7 @@ TEST_SET_A = [
         "set_id": "A", "case_id": "A03",
         "query": "What data privacy rules govern our Frankfurt subsidiary?",
         "user_context": {"role": "legal_counsel", "jurisdiction": "EU", "session_id": "s-A03"},
-        "true_jurisdiction": "EU",
+        "true_jurisdiction": "EU,IN",
         "true_violations": [],
         "correct_date": "2018-05-25",
         "true_leakage": "NONE",
