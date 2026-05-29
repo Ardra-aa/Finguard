@@ -30,8 +30,8 @@ class QueryResponse(BaseModel):
     answer: str
     sources: List[SourceDoc]
     compliance_status: str           # "PASS" | "WARNING" | "FAIL"
-    violations: List[str]
-    conflicts: List[str]
+    violations: list                     # rule IDs (str) or violation dicts
+    conflicts: list
     leakage_risk: str                # "NONE" | "LOW" | "HIGH"
     leakage_details: List[str]
     conflict_detected: bool

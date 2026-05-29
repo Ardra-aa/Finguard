@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 venv/
 evaluation/results/
+node_modules/

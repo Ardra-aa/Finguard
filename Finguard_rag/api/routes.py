@@ -424,18 +424,33 @@ def _select_docs(query: str, user_context: UserContext, top_k: int = 5) -> List[
     if not accessible:
         return []
 
-    # Score by keyword relevance
+    # Score by keyword relevance — uses substring matching for better recall
     def relevance(doc: FinancialDocument) -> float:
         text = (doc.doc_id + " " + doc.content + " " + doc.regulatory_scope).lower()
-        words = [w for w in q_lower.split() if len(w) > 3]
+        words = [w for w in q_lower.split() if len(w) > 2]
         if not words:
-            return 0.3
+            return 0.5  # no keywords → return a decent baseline score
+        # Substring matching: check if each query word appears anywhere in the doc text
         hits = sum(1 for w in words if w in text)
         base_score = hits / len(words)
         # Boost for jurisdiction match
         if doc.jurisdiction == jurisdiction:
-            base_score += 0.1
-        return min(0.98, base_score + 0.2)  # floor so all relevant docs score > 0
+            base_score += 0.15
+        # Boost for regulatory scope keywords in query
+        scope_keywords = {
+            "securities": ["sebi", "lodr", "insider", "trading", "disclosure", "stock", "listed"],
+            "banking": ["rbi", "nbfc", "kyc", "aml", "fema", "capital", "bank", "lending"],
+            "corporate": ["companies", "act", "board", "director", "csr", "rpt", "related"],
+            "accounting": ["ind", "ifrs", "lease", "revenue", "accounting", "standard"],
+            "insurance": ["insurance", "ifrs17", "actuarial"],
+            "internal": ["salary", "compensation", "esop", "band", "pay", "grade", "ctc",
+                         "policy", "code", "conduct", "whistleblower", "data", "retention",
+                         "trading window", "acceptable use"],
+        }
+        for scope, keywords in scope_keywords.items():
+            if doc.regulatory_scope == scope and any(kw in q_lower for kw in keywords):
+                base_score += 0.25
+        return min(0.98, base_score + 0.3)  # higher floor so all accessible docs have decent scores
 
     scored = sorted(accessible, key=lambda d: relevance(d), reverse=True)[:top_k]
 
@@ -545,6 +560,29 @@ async def query_endpoint(req: QueryRequest):
             sources = [rd.document for rd in ranked_docs]
             confidence = 0.0
 
+    # ── Step 3b: Compliance FAIL gate — withhold if FAIL ──────────────────
+    if compliance_status == "FAIL":
+        violation_ids = ", ".join(
+            v if isinstance(v, str) else v.get("rule_id", "") for v in violations
+        )
+        return QueryResponse(
+            answer=(
+                f"This response has been blocked by the compliance validator. "
+                f"Violations detected: {violation_ids}"
+            ),
+            sources=[],
+            compliance_status="FAIL",
+            violations=violations,
+            conflicts=[],
+            leakage_risk="NONE",
+            leakage_details=[],
+            conflict_detected=False,
+            conflicting_rules=[],
+            conservative_recommendation="",
+            confidence_score=0.0,
+            agent_trace=None,
+        )
+
     # ── Step 4: Post-generation defence (M8 full check + M9 conflict) ─────
     post_defense = defend(
         session_id=req.session_id,
@@ -561,14 +599,27 @@ async def query_endpoint(req: QueryRequest):
     if post_defense["conflict_detected"] and compliance_status == "PASS":
         compliance_status = "WARNING"
 
-    # Block if post-generation leakage check also raises HIGH
-    if post_defense["leakage_risk"] == "HIGH":
-        raise HTTPException(
-            status_code=403,
-            detail={
-                "error": "Response blocked: high leakage risk in generated content.",
-                "details": post_defense["leakage_details"],
-            },
+    # Block if post-generation leakage check raises HIGH
+    BLOCK_ON_LEAKAGE = ["HIGH"]
+    if post_defense["leakage_risk"] in BLOCK_ON_LEAKAGE:
+        return QueryResponse(
+            answer=(
+                "This query has been blocked. It appears to request "
+                "sensitive compensation or role-inference information "
+                "that you are not authorized to access."
+            ),
+            sources=[],
+            compliance_status="FAIL",
+            violations=[{"rule_id": "LDR-001",
+                         "description": "Role-inference leakage detected",
+                         "severity": "HIGH"}],
+            leakage_risk=post_defense["leakage_risk"],
+            leakage_details=post_defense["leakage_details"],
+            conflict_detected=False,
+            conflicting_rules=[],
+            conservative_recommendation="",
+            confidence_score=0.0,
+            agent_trace=None,
         )
 
     return QueryResponse(

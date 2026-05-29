@@ -39,6 +39,16 @@ SENSITIVE_PATTERNS = {
                      "increment", "salary hike"],
 }
 
+# Cross-role salary inference patterns — fires BEFORE any other checks
+CROSS_ROLE_SALARY_PATTERNS = [
+    "salary of", "compensation of", "pay of", "ctc of",
+    "how much does", "how much do", "what does a", "what do",
+    "executive salary", "manager salary", "senior salary",
+    "ceo salary", "cfo salary", "director salary",
+    "salary of senior", "salary of executive", "salary of manager",
+    "compensation structure", "pay structure",
+]
+
 
 def classify_query_sensitivity(query: str) -> str:
     """
@@ -96,6 +106,21 @@ class LeakageDetector:
         """
         if mock_mode:
             return {"leakage_risk": "NONE", "leakage_details": []}
+
+        # ----- Cross-role salary inference check (fires FIRST) -----
+        query_lower = query_text.lower()
+        is_cross_role_query = any(p in query_lower for p in CROSS_ROLE_SALARY_PATTERNS)
+        is_restricted_role = role in ["junior_analyst", "analyst", "senior_analyst", "it_admin", "auditor_external"]
+
+        if is_cross_role_query and is_restricted_role:
+            return {
+                "leakage_risk": "HIGH",
+                "leakage_details": [
+                    f"Cross-role compensation query detected. "
+                    f"Role '{role}' is not authorized to query salary/compensation "
+                    f"data for other roles. Query: '{query_text[:80]}'"
+                ],
+            }
 
         # ----- Query-level sensitivity (fires BEFORE doc-based checks) -----
         query_sensitivity = classify_query_sensitivity(query_text)

@@ -54,8 +54,11 @@ CONTEXT DOCUMENTS provided below.  Follow these rules strictly:
    today and that are NOT superseded (superseded_date is null or in the
    future).  If a document is superseded, note this explicitly.
 
-4. **Do NOT hallucinate** — If the provided context documents do not
-   contain enough information, say so.  Never invent regulatory provisions.
+4. **Use available context fully** — Synthesize a comprehensive answer
+   from ALL provided context documents.  If some aspects of the query
+   are not fully covered, answer what you can from the context and note
+   any gaps.  Never invent regulatory provisions not found in the context,
+   but DO provide substantive answers from the documents you have.
 
 5. **Professional tone** — Use formal, advisory language appropriate for
    a compliance officer or CFO audience.
@@ -109,8 +112,8 @@ def build_prompt(
     Assemble the full LLM prompt from system instructions, context
     documents, and the user query.
 
-    If the combined prompt exceeds ``MAX_INPUT_TOKENS`` the lowest-ranked
-    context documents are dropped one-by-one until it fits.
+    Injects actual document content from ranked_docs into the prompt
+    so the LLM can synthesize real answers with citations.
 
     Args:
         query:        The user's compliance question.
@@ -121,74 +124,50 @@ def build_prompt(
         A single prompt string ready to send to :func:`gemini_client.call_llm`.
     """
     # ------------------------------------------------------------------ #
-    # 1. Build the fixed (non-context) parts of the prompt
+    # 1. Build context from real document chunks
     # ------------------------------------------------------------------ #
-    user_meta = (
-        f"USER METADATA:\n"
-        f"  role: {user_context.role}\n"
-        f"  jurisdiction: {user_context.jurisdiction}\n"
-        f"  reference_date: {user_context.reference_date}\n"
-    )
-
-    query_section = (
-        f"USER QUERY:\n{query}\n\n"
-        f"Provide a comprehensive, well-cited answer following the rules above."
-    )
-
-    fixed_text = f"{SYSTEM_PROMPT}\n\n{user_meta}\n"
-    fixed_tokens = _estimate_tokens(fixed_text)
-
-    query_tokens = _estimate_tokens(query_section)
-
-    budget_for_context = MAX_INPUT_TOKENS - fixed_tokens - query_tokens
-    if budget_for_context < 100:
-        logger.warning(
-            "Token budget leaves only %d tokens for context — query may be "
-            "too long",
-            budget_for_context,
-        )
-        budget_for_context = 100  # allow at least a small snippet
-
-    # ------------------------------------------------------------------ #
-    # 2. Fill the context section, trimming from the tail if needed
-    # ------------------------------------------------------------------ #
-    context_blocks: List[str] = []
-    used_tokens = 0
-
-    for idx, doc in enumerate(docs, start=1):
-        block = _format_context_chunk(idx, doc)
-        block_tokens = _estimate_tokens(block)
-
-        if used_tokens + block_tokens > budget_for_context:
-            logger.info(
-                "Token budget reached after %d/%d context docs — trimming.",
-                idx - 1,
-                len(docs),
+    context_sections = []
+    for i, doc in enumerate(docs[:5]):  # top 5 docs
+        content = doc.document.content or ""
+        if content:
+            context_sections.append(
+                f"[Source {i+1}: {doc.document.doc_id}]\n{content[:1500]}"
             )
-            break
 
-        context_blocks.append(block)
-        used_tokens += block_tokens
-
-    if not context_blocks:
-        context_section = (
-            "CONTEXT DOCUMENTS:\n"
-            "(No relevant documents were retrieved for this query.)\n"
-        )
+    if not context_sections:
+        context_block = "No relevant documents found in the corpus."
     else:
-        context_section = "CONTEXT DOCUMENTS:\n\n" + "\n".join(context_blocks)
+        context_block = "\n\n".join(context_sections)
 
     # ------------------------------------------------------------------ #
-    # 3. Assemble the full prompt
+    # 2. Assemble the full prompt
     # ------------------------------------------------------------------ #
-    full_prompt = f"{fixed_text}{context_section}\n\n{query_section}"
+    prompt = f"""You are FinGuard, a financial compliance assistant for BharatFinServ Ltd. You answer questions strictly based on the provided regulatory documents.
 
-    total_tokens = _estimate_tokens(full_prompt)
+USER ROLE: {user_context.role}
+JURISDICTION: {user_context.jurisdiction}
+
+RETRIEVED REGULATORY CONTEXT:
+{context_block}
+
+INSTRUCTIONS:
+1. Answer ONLY using information from the retrieved context above.
+2. Write a complete, structured answer in clear paragraphs — not bullet points, not "please refer to document X".
+3. Cite sources inline as [Source: doc_id] after each fact.
+4. If the context does not contain enough information to answer, say: "The available regulatory documents do not contain sufficient information on this topic for your role and jurisdiction."
+5. Do NOT say "please refer to" or "consult the document" — extract and explain the actual content.
+6. Tailor the answer to the user's role ({user_context.role}) — a junior_analyst gets a simpler explanation than a cfo.
+
+QUERY: {query}
+
+ANSWER:"""
+
+    total_tokens = _estimate_tokens(prompt)
     logger.info(
         "Prompt assembled — %d context docs, ~%d tokens (budget: %d)",
-        len(context_blocks),
+        len(context_sections),
         total_tokens,
         MAX_INPUT_TOKENS,
     )
 
-    return full_prompt
+    return prompt
