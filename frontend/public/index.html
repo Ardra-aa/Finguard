@@ -11,6 +11,62 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; font-family: 'Inter', system-ui, sans-serif; }
     #root { min-height: 100vh; }
+
+    /* ── FinGuard Design Tokens ─────────────────────────────── */
+    :root {
+      /* Dark Blues */
+      --fg-navy-900: #0a1628;
+      --fg-navy-800: #0f1f38;
+      --fg-navy-700: #142742;
+      --fg-navy-600: #1a3358;
+      --fg-navy-500: #1e3a5f;
+      --fg-navy-400: #264a73;
+      --fg-navy-300: #3a6491;
+      --fg-navy-200: #5a8ab5;
+      --fg-navy-100: #8fb3d4;
+
+      /* Orange Accents */
+      --fg-orange-500: #e8772e;
+      --fg-orange-400: #f0923e;
+      --fg-orange-300: #f4a95f;
+
+      /* Neutrals */
+      --fg-bg: #f0f4f8;
+      --fg-surface: #ffffff;
+      --fg-border: #d3dce6;
+      --fg-border-light: #e4ebf2;
+      --fg-text-primary: #1a2332;
+      --fg-text-secondary: #5a6b7f;
+      --fg-text-muted: #8896a6;
+    }
+
+    /* ── Spinner Keyframe ──────────────────────────────────── */
+    @keyframes fg-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ── Smooth transitions for interactive elements ───────── */
+    .fg-card {
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+    }
+    .fg-card:hover {
+      border-color: var(--fg-navy-300);
+      box-shadow: 0 4px 16px rgba(10, 22, 40, 0.10);
+      transform: translateY(-1px);
+    }
+
+    .fg-btn {
+      transition: background 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+    }
+    .fg-btn:hover:not(:disabled) {
+      box-shadow: 0 2px 8px rgba(10, 22, 40, 0.15);
+    }
+
+    /* ── Scrollbar styling ─────────────────────────────────── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--fg-bg); }
+    ::-webkit-scrollbar-thumb { background: var(--fg-navy-200); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--fg-navy-300); }
   </style>
 </head>
 <body>

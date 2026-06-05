@@ -57,14 +57,47 @@ export function QueryPage() {
   }
 
   return (
-    <div style={{ maxWidth: 860, margin: "0 auto", padding: 24 }}>
-      <h2 style={{ color: "#1e3a5f", marginBottom: 4 }}>Compliance Query</h2>
-      <p style={{ color: "#64748b", marginBottom: 20, fontSize: 14 }}>
-        Querying as <strong>{user.name}</strong> ({user.role} · {user.jurisdiction})
-      </p>
+    <div style={{ maxWidth: 880, margin: "0 auto", padding: "0 24px 48px" }}>
+      {/* ── Page Header ────────────────────────────────────────── */}
+      <div style={{ marginBottom: 24 }}>
+        <h2 style={{
+          color: "#0f1f38", marginBottom: 6, fontSize: 22, fontWeight: 700,
+          letterSpacing: "-0.01em",
+        }}>
+          Compliance Query
+        </h2>
+        <p style={{ color: "#5a6b7f", fontSize: 14, margin: 0 }}>
+          Querying as <strong style={{ color: "#1a2332" }}>{user.name}</strong>
+          <span style={{
+            marginLeft: 8,
+            background: "#0f1f38",
+            color: "rgba(255,255,255,0.85)",
+            borderRadius: 4,
+            padding: "2px 8px",
+            fontSize: 11,
+            fontWeight: 600,
+            letterSpacing: "0.02em",
+          }}>
+            {user.role.replace(/_/g, " ").toUpperCase()}
+          </span>
+          <span style={{
+            marginLeft: 6,
+            background: "rgba(232,119,46,0.1)",
+            color: "#e8772e",
+            borderRadius: 4,
+            padding: "2px 8px",
+            fontSize: 11,
+            fontWeight: 600,
+          }}>
+            {user.jurisdiction}
+          </span>
+        </p>
+      </div>
 
-      {/* Input */}
-      <div style={{ display: "flex", gap: 10, marginBottom: 24 }}>
+      {/* ── Input Area ─────────────────────────────────────────── */}
+      <div style={{
+        display: "flex", gap: 10, marginBottom: 24,
+      }}>
         <textarea
           value={query}
           onChange={e => setQuery(e.target.value)}
@@ -72,67 +105,107 @@ export function QueryPage() {
           placeholder="Ask a compliance question... (Ctrl+Enter to submit)"
           rows={3}
           style={{
-            flex: 1, borderRadius: 8, border: "1px solid #cbd5e1",
-            padding: "10px 14px", fontSize: 14, resize: "vertical",
+            flex: 1,
+            borderRadius: 8,
+            border: "1px solid #d3dce6",
+            padding: "12px 16px",
+            fontSize: 14,
+            resize: "vertical",
             fontFamily: "inherit",
+            background: "#ffffff",
+            color: "#1a2332",
+            outline: "none",
+            transition: "border-color 0.2s ease",
           }}
+          onFocus={e => e.target.style.borderColor = "#264a73"}
+          onBlur={e => e.target.style.borderColor = "#d3dce6"}
         />
         <button
           onClick={handleSubmit}
           disabled={loading || !query.trim()}
+          className="fg-btn"
           style={{
-            background: "#2563eb", color: "#fff", border: "none",
-            borderRadius: 8, padding: "0 22px", cursor: "pointer",
-            fontWeight: 600, fontSize: 14, alignSelf: "stretch",
-            opacity: (loading || !query.trim()) ? 0.5 : 1,
+            background: "linear-gradient(135deg, #142742 0%, #1a3358 100%)",
+            color: "#fff",
+            border: "none",
+            borderRadius: 8,
+            padding: "0 24px",
+            cursor: "pointer",
+            fontWeight: 600,
+            fontSize: 14,
+            alignSelf: "stretch",
+            fontFamily: "inherit",
+            opacity: (loading || !query.trim()) ? 0.4 : 1,
+            letterSpacing: "0.01em",
+            minWidth: 80,
           }}
         >
           {loading ? "..." : "Ask"}
         </button>
       </div>
 
-      {/* Loading */}
+      {/* ── Loading ────────────────────────────────────────────── */}
       {loading && <Spinner />}
 
-      {/* Blocked error */}
+      {/* ── Blocked Error ──────────────────────────────────────── */}
       {error?.type === "blocked" && (
         <div style={{
-          background: "#fee2e2", border: "1px solid #fca5a5",
-          borderRadius: 8, padding: "16px 20px",
+          background: "#fef2f2",
+          border: "1px solid #e8b4b4",
+          borderLeft: "4px solid #c53030",
+          borderRadius: 8,
+          padding: "16px 20px",
+          marginBottom: 16,
         }}>
-          <strong style={{ color: "#991b1b" }}>[BLOCKED] Query Blocked</strong>
-          <p style={{ margin: "6px 0 0", fontSize: 14, color: "#374151" }}>
+          <strong style={{ color: "#9b2c2c", fontSize: 14 }}>Query Blocked</strong>
+          <p style={{ margin: "6px 0 0", fontSize: 13, color: "#374151" }}>
             {error.detail?.error}
           </p>
           {error.detail?.details?.map((d, i) => (
-            <p key={i} style={{ margin: "4px 0 0", fontSize: 13, color: "#6b7280" }}>{d}</p>
+            <p key={i} style={{ margin: "4px 0 0", fontSize: 12, color: "#5a6b7f" }}>{d}</p>
           ))}
         </div>
       )}
 
-      {/* Generic error */}
+      {/* ── Generic Error ──────────────────────────────────────── */}
       {error?.type === "error" && (
         <div style={{
-          background: "#fef3c7", border: "1px solid #fcd34d",
-          borderRadius: 8, padding: 14, color: "#92400e", fontSize: 14,
+          background: "#fffbeb",
+          border: "1px solid #e0c97d",
+          borderLeft: "4px solid #d69e2e",
+          borderRadius: 8,
+          padding: "14px 18px",
+          color: "#744210",
+          fontSize: 13,
+          marginBottom: 16,
         }}>
-          [!] {error.detail}
+          {error.detail}
         </div>
       )}
 
-      {/* Result */}
+      {/* ── Result Card ────────────────────────────────────────── */}
       {result && (
         <div style={{
-          background: "#fff", border: "1px solid #e2e8f0",
-          borderRadius: 10, padding: 24,
+          background: "#ffffff",
+          border: "1px solid #d3dce6",
+          borderRadius: 10,
+          padding: 24,
+          boxShadow: "0 1px 4px rgba(10, 22, 40, 0.06)",
         }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
+          {/* Status row */}
+          <div style={{
+            display: "flex", alignItems: "center", gap: 10,
+            marginBottom: 16,
+            paddingBottom: 14,
+            borderBottom: "1px solid #e4ebf2",
+          }}>
             <ComplianceBadge status={result.compliance_status} />
-            <span style={{ fontSize: 12, color: "#94a3b8" }}>
-              confidence {(result.confidence_score * 100).toFixed(0)}%
+            <span style={{ fontSize: 12, color: "#8896a6" }}>
+              Confidence: {(result.confidence_score * 100).toFixed(0)}%
             </span>
           </div>
 
+          {/* Alerts */}
           <LeakageAlert risk={result.leakage_risk} details={result.leakage_details} />
           <ConflictNotice
             detected={result.conflict_detected}
@@ -140,16 +213,30 @@ export function QueryPage() {
             recommendation={result.conservative_recommendation}
           />
 
-          <p style={{ fontSize: 15, color: "#1e293b", lineHeight: 1.6, margin: "0 0 16px" }}>
+          {/* Answer */}
+          <div style={{
+            fontSize: 14, color: "#1a2332", lineHeight: 1.7,
+            margin: "0 0 16px",
+            whiteSpace: "pre-wrap",
+          }}>
             {result.answer}
-          </p>
+          </div>
 
+          {/* Violations */}
           {result.violations?.length > 0 && (
-            <div style={{ marginBottom: 12 }}>
-              <strong style={{ fontSize: 13, color: "#991b1b" }}>Violations</strong>
-              <ul style={{ margin: "4px 0 0", paddingLeft: 18 }}>
+            <div style={{
+              marginBottom: 14,
+              background: "#fef2f2",
+              border: "1px solid #e8b4b4",
+              borderRadius: 8,
+              padding: "12px 16px",
+            }}>
+              <strong style={{ fontSize: 12, color: "#9b2c2c", letterSpacing: "0.03em" }}>
+                VIOLATIONS
+              </strong>
+              <ul style={{ margin: "6px 0 0", paddingLeft: 18 }}>
                 {result.violations.map((v, i) => (
-                  <li key={i} style={{ fontSize: 13, color: "#374151" }}>{v}</li>
+                  <li key={i} style={{ fontSize: 13, color: "#374151", marginBottom: 2 }}>{v}</li>
                 ))}
               </ul>
             </div>
@@ -160,22 +247,39 @@ export function QueryPage() {
         </div>
       )}
 
-      {/* History */}
+      {/* ── Query History ──────────────────────────────────────── */}
       {history.length > 0 && (
         <div style={{ marginTop: 32 }}>
-          <h3 style={{ fontSize: 14, color: "#64748b", marginBottom: 12 }}>Recent Queries</h3>
+          <h3 style={{
+            fontSize: 13, color: "#5a6b7f", marginBottom: 12,
+            fontWeight: 600, letterSpacing: "0.04em",
+            textTransform: "uppercase",
+          }}>
+            Recent Queries
+          </h3>
           {history.map((h, i) => (
             <div
               key={i}
               onClick={() => { setQuery(h.query); setResult(h.result); }}
+              className="fg-card"
               style={{
-                background: "#f8fafc", border: "1px solid #e2e8f0",
-                borderRadius: 8, padding: "10px 14px", marginBottom: 8,
-                cursor: "pointer", fontSize: 13, color: "#374151",
-                display: "flex", justifyContent: "space-between",
+                background: "#ffffff",
+                border: "1px solid #d3dce6",
+                borderRadius: 8,
+                padding: "10px 16px",
+                marginBottom: 8,
+                cursor: "pointer",
+                fontSize: 13,
+                color: "#1a2332",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
               }}
             >
-              <span style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+              <span style={{
+                flex: 1, overflow: "hidden", textOverflow: "ellipsis",
+                whiteSpace: "nowrap", marginRight: 12,
+              }}>
                 {h.query}
               </span>
               <ComplianceBadge status={h.result?.compliance_status} />
