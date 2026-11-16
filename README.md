@@ -2,8 +2,7 @@
 
 **A Secure, Policy-Aware RAG Framework for Indian Financial Compliance**
 
-> NLP 22AIE315 -- Amrita Vishwa Vidyapeetham, Amritapuri
-> Guide: Dr. Veena G | Version 3.0 -- April 2026
+> NLP Amrita Vishwa Vidyapeetham, Amritapuri
 
 ---
 
