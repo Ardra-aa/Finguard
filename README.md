@@ -2,10 +2,6 @@
 
 **A Secure, Policy-Aware RAG Framework for Indian Financial Compliance**
 
-> NLP Amrita Vishwa Vidyapeetham, Amritapuri
-
----
-
 ## Table of Contents
 
 1. [Overview](#overview)
